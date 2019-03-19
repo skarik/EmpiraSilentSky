@@ -1,0 +1,210 @@
+#begin
+
+// let player approach...
+wait
+{
+    type input
+    id approach
+}
+
+lines
+{
+    target princess
+    1 Oh, $bfinally$$!$w Come release me so you can grovel at my feet!
+}
+lines
+{
+    target paladin
+    1 I beg your pardon, who are you?
+}
+
+wait
+{
+    type time
+    time 0.2
+}
+wait
+{
+    type input
+    id pose0
+}
+
+lines
+{
+    target princess
+    1 Just how could you possibly not know $bme$$?!
+}
+wait
+{
+    type input
+    id pose1
+}
+lines
+{
+    target princess
+    1 The youngest daughter of the great $1succubus Queen Kyneryth$0!
+    2 The sole surviving heir of King Akan!
+}
+wait
+{
+    type input
+    id pose2
+}
+lines
+{
+    target princess
+    1 The great master of alchemy!
+    2 And the beautiful demon $bprincess$$ of Akaith!
+}
+wait
+{
+    type input
+    id pose3
+}
+lines
+{
+    target princess
+    1 I am $bKyin$$!
+}
+wait
+{
+    type time
+    time 0.3
+}
+wait
+{
+    type input
+    id pose4
+}
+
+lines
+{
+    target paladin
+    1 A demon?! In your dreams I would help you!
+    2 On my honor as a paladin, prepare to be vanquished!
+}
+// Comedic input time here
+wait
+{
+    type input
+    id magicguard
+}
+// Now way too much dialogue
+lines
+{
+    target paladin
+    1 Go on, perform a vanquishable offense.
+}
+wait
+{
+    type input
+    id princessfall
+}
+lines
+{
+    target princess
+    1 What's the point?
+}
+lines
+{
+    target princess
+    1 There's hell pouring out of the sky and there's no magic locks for me to dispel.
+}
+lines
+{
+    target princess
+    1 Plus, you let me monologue. Not a lot of people actually let me finish the whole thing-
+    end auto
+}
+lines
+{
+    target paladin
+    1 You can dispel magic? Then you can dispel the rift!
+}
+lines
+{
+    target princess
+    1 But-
+    end auto
+}
+lines
+{
+    target paladin
+    1 Here, I shall help you out of those chains.
+}
+
+wait
+{
+    type input
+    id unlock0
+}
+wait
+{
+    type input
+    id unlock0_guards
+}
+
+// In comes the gaurds!
+lines
+{
+    target guard
+    object 0
+    1 There he is, assisting in the demon's escape!
+}
+lines
+{
+    target paladin
+    facing guard
+    1 Actually, I was rather-
+    end auto
+}
+lines
+{
+    target guard
+    object 0
+    1 Get him!
+}
+
+wait
+{
+    type input
+    id unlock0_fight
+}
+
+// Now, go to the part where we unlock the princess
+lines
+{
+    target princess
+    1 Why help me?
+}
+lines
+{
+    target paladin
+    facing princess
+    1 An enemy of my enemy-
+}
+lines
+{
+    target princess
+    1 Isn't always a friend. Aren’t you taking a risk, trusting me?
+}
+
+wait
+{
+    type input
+    id unlock1
+}
+
+lines
+{
+    target princess
+    1 Thanks.
+}
+
+wait
+{
+    type input
+    id princessenabled
+}
+
+#end

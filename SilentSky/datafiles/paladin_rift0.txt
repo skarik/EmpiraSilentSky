@@ -1,0 +1,10 @@
+#begin
+
+lines
+{
+    target  paladin
+    facing  left
+    1 That must be the $1rift$0.
+}
+
+#end

@@ -1,0 +1,32 @@
+#begin
+
+lines
+{
+    target  guard
+    object  0
+    facing  left
+    1 The $1demon$0 is still there, right?
+}
+lines
+{
+    target  guard
+    object  1
+    facing  right
+    1 Of course she is.
+}
+lines
+{
+    target  guard
+    object  0
+    facing  left
+    1 Why would they open a $1rift$0 over their $bprincess$$?
+}
+lines
+{
+    target  guard
+    object  1
+    facing  right
+    1 They're $1demons$0, lives don’t matter to them.
+}
+
+#end

@@ -1,0 +1,69 @@
+Character:
+    Jump
+    Step
+    Land
+    Slide
+
+Input:
+    Book opening/page turning
+    Menu change selection
+    Menu make selection
+    Message box accept
+    Enter spell quickcast menu
+    Select spell to quickcast
+
+Paladin:
+    Light sword attacks
+    Heavy sword attack
+    Sword hit
+    Roll
+    Start casting
+    Cast Heal
+
+Princess:
+    Throw potion
+    Potion break
+    Fire potion effect
+    Smoke potion effect
+    Tar potion effect
+    Shadow push
+    Shadow dash
+    Start casting
+    Cast Enchant fire
+    Cast Enchant smoke
+    Cast Enchant tar
+    Cast Dispel
+    Cast Dispel Finger Snap
+    Cast Dispel Overdrive (for when dispelling the hell portal)
+    Spell fizzle (when a spell is hit by the dispel shockwave wave)
+    Spell fizzle overdrive (for when the rift to hell closes)
+
+Tinkerer:
+    Sparks
+    Loose electric arrow
+    Loose arrow (same as before but no mana)
+    Electric dash
+    Dash (same as before but no mana)
+    Start casting
+    Cast shock burst
+
+World:
+    Hell pulse (there is a rift open in the sky, basically leads to hell. sometimes it will pulse in the distance. quick & forboding sound? experiment)
+    Water dripping (fast and slow)
+    Wind (for outside as get closer to the top of the prison)
+    Hell shockwave: Muffled groans
+    Hell shockwave: Muffled screams
+    Hell shockwave: Some odd thing
+    Crumbling rocks
+
+Object:
+    Lever press
+    Hinge door open
+    Gear door open
+    Gears turn
+    Plasma globe charge (electric switch)
+    Plasma globe discharge (electric switch)
+    Plasma globe glow loop
+    Shield spell cast
+    Shield spell reflect object
+    Magical circle glow loop

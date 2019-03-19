@@ -1,0 +1,22 @@
+#begin
+
+lines
+{
+    target  none
+    1 On the world of Secuna there was a $bcastle$$ that reached to the $bsky$$.
+    //1wav vox/librarian0test.wav
+    2 Although it was more like $2third highest point$0, the humans that built it declared it the $bclosest point to the heavens$$.
+    //2wav
+    3 They named it:
+    //3wav
+    4 Perihelione.
+    //4wav
+}
+
+wait
+{
+    type input
+    id titlecard
+}
+
+#ended

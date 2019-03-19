@@ -1,0 +1,10 @@
+#begin
+
+lines
+{
+    target  paladin
+    1 ...
+    //1wav
+}
+
+#ended

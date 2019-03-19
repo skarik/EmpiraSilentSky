@@ -1,0 +1,30 @@
+#begin
+
+lines
+{
+    target  none
+    1 $bBlessings$$ cannot be received by those who $1do not wish$0 to receive them .
+}
+
+lines
+{
+    target  none
+    1 Send $bblessings$$ anyways?
+}
+
+choice
+{
+    target  paladin
+    1 No.
+    2 Yes.
+}
+
+lines
+{
+    target  paladin
+    1 Wherever you are, $1Kynell$0, I hope that you're healthy and loved.
+}
+
+**Princess** Kynell?
+
+#ended

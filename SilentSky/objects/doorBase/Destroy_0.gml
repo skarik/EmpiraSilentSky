@@ -1,0 +1,4 @@
+delete(parta);
+delete(partb);
+
+

@@ -1,0 +1,59 @@
+#begin
+
+lines
+{
+    target  imp
+    targeti 0
+    1 Hello, human! I'm the $bLibrarian$$!
+    1wav vox/librarian0test.wav
+    2 Librarian of what, you might ask? Well, of stories of course!
+    //2wav
+    3 My stories are a little bit different, though.
+    //3wav
+    4 Go ahead, look through the volumes!
+    //4wav
+}
+
+wait
+{
+    type input
+    id storyselect
+}
+
+lines
+{
+    target  imp
+    targeti 1
+    1 The war on Secuna. I suppose I could read it for you, although $bI'd rather not$$.
+    //1wav
+}
+lines
+{
+    target  imp
+    1 Are you $bsure$$ you want this story?
+    //1wav
+}
+
+choice
+{
+    1 Yes.
+    2 Yes?
+    3 Yes!
+    4 ...Yes.
+}
+
+lines
+{
+    target  imp
+    targeti 1
+    1 Okay...
+    //1wav
+}
+
+wait
+{
+    type input
+    id storybegin
+}
+
+#ended

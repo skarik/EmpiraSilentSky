@@ -1,0 +1,2 @@
+objPlayerMain.moPlayer = true;
+

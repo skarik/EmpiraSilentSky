@@ -1,0 +1,96 @@
+#begin
+
+lines
+{
+    target  paladin
+    1 ...
+    //1wav vox/librarian0test.wav
+}
+// Wait for a bit, then wait on the rebel enter sequence
+wait
+{
+    type time
+    time 1.5
+}
+wait
+{
+    type input
+    id rebelenter
+}
+lines
+{
+    target rebel
+    object 0
+    1 $bDamn!$$ They haven't evacuated anybody!
+    2 You, $bpaladin$$!$w You can help.
+}
+
+// Rebel frees paladin
+wait
+{
+    type input
+    id rebelfree
+}
+
+// Lil bit of dialogue here
+lines
+{
+    target  paladin
+    1 Thank you.
+}
+lines
+{
+    target rebel
+    1 Don't thank me yet, we're not safe.
+    2 We've got a $1rift$0 to worry about.
+}
+lines
+{
+    target  paladin
+    1 A $1rift$0? What rift?
+}
+wait
+{
+    type input
+    id rebeldeath
+}
+wait
+{
+    type input
+    id guardsarrive
+}
+
+// Rebel has died! OH nooooo
+lines
+{
+    target guard
+    object 0
+    1 He released the $bpaladin$$!
+}
+lines
+{
+    target guard
+    object 1
+    1 Let's get that church boy!
+}
+
+// Wait for fight
+wait
+{
+    type input
+    id fight
+}
+
+// And do badass line at the end
+wait
+{
+    type time
+    time 0.4
+}
+lines
+{
+    target paladin
+    1 I don’t think so.
+}
+
+#ended

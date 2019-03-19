@@ -1,0 +1,21 @@
+#begin
+
+lines
+{
+    target  guard
+    object  0
+    1 Those damn demons! To open a rift over our castle!
+}
+lines
+{
+    target  guard
+    object  1
+    1 Well, they won’t gain our people. We all stay and die with it.
+}
+lines
+{
+    target  paladin
+    1 To die out of spite - deplorable.
+}
+
+#end
