@@ -50,9 +50,9 @@ for (var i = 0; i < floor(current_display_count); ++i)
     
     // draw the text
     draw_set_color( c_black );
-    draw_text(dx + penx, dy + peny + 1, string_hash_to_newline(char));    
+    draw_text(round(dx + penx), round(dy + peny + 1), string_hash_to_newline(char));    
     draw_set_color( penc );
-    draw_text(dx + penx, dy + peny, string_hash_to_newline(char));
+    draw_text(round(dx + penx), round(dy + peny), string_hash_to_newline(char));
     
     // do a lookahead for dropping a line if currently on a space
     var override_drop = false;

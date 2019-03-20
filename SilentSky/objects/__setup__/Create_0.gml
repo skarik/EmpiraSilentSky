@@ -19,6 +19,7 @@ new(Input);
 if (Debug.reset || !Game_Load())
 {
     // If not, we just continue normally.
-    room_goto_next();
+    //room_goto_next();
+	room_goto(rm_title);
 }
 

@@ -34,3 +34,6 @@ for (var i = 0; i < 1000000; ++i)
             0,0,0,0, null);
     }
 }
+
+// Set up output camera
+m_outputCamera = camera_create_view(0, 0, width * scale, height * scale);

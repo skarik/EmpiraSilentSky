@@ -1,3 +1,5 @@
+view_set_camera(1, m_outputCamera);
+camera_apply(m_outputCamera);
 
 // If lighting doesn't exist, then we draw "normally"
 if (!exists(Lighting))

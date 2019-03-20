@@ -1,6 +1,10 @@
 // We need the screen to draw, but otherwise this is where we draw
 if (exists(Screen))
 {
+	// Apply the output matrix
+	view_set_camera(1, Screen.m_outputCamera);
+	camera_apply(Screen.m_outputCamera);
+	
     // Reset drawing color
     draw_set_color(c_white);
     
