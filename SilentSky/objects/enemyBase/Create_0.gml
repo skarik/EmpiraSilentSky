@@ -13,6 +13,7 @@ isGooed = false;
 isGlued = false;
 isBurning = false;
 isShocked = false;
+isBlocking = false;
 atkTimer = 0;
 atkQueued = false;
 gunTimer = 0;

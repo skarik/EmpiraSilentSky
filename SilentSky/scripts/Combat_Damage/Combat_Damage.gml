@@ -8,7 +8,11 @@ var damage = argument1;
 var do_hitparticles = argument2;
 var do_hitfx = argument3;
 
-chHealth -= damage;
+// Modify damage based on armor
+var actualDamage = Combat_CalculateDamage(damage);
+		
+// Perform damage
+chHealth -= actualDamage;
         
 // Generate intersecting BB for the effect spawning
 var c_x1 = x-sprite_xoffset;
@@ -18,7 +22,7 @@ var c_y2 = y-sprite_yoffset+sprite_height;
 
 // Create damage ticker
 var ticker = instance_create(random_range(c_x1,c_x2), random_range(c_y1,c_y2), floaterDmgTicker);
-    ticker.value = damage;
+    ticker.value = actualDamage;
 
 if (do_hitparticles)
 {

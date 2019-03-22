@@ -111,11 +111,15 @@ if ( enme_saved != null )
 {
     with ( enme_saved )
     {
-        chHealth -= damage;
+        // Modify damage based on armor
+		var actualDamage = Combat_CalculateDamage(damage);
+		
+		// Perform damage
+        chHealth -= actualDamage;
         
         // Create damage ticker
         var ticker = instance_create(dx,dy, floaterDmgTicker);
-            ticker.value = damage;
+            ticker.value = actualDamage;
         
         // Create hit sound
         var sound_hit = sound_play_at(dx,dy, Sound_Impact(chBloodtype));

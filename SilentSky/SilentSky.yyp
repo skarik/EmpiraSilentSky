@@ -4935,14 +4935,6 @@
             }
         },
         {
-            "Key": "dd33f600-3119-4d43-8d15-64c95b9952c0",
-            "Value": {
-                "id": "2efaa6fd-62d2-49c5-8ff6-9573c7da7e9c",
-                "resourcePath": "scripts\\script29\\script29.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "dd85835d-2e46-45fe-be86-f2f19adcc2e1",
             "Value": {
                 "id": "87aec1d6-7b18-42ae-ab1f-f5dfee292a03",
@@ -5431,6 +5423,14 @@
             }
         },
         {
+            "Key": "f0ba3896-8610-481c-be2f-3cdf500ceada",
+            "Value": {
+                "id": "9d0f3017-57ad-4811-a88b-5f4cfc3d8a1c",
+                "resourcePath": "scripts\\Combat_CalculateDamage\\Combat_CalculateDamage.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f0d58423-b3af-4141-8645-5463ce2af986",
             "Value": {
                 "id": "c60384dd-6a8a-4f8b-a3eb-1d0f73552670",
@@ -5888,7 +5888,6 @@
         "d41c7943-1c51-421a-a605-8779f3edfad4",
         "8dfab2e9-dae2-435f-ae01-001b1ee72466",
         "2cc9b3d1-5bce-4b40-b443-dde37759dea6",
-        "dd33f600-3119-4d43-8d15-64c95b9952c0",
         "09c869d7-e17a-4c0c-b7d9-dab6cf6140bb",
         "42253bdb-0b15-442a-b6ff-74f4fd32a1f2",
         "dfe3acb8-eabc-47b9-9e1b-a1d1abd67741",
@@ -5897,6 +5896,7 @@
         "9a2552b4-2fbe-42fb-864f-ec5dd15caf8c",
         "8722a296-5cea-4172-909e-027092674036",
         "39717001-e6f2-4d95-9408-95053f20156e",
+        "f0ba3896-8610-481c-be2f-3cdf500ceada",
         "cc080771-bd54-4192-a165-bf34ec02d54c",
         "03fd44ec-f736-4a80-9688-b382a69f3b85",
         "d40d5a5d-4e79-4521-89f9-edf2cc14279d",

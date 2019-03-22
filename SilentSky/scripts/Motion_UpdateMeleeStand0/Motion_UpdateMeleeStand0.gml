@@ -41,19 +41,19 @@ if ( atkTimer >= 1.0 )
 }
 
 // Set xspeed based on motion and attack timer
-/*if (atkTimer > moAtkKey1)
+if (atkTimer > moAtkKey1)
 {
-    xspeed = sign(facingDir) * power(1.0 - atkTimer,4) * moSpeedRun * moAtkSpeed1;
+    xspeed = sign(facingDir) * power(1.0 - atkTimer,4) * moSpeedRun * moAtkSpeed1 * 1.0;
 }
 else
 {
-    xspeed = sign(facingDir) * power(1.0 - atkTimer,4) * moSpeedRun * 1.0;
+    xspeed = sign(facingDir) * power(1.0 - atkTimer,4) * moSpeedRun * 1.0 * 0.0;
 }
 if (Motion_Common_LookaheadNoGround())
 {
     xspeed = 0;
-}*/
-xspeed = 0;
+}
+//xspeed = 0;
 
 
 // Player controls start:

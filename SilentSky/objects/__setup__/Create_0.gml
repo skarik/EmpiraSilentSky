@@ -16,10 +16,9 @@ new(Input);
 // Setup is now complete.
 
 // Try to load a game
-if (Debug.reset || !Game_Load())
+//if (Debug.reset || !Game_Load())
 {
     // If not, we just continue normally.
-    //room_goto_next();
-	room_goto(rm_title);
+    room_goto_next();
 }
 

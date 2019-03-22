@@ -57,7 +57,11 @@ with (enemyBase)
 {
     if (id != source && ((moTeam & source.moTeam) == 0) && collision_rectangle(x1,y1,x2,y2, id, true, false) != null)
     {
-        chHealth -= damage;
+		// Modify damage based on armor
+		var actualDamage = Combat_CalculateDamage(damage);
+		
+		// Perform damage
+        chHealth -= actualDamage;
         
         // Generate intersecting BB for the effect spawning
         var c_x1 = max( x1, x-sprite_xoffset );
@@ -67,7 +71,7 @@ with (enemyBase)
         
         // Create damage ticker
         var ticker = instance_create(random_range(c_x1,c_x2), random_range(c_y1,c_y2), floaterDmgTicker);
-            ticker.value = damage;
+            ticker.value = actualDamage;
         
         // Create hit sound
         var sound_hit = sound_play_at(random_range(c_x1,c_x2), random_range(c_y1,c_y2), Sound_Impact(chBloodtype));
