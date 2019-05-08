@@ -11,7 +11,7 @@ chMaxMana = 80;
 chBloodtype = BLOOD_RED;
 chTakeBurnDamage = true;
 
-if (room != rm_gameplayTesting)
+if (room != rm_gameplayTesting && room != rm_jail0_0_shrine)
 {
     moPlayerAvailable = false;
     moPlayer = false;   

@@ -26,6 +26,10 @@ else
     image_alpha -= Time.dt;
     if (image_alpha <= 0.0) 
     {
+		if (room_next(room) != rm_menu && room_next(room) != rm_librarian_0)
+		{
+			audio_stop_sound(music);
+		}
         room_goto_next();
     }
 }

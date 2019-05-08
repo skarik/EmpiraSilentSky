@@ -50,6 +50,22 @@ for (var character = 0; character < ofi; ++character)
        
     draw_set_alpha(uiAlpha);
     draw_set_color(c_white);
+	
+	// Draw the items they have
+	if (pl.object_index == objPlayerPaladin)
+	{
+		var scale = 0.5 + 0.5 * pl.moPlayer;
+		for (var sword_i = 0; sword_i < pl.chSwordCountMax; ++sword_i)
+		{
+			var has_sword = sword_i < pl.chSwordCount;
+			draw_sprite_ext(s_projectileSword, 0,
+							dx + 50 * scale + 15 * scale * sword_i, dy + 30,
+							scale, scale,
+							45,
+							has_sword ? c_white : c_black,
+							has_sword ? 1.0 : 0.25);
+		}
+	}
     
     // Draw portraits
     var scale = 0.5 + 0.5 * pl.moPlayer;
@@ -63,7 +79,8 @@ for (var character = 0; character < ofi; ++character)
     if ( pl.moPlayer )
     {
         // Draw the current health
-        UI_DrawInterleavedBar( dx+44, dy+4, pl.chHealth, pl.chMaxHealth, suiHudBar0, c_red );
+        UI_DrawInterleavedBar( dx+44, dy+4, pl.chMaxHealth, pl.chMaxHealth, suiHudBar0, c_black, c_maroon );
+		UI_DrawInterleavedBar( dx+44, dy+4, pl.chHealth, pl.chMaxHealth, suiHudBar0, c_red, c_white );
               
         // Draw the current mana
         if (pl.moState == MO_SPECIAL && pl.spellState == SPELL_CASTING)
@@ -74,7 +91,8 @@ for (var character = 0; character < ofi; ++character)
                 draw_set_color(c_aqua);
             draw_rectangle( dx+44 + max(0, pl.chMana - pl.spellCastCost), dy+15, dx+44 + pl.chMana, dy+15+7, false );
         }
-        UI_DrawInterleavedBar( dx+44, dy+15, pl.chMana, pl.chMaxMana, suiHudBar0, c_blue );
+        UI_DrawInterleavedBar( dx+44, dy+15, pl.chMaxMana, pl.chMaxMana, suiHudBar0, c_black, c_navy );
+		UI_DrawInterleavedBar( dx+44, dy+15, pl.chMana, pl.chMaxMana, suiHudBar0, c_blue, c_white );
         
         // Draw the text over the bars
         draw_set_color(c_white);
@@ -94,7 +112,8 @@ for (var character = 0; character < ofi; ++character)
         // Otherwise, draw minibars
         
         // Draw the current health
-        UI_DrawInterleavedBar( dx+44, dy+4, pl.chHealth*0.5, pl.chMaxHealth*0.5, suiHudBar1, c_red );
+		UI_DrawInterleavedBar( dx+44, dy+4, pl.chMaxHealth*0.5, pl.chMaxHealth*0.5, suiHudBar1, c_black, c_maroon );
+        UI_DrawInterleavedBar( dx+44, dy+4, pl.chHealth*0.5, pl.chMaxHealth*0.5, suiHudBar1, c_red, c_white );
         
         // Draw the current mana
         if (pl.moState == MO_SPECIAL && pl.spellState == SPELL_CASTING)
@@ -105,7 +124,8 @@ for (var character = 0; character < ofi; ++character)
                 draw_set_color(c_aqua);
             draw_rectangle( dx+44 + max(0, pl.chMana - pl.spellCastCost)*0.5, dy+12, dx+44 + pl.chMana*0.5, dy+12+5, false );
         }
-        UI_DrawInterleavedBar( dx+44, dy+12, pl.chMana*0.5, pl.chMaxMana*0.5, suiHudBar1, c_blue );
+		UI_DrawInterleavedBar( dx+44, dy+12, pl.chMaxMana*0.5, pl.chMaxMana*0.5, suiHudBar1, c_black, c_navy );
+        UI_DrawInterleavedBar( dx+44, dy+12, pl.chMana*0.5, pl.chMaxMana*0.5, suiHudBar1, c_blue, c_white );
         
         // Draw the text over the bars
         draw_set_color(c_white);

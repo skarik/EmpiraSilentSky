@@ -11,6 +11,9 @@ chMaxMana = 40;
 chBloodtype = BLOOD_RED;
 chTakeBurnDamage = true;
 
+chSwordCount = 0;
+chSwordCountMax = 2;
+
 moAccelGround = 1600;
 moDeAccelGround = 800;
 moAccelAir = 600;
@@ -56,9 +59,9 @@ if (!exists(playerHudSpellbook)) new(playerHudSpellbook);
 if (!exists(playerHudBgInfo)) new(playerHudBgInfo);
 if (!exists(playerHudBgInfoHp)) new(playerHudBgInfoHp);
 
-moAtkStateOverride0 = null;
-moAtkKey0 = 0.3;
-moAtkSpeed0 = 1.0;
+moAtkStateOverride0 = Paladin_ThrowSword;
+moAtkKey0 = 0.4;
+moAtkSpeed0 = 2.0;
 moAtkDamage0 = 24;
 moAtkStamina0 = 8;
 moAtkStateOverride1 = null;

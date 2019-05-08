@@ -26,6 +26,8 @@ for (var i = 0; i < floor(current_display_count); ++i)
             penc = c_red;
         if ( display_flags[i] == ord("2") )
             penc = c_gray;
+		if ( display_flags[i] == ord("3") )
+			penc = c_electricity;
         if ( display_flags[i] == ord("b") )
         {
             draw_set_font(display_font_bold);

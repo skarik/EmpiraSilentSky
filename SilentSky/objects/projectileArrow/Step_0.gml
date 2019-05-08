@@ -5,7 +5,7 @@ yspeed += ygrav * Time.dt;
 // Step by step motion for perfect collision
 
 // First get normalized motion
-var move_dist = point_distance(0,0,xspeed,yspeed);
+var move_dist = point_distance(0, 0, xspeed, yspeed);
 var xs = xspeed / move_dist;
 var ys = yspeed / move_dist;
 // Loop through distance and apply normalize motion

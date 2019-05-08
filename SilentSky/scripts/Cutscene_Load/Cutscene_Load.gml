@@ -84,27 +84,52 @@ while (!file_text_eof(fp))
             {
                 var actual_map = ds_map_create();
             
-                // Go through the keys to find the maximum value and convert needed values
-                var size = ds_map_size(read_object_map);
-                var key = ds_map_find_first(read_object_map);
-                var max_key = 0;
-                repeat (size)
-                {
-                    if (is_string(key))
-                    {
-                        var val = real(key);
-                        if (val != 0)
-                        {
-                            // Select max key for the count later
-                            max_key = max(max_key, val);
-                            // Add the actual key
-                            ds_map_add(actual_map, val, ds_map_find_value(read_object_map, key));
-                        }
-                    }
-                    key = ds_map_find_next(read_object_map, key);
-                }
+				var target = ds_map_find_value(read_object_map, "target");
+                if (is_undefined(target))
+                    target = null;
+                else if (target == "imp")
+                    target = objPlayerImp;
+                else if (target == "paladin")
+                    target = objPlayerPaladin;
+                else if (target == "princess" || target == "kyin")
+                    target = objPlayerPrincess;
+                else if (target == "tinkerer" || target == "buzzbrain")
+                    target = objPlayerTinkerer;
+                else if (target == "rebel")
+                    target = npcRebel;
+                else if (target == "guard")
+                    target = npcGuard;
+                else
+                    target = null;
+			
+                var name = ds_map_find_value(read_object_map, "id");
+				
+				// Loop through the numbered keys for choices:
+				var key = 1;
+				var max_key = 0;
+				while (!is_undefined(ds_map_find_value(read_object_map, string(key))))
+				{
+					// Select max key for the count later
+                    max_key = max(max_key, key);
+					// Add the actual key
+                    ds_map_add(actual_map, key, ds_map_find_value(read_object_map, string(key)));
+					// Find if there is jump information
+					var jump_key = string(key) + "goto";
+					if (ds_map_exists(read_object_map, jump_key))
+					{	// Save the jump information if there is
+						ds_map_add(actual_map, key + SEQI_JUMP_OFFSET, ds_map_find_value(read_object_map, jump_key));
+					}
+					// Incremenent key
+					key += 1;
+				}
                 // Add the key count
                 ds_map_add(actual_map, SEQI_COUNT, max_key);
+				
+				// Add the target
+				ds_map_add(actual_map, SEQI_TARGET, target);
+				
+				// Add the ID
+				ds_map_add(actual_map, SEQI_ID, name);
                 
                 // Delete original map
                 ds_map_destroy(read_object_map);

@@ -8,3 +8,5 @@ dt = unscaled_dt * scale;
 // Update the window caption for display
 window_set_caption( "Still Sky : " + string(fps) + " FPS" );
 
+// update aliases
+deltaTime = dt;

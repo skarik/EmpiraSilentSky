@@ -25,6 +25,8 @@ lines
     1 Wherever you are, $1Kynell$0, I hope that you're healthy and loved.
 }
 
-**Princess** Kynell?
+//**Princess** Kynell?
+// go thru old comic and try to keep the timeline straight
+// this might be before her half-sister is crowned
 
 #ended

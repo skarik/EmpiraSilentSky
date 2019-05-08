@@ -8,3 +8,5 @@ unscaled_dt = 0;
 dt = 0;
 scale = 1.0;
 
+// aliases
+deltaTime = 0;
