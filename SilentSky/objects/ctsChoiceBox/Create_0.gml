@@ -9,7 +9,7 @@ input_choice[0] = "Nothing";
 input_fadeout = false;
 input_priority = true;
 
-display_font = fntArvoReg;
+display_font = global.font_arvo9;
 display_width = 150;
 display_choice = 0;
 

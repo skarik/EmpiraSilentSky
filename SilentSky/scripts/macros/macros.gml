@@ -59,9 +59,6 @@
 #macro SPELL_INBOOK 0
 #macro SPELL_CASTING 1
 #macro SPELL_FOLLOWTHRU 2
-#macro c_electricity make_color_rgb(100,255,255)
-#macro c_ltblue make_color_rgb(70,90,255)
-#macro c_riftgreen make_color_rgb(103,255,144)
 #macro POTION_NONE 0
 #macro POTION_FIRE 1
 #macro POTION_TAR 2
@@ -73,7 +70,7 @@
 #macro LINK_GROUND 8
 #macro LINK_AIR 16
 #macro LINK_FALLING 32
-#macro SEQTYPE_NULL -1
+/*#macro SEQTYPE_NULL -1
 #macro SEQTYPE_LINES 0
 #macro SEQTYPE_WAIT 1
 #macro SEQTYPE_CHOICES 2
@@ -91,5 +88,5 @@
 #macro SEQWAIT_TIME 1
 #macro SEQEND_NONE 0
 #macro SEQEND_AUTO 1
-#macro SEQEND_ORGANIC 2
+#macro SEQEND_ORGANIC 2*/
 #macro SAVE_FILE "empira1.pl"

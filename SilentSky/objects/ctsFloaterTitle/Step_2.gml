@@ -9,7 +9,7 @@ if (Controls_UpdateAndCheckAny())
     if (!fadeout)
     {
         fadeout = true;
-        audio_play_sound(sndUiFail2, 50, false);
+        //audio_play_sound(sndUiFail2, 50, false);
     }
 }
 

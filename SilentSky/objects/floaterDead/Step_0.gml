@@ -3,10 +3,10 @@ image_yscale = image_xscale;
 
 if ( !fade )
 {
-    image_alpha += Time.dt * 2.0;
+    image_alpha += Time.dt * 1.0;
     if ( image_alpha > 4.0 ) 
     {
-        fade = true;
+        //fade = true;
     }
 }
 else

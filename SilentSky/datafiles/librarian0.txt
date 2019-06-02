@@ -6,7 +6,7 @@ lines
     targeti 0
     1 Hello, human! I'm the $bLibrarian$$!
     1wav vox/librarian0test.wav
-    2 Librarian of what, you might ask? Well, of stories of course!
+    2 Librarian of what, you might ask? Well, $wof stories$$ of course!
     //2wav
     3 My stories are a little bit different, though.
     //3wav
@@ -24,7 +24,7 @@ lines
 {
     target  imp
     targeti 1
-    1 The war on Secuna. I suppose I could read it for you, although $bI'd rather not$$.
+    1 The war on Secuna. I $2suppose$0 I could read it for you, although$s $bI'd rather not$$.
     //1wav
 }
 lines

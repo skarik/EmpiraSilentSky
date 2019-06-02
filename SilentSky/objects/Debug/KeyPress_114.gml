@@ -1,0 +1,3 @@
+/// @description restart game
+
+gameRestart();

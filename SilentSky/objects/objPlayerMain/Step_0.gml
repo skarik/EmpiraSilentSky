@@ -30,3 +30,13 @@ if ( moDead )
     }
 }
 
+if ( moDead )
+{
+	if (exists(floaterDead))
+	{
+		if (floaterDead.image_alpha > 4.0)
+		{
+			Game_Load();
+		}
+	}
+}

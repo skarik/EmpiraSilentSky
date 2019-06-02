@@ -1,23 +1,23 @@
-if (!Cutscene_Update())
+if (!cutsceneUpdate())
 {
-    if (Cutscene_GetWaitId() == "storyselect")
+    if (cutsceneGetWaitId() == "storyselect")
     {
         // todo: do story select
-        /*Cutscene_WaitEnd();
+        /*cutsceneWaitEnd();
         
         target_pitch = 0.75;*/
         if (!exists(ctsLibraryBookcase)) new(ctsLibraryBookcase);
         if (ctsLibraryBookcase.bk_selected)
         {
-            Cutscene_WaitEnd();
+            cutsceneWaitEnd();
             target_pitch = 0.75;
         }
     }
-    if (Cutscene_GetChoiceReady())
+    if (cutsceneIsChoiceReady())
     {
         target_pitch = 0.50;
     }
-    if (Cutscene_GetWaitId() == "storybegin")
+    if (cutsceneGetWaitId() == "storybegin")
     {
         if (!exists(ctsFadeOutLongBlack))
         {

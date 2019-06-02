@@ -17,9 +17,9 @@ if (!ctEnabled)
 else
 {
     //with (objPlayerPaladin) isPlayer = true;
-    if (!Cutscene_Update())
+    if (!cutsceneUpdate())
     {
-        if (Cutscene_Done())
+        if (cutsceneIsDone())
         {   
             //Cts_HellPulse();
             // We're fucking don moe here

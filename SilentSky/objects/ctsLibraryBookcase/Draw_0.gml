@@ -38,9 +38,9 @@ for (var i = 0; i < bk_title_count; ++i)
         draw_set_alpha(bk_fade);
         draw_set_color(c_white);
         if ( i != 7 )
-            draw_set_font(fntArvoReg);
+            draw_set_font(global.font_arvo9);
         else
-            draw_set_font(fntArvoBold);
+            draw_set_font(global.font_arvo9Bold);
         draw_set_halign(fa_center);
         draw_set_valign(fa_top);
         draw_text_outline(dx, dy + 7, bk_title[i], c_white, c_black, 1.0);

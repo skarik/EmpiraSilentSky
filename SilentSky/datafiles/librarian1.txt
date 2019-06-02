@@ -3,14 +3,21 @@
 lines
 {
     target  none
-    1 On the world of Secuna there was a $bcastle$$ that reached to the $bsky$$.
+    //1 On the world of Secuna there was a $bcastle$$ that reached to the $bsky$$.
     //1wav vox/librarian0test.wav
-    2 Although it was more like $2third highest point$0, the humans that built it declared it the $bclosest point to the heavens$$.
+    //2 Although it was more like $2third highest point$0, the humans that built it declared it the $bclosest point to the heavens$$.
     //2wav
-    3 They named it:
+    //3 They named it:
     //3wav
-    4 Perihelione.
+    //4 Perihelione.
     //4wav
+	
+	
+	//1 Secuna was the home to a terrible war between
+	//2 The Perihelione empire 
+	//3 A paladin of the Light found himself bound within this prison...
+	
+	1 In the land of Perihelione, a paladin was in a prison...
 }
 
 wait

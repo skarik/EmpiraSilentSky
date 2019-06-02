@@ -307,24 +307,24 @@ Converted builtin - line 23: view_yview[0] -> __view_get( e__VW.YView, 0 )
 Converted builtin - line 23: view_wview[0] -> __view_get( e__VW.WView, 0 )
 Converted builtin - line 23: view_hview[0] -> __view_get( e__VW.HView, 0 )
 
-Converting GML script: ${project_dir}\scripts\Cutscene_Load\Cutscene_Load.gml
-Converted description /// @description Cutscene_Load(cutscene_file);/// @param cutscene_file
+Converting GML script: ${project_dir}\scripts\cutsceneLoad\cutsceneLoad.gml
+Converted description /// @description cutsceneLoad(cutscene_file);/// @param cutscene_file
 Converted string - line 242: ' ' -> " "
 
-Converting GML script: ${project_dir}\scripts\Cutscene_Update\Cutscene_Update.gml
-Converted description /// @description Cutscene_Update
+Converting GML script: ${project_dir}\scripts\cutsceneUpdate\cutsceneUpdate.gml
+Converted description /// @description cutsceneUpdate
 
-Converting GML script: ${project_dir}\scripts\Cutscene_GetWaitId\Cutscene_GetWaitId.gml
-Converted description /// @description Cutscene_GetWaitId
+Converting GML script: ${project_dir}\scripts\cutsceneGetWaitId\cutsceneGetWaitId.gml
+Converted description /// @description cutsceneGetWaitId
 
-Converting GML script: ${project_dir}\scripts\Cutscene_WaitEnd\Cutscene_WaitEnd.gml
-Converted description /// @description Cutscene_WaitEnd()
+Converting GML script: ${project_dir}\scripts\cutsceneWaitEnd\cutsceneWaitEnd.gml
+Converted description /// @description cutsceneWaitEnd()
 
-Converting GML script: ${project_dir}\scripts\Cutscene_SetOrganicness\Cutscene_SetOrganicness.gml
-Converted description /// @description Cutscene_SetOrganicness(organic)/// @param organic
+Converting GML script: ${project_dir}\scripts\cutsceneSetOrganicness\cutsceneSetOrganicness.gml
+Converted description /// @description cutsceneSetOrganicness(organic)/// @param organic
 
-Converting GML script: ${project_dir}\scripts\Cutscene_EndEarly\Cutscene_EndEarly.gml
-Converted description /// @description Cutscene_EndEarly()
+Converting GML script: ${project_dir}\scripts\cutsceneEndEarly\cutsceneEndEarly.gml
+Converted description /// @description cutsceneEndEarly()
 
 Converting GML script: ${project_dir}\scripts\Cts_MakeGabber\Cts_MakeGabber.gml
 Converted description /// @description  Cts_MakeGabber(character, name, string)/// @param character

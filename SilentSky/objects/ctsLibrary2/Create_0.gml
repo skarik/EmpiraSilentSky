@@ -1,3 +1,3 @@
-Cutscene_Load("librarian1.txt");
+cutsceneLoad("librarian1.txt");
 
 

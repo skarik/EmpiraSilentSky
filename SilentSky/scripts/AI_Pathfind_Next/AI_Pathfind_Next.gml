@@ -50,7 +50,7 @@ while (current_node != target_node)
             AI_FollowWait();
             aiFollowNodeRefresh = 3.0;
             
-            DebugOut("Degenerate path!");
+            debugOut("Degenerate path!");
             return start_node;
         }
     }
@@ -63,7 +63,7 @@ while (current_node != target_node)
 // Sanity check
 if (current_node != target_node)
 {
-    DebugOut("Did not path to the final node!");
+    debugOut("Did not path to the final node!");
 }
 
 // Convert the stack to a list

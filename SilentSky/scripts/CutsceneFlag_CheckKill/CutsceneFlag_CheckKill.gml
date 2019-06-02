@@ -3,7 +3,7 @@ if (Debug.reset && !exists(Game))
 
 if (global._flag_cutscene[argument0] == true)
 {
-    Cutscene_Init();
+    cutsceneInit();
     delete(this);
     return true;
 }

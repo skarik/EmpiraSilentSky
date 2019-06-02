@@ -98,7 +98,7 @@ if (exists(aiFollowNode) && aiFollowStuckFixState == 0 && !path_super_clear)
         aiFollowStuckTimer += 2.0 * Time.dt;
         if ( aiFollowStuckTimer > 1.0 )
         {
-            DebugOut("Got stuck, going into an unstuck mode...");
+            debugOut("Got stuck, going into an unstuck mode...");
             /*if (upcoming_wall || upcoming_no_ground)
             {
                 if ( image_xscale > 0 ) aiFollowStuckFixState = 2;
@@ -131,7 +131,7 @@ else
             aiFollowStuckTimer += 2.0 * Time.dt;
             if ( aiFollowStuckTimer > 1.0 )
             {
-                DebugOut("Got stuck, going into an unstuck mode...");
+                debugOut("Got stuck, going into an unstuck mode...");
                 /*if (upcoming_wall || upcoming_no_ground)
                 {
                     if ( image_xscale > 0 ) aiFollowStuckFixState = 2;

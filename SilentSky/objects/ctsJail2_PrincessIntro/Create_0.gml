@@ -1,7 +1,7 @@
 
 if (CutsceneFlag_CheckKill(79)) exit;
 
-Cutscene_Load("princess_intro0.txt");
+cutsceneLoad("princess_intro0.txt");
 
 
 ctDisablePlayer = true;

@@ -42,12 +42,12 @@ lines
 {
     target rebel
     1 Don't thank me yet, we're not safe.
-    2 We've got a $1rift$0 to worry about.
+    2 We've got a $5rift$0 to worry about.
 }
 lines
 {
     target  paladin
-    1 A $1rift$0? What rift?
+    1 A $5rift$0? What rift?
 }
 wait
 {

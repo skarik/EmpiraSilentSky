@@ -8,18 +8,18 @@ if (ctDisablePlayer)
     }
 }
 
-if (!Cutscene_Update())
+if (!cutsceneUpdate())
 {
     var pl = GetActivePlayer();
     if (!exists(pl)) exit;
 
-    var wait_id = Cutscene_GetWaitId();
+    var wait_id = cutsceneGetWaitId();
     if (wait_id == "approach")
     {
         if (pl.x < x)
         {
             //CutsceneFlag_AutoSet();
-            Cutscene_WaitEnd();
+            cutsceneWaitEnd();
             delete(musicAmbientJail0);
             delete(musicAmbientJail1);
             new(musicAmbientPrincess0);
@@ -32,27 +32,27 @@ if (!Cutscene_Update())
     else if (wait_id == "pose0")
     {
         objPlayerPrincess.spStand = sprPrincessChains3;
-        Cutscene_WaitEnd();
+        cutsceneWaitEnd();
     }
     else if (wait_id == "pose1")
     {
         objPlayerPrincess.spStand = sprPrincessChains4;
-        Cutscene_WaitEnd();
+        cutsceneWaitEnd();
     }
     else if (wait_id == "pose2")
     {
         objPlayerPrincess.spStand = sprPrincessChains5;
-        Cutscene_WaitEnd();
+        cutsceneWaitEnd();
     }
     else if (wait_id == "pose3")
     {
         objPlayerPrincess.spStand = sprPrincessChains6;
-        Cutscene_WaitEnd();
+        cutsceneWaitEnd();
     }
     else if (wait_id == "pose4")
     {
         objPlayerPrincess.spStand = sprPrincessChains5;
-        Cutscene_WaitEnd();
+        cutsceneWaitEnd();
     }
     
     else if (wait_id == "magicguard")
@@ -77,7 +77,7 @@ if (!Cutscene_Update())
                 if (ctStage > 2.0)
                 {
                     ctStage = 0;
-                    Cutscene_WaitEnd();
+                    cutsceneWaitEnd();
                 }
             }
         }
@@ -87,7 +87,7 @@ if (!Cutscene_Update())
     {
         target_pitch = 0.24;
         objPlayerPrincess.spStand = sprPrincessChains;
-        Cutscene_WaitEnd();
+        cutsceneWaitEnd();
     }
     
     else if (wait_id == "unlock0")
@@ -96,7 +96,7 @@ if (!Cutscene_Update())
         if ( buttonInvisi.triggered )
         {
             buttonInvisi.y += 128;
-            Cutscene_WaitEnd();
+            cutsceneWaitEnd();
             objPlayerPaladin.moInput = false;
             buttonInvisi.triggered = false;
         }
@@ -115,7 +115,7 @@ if (!Cutscene_Update())
         if (abs(npcGuard.x - objPlayerPaladin.x) < 180)
         {
             with (npcGuard) xAxis = 0;
-            Cutscene_WaitEnd();
+            cutsceneWaitEnd();
             ctStage = 0;
             objPlayerPaladin.moInput = true;
         }        
@@ -129,7 +129,7 @@ if (!Cutscene_Update())
         with (npcGuard) if (chHealth > 0) dead = false;
         if (dead)
         {
-            Cutscene_WaitEnd();
+            cutsceneWaitEnd();
         }
     }
     
@@ -141,14 +141,14 @@ if (!Cutscene_Update())
         if ( buttonInvisi.triggered )
         {
             buttonInvisi.y += 128;
-            Cutscene_WaitEnd();
+            cutsceneWaitEnd();
             //objPlayerPaladin.moInput = false;
         }
     }
     
     else if (wait_id == "princessenabled")
     {
-        Cutscene_WaitEnd();
+        cutsceneWaitEnd();
         ctDisablePlayer = false;
         objPlayerPrincess.moPlayer = true;
         objPlayerPrincess.moPlayerAvailable = true;
@@ -156,7 +156,7 @@ if (!Cutscene_Update())
         objPlayerPrincess.spStand = sprPrincessStand;
     }
     
-    else if (Cutscene_Done())
+    else if (cutsceneIsDone())
     {   
         CutsceneFlag_AutoSet();
         // We're fucking done here

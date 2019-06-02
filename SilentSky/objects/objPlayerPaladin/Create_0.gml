@@ -49,9 +49,9 @@ spDeath = sprPaladinFail;
 
 mgCount = 1;
 mgCastTime[0] = 3.0;
-mgCastCb[0] = null;
-//mgCastCb[0] = Paladin_CastHeal;
-moSpecialCbKey = Paladin_CastHeal;
+//mgCastCb[0] = null;
+mgCastCb[0] = Paladin_CastHeal;
+//moSpecialCbKey = Paladin_CastHeal;
 mgCastCost[0] = 20;
 
 if (!exists(playerHudInfo)) new(playerHudInfo);

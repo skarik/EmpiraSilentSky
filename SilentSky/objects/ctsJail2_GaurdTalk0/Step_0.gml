@@ -18,9 +18,9 @@ if (!ctEnabled)
 }
 else
 {
-    if (!Cutscene_Update())
+    if (!cutsceneUpdate())
     {
-        if (Cutscene_Done())
+        if (cutsceneIsDone())
         {   
             // Make spoopy pulse
             CutsceneFlag_AutoSet();
@@ -32,7 +32,7 @@ else
     }
     if (GetGuardsAngry())
     {
-        Cutscene_EndEarly();
+        cutsceneEndEarly();
         
         // Make spoopy pulse
         CutsceneFlag_AutoSet();

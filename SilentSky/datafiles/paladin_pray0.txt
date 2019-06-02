@@ -3,19 +3,20 @@
 lines
 {
     target  none
-    1 $bBlessings$$ cannot be received by those who $1do not wish$0 to receive them .
+    1 $bBlessings$$ cannot be received by those who $1do not wish$0 to receive them.
 }
 
 lines
 {
     target  none
-    1 Send $bblessings$$ anyways?
+    1 Send $bblessings$$ anyway?
 }
 
 choice
 {
     target  paladin
     1 No.
+	1goto ended
     2 Yes.
 }
 

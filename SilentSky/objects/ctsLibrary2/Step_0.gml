@@ -1,6 +1,6 @@
-if (!Cutscene_Update())
+if (!cutsceneUpdate())
 {
-    if (Cutscene_GetWaitId() == "titlecard")
+    if (cutsceneGetWaitId() == "titlecard")
     {
         room_goto_next();
     }

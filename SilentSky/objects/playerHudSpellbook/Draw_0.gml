@@ -63,7 +63,7 @@ if (pl.mgCount > 1)
         else if (i == 2) draw_set_valign(fa_top);
         else draw_set_valign(fa_middle);
         
-        draw_set_font(fntArvoReg);
+        draw_set_font(global.font_arvo9);
         var book_index = i;
         if (Input.gamepad)
         {
@@ -79,7 +79,7 @@ if (pl.mgCount > 1)
     draw_sprite_ext(suiButtonContainer, 0, base_x + 18*center_dist*swapper,base_y, 1,1,0,c_white, image_alpha);
     
     draw_set_color(c_white);
-    draw_set_font(fntArvoReg);
+    draw_set_font(global.font_arvo9);
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
     

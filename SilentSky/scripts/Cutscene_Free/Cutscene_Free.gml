@@ -1,3 +1,0 @@
-//todo
-
-Cutscene_EndEarly();

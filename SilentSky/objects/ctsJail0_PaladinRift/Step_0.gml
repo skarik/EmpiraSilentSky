@@ -12,9 +12,9 @@ if (!ctEnabled)
 }
 else
 {
-    if (!Cutscene_Update())
+    if (!cutsceneUpdate())
     {
-        if (Cutscene_Done())
+        if (cutsceneIsDone())
         {   
             Cts_HellPulse();
             // We're fucking done here

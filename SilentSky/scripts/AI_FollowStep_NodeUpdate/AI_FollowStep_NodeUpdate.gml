@@ -35,10 +35,10 @@ if (exists(aiFollowNode))
         if (aiFollowNodeList == null || ds_list_empty(aiFollowNodeList))
         {
             // Close enough to node: let's find the next node
-            DebugOut("Creating new path");
+            debugOut("Creating new path");
             aiFollowNode = AI_Pathfind_Next(aiFollowNode, aiFollowTargetX, aiFollowTargetY);
             if (aiFollowNodeList != null)
-                DebugOut("New path has a size of " + string(ds_list_size(aiFollowNodeList)));
+                debugOut("New path has a size of " + string(ds_list_size(aiFollowNodeList)));
         }
         else
         {
@@ -53,7 +53,7 @@ if (exists(aiFollowNode))
             {   // No longer need to follow nodes
                 aiFollowNode = null;
                 ds_list_clear(aiFollowNodeList);
-                DebugOut("Hit end of path. Resetting path.");
+                debugOut("Hit end of path. Resetting path.");
                 exit;
             }
         }
@@ -80,7 +80,7 @@ if (exists(aiFollowNode))
             {   // No longer need to follow nodes
                 aiFollowNode = null;
                 ds_list_clear(aiFollowNodeList);
-                DebugOut("No valid nodes on path! Resetting path.");
+                debugOut("No valid nodes on path! Resetting path.");
                 exit;
             }
         }
@@ -93,7 +93,7 @@ if (exists(aiFollowNode))
                 aiFollowNode = null;
                 if ( aiFollowNodeList != null )
                     ds_list_clear(aiFollowNodeList);
-                DebugOut("Stuck undernearth node! Resetting path.");
+                debugOut("Stuck undernearth node! Resetting path.");
             }
             exit;
         }

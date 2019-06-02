@@ -1,2 +1,2 @@
-Cutscene_Free();
+cutsceneFree();
 

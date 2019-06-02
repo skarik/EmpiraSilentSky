@@ -8,9 +8,9 @@ if (ctDisablePlayer)
     }
 }
 
-if (!Cutscene_Update())
+if (!cutsceneUpdate())
 {
-    if (Cutscene_GetWaitId() == "rebelenter")
+    if (cutsceneGetWaitId() == "rebelenter")
     {
         if (!exists(npcRebel))
         {
@@ -21,11 +21,11 @@ if (!Cutscene_Update())
         if (abs(npcRebel.x - objPlayerPaladin.x) < 100)
         {
             npcRebel.xAxis = 0;
-            Cutscene_WaitEnd();
+            cutsceneWaitEnd();
         }
         
     }
-    else if (Cutscene_GetWaitId() == "rebelfree")
+    else if (cutsceneGetWaitId() == "rebelfree")
     {
         if (ctStage == 0)
         {
@@ -54,16 +54,16 @@ if (!Cutscene_Update())
                 npcRebel.xAxis = 0;
                 npcRebel.facingDir = -1;
                 objPlayerPaladin.spStand = sprPaladinChainsGround;
-                Cutscene_WaitEnd();
+                cutsceneWaitEnd();
                 ctState = 0;
             }
         }
     }
-    else if (Cutscene_GetWaitId() == "rebeldeath")
+    else if (cutsceneGetWaitId() == "rebeldeath")
     {   
         // The rebel is killed in front of the paladin
         //npcRebel.chHealth -= npcRebel.chMaxHealth * 2.0;
-        //Cutscene_WaitEnd();
+        //cutsceneWaitEnd();
         if (ctState == 0)
         {
             var arrow = instance_create(__view_get( e__VW.XView, 0 ) + __view_get( e__VW.WView, 0 ) + 16, npcRebel.y - 60, projectileCutsceneArrow);
@@ -80,11 +80,11 @@ if (!Cutscene_Update())
         {
             if (!exists(npcRebel) || npcRebel.chHealth <= 0)
             {
-                Cutscene_WaitEnd();
+                cutsceneWaitEnd();
             }
         }
     }
-    else if (Cutscene_GetWaitId() == "guardsarrive")
+    else if (cutsceneGetWaitId() == "guardsarrive")
     {
         // The guards come onto the screen
         if (!exists(npcGuard))
@@ -96,11 +96,11 @@ if (!Cutscene_Update())
         if (abs(npcGuard.x - objPlayerPaladin.x) < 160)
         {
             npcGuard.xAxis = 0;
-            Cutscene_WaitEnd();
+            cutsceneWaitEnd();
             ctStage = 0;
         }
     }
-    else if (Cutscene_GetWaitId() == "fight")
+    else if (cutsceneGetWaitId() == "fight")
     {   
         // We give the paladin a chance to prove himself as a badass!
         if (ctStage == 0)
@@ -110,6 +110,8 @@ if (!Cutscene_Update())
             objPlayerPaladin.spStand = sprPaladinChainsSword;
             objPlayerPaladin.animFrame = 0;
             sound_play_at(corpseNpc.x, corpseNpc.y, sndPickupSword);
+			// Add the sword to the inventory
+			objPlayerPaladin.chSwordCount = max(1, objPlayerPaladin.chSwordCount);
             // Play sword pickup animation
             ctStage = 1;
         }
@@ -138,12 +140,12 @@ if (!Cutscene_Update())
             with (npcGuard) if (chHealth > 0) dead = false;
             if (dead)
             {
-                Cutscene_WaitEnd();
+                cutsceneWaitEnd();
             }
         }
         
     }
-    else if (Cutscene_Done())
+    else if (cutsceneIsDone())
     {   
         // We're fucking done here
         delete(this);

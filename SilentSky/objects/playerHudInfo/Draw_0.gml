@@ -167,7 +167,7 @@ if (uiShowControls)
     
     draw_set_color(c_white);
     draw_set_alpha(uiAlpha);
-    draw_set_font(fntArvoReg);
+    draw_set_font(global.font_arvo9);
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
     
@@ -267,7 +267,7 @@ if (uiButtonFade > 0.0)
     var ds = bouncestep(uiButtonFade);
     
     draw_sprite_ext(suiButtonPresses, 0, dx,dy, ds,ds,0,c_white, uiButtonFade);
-    draw_set_font(fntArvoReg);
+    draw_set_font(global.font_arvo9);
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
     draw_text_outline(dx,dy, "X", c_ltblue,c_black,1);
