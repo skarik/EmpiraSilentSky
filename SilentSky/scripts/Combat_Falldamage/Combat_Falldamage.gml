@@ -10,8 +10,8 @@ with (target)
     chHealth -= damage;
         
     // Create damage ticker
-    var ticker = instance_create(x,y, floaterDmgTicker);
-        ticker.value = damage;
+    //var ticker = instance_create(x,y, floaterDmgTicker);
+    //    ticker.value = damage;
     
     // Play hit-ground sound
     sound_play_at(x,y,sndStepGravel);

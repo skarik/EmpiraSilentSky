@@ -118,8 +118,8 @@ if ( enme_saved != null )
         chHealth -= actualDamage;
         
         // Create damage ticker
-        var ticker = instance_create(dx,dy, floaterDmgTicker);
-            ticker.value = actualDamage;
+        //var ticker = instance_create(dx,dy, floaterDmgTicker);
+        //    ticker.value = actualDamage;
         
         // Create hit sound
         var sound_hit = sound_play_at(dx,dy, Sound_Impact(chBloodtype));
@@ -163,8 +163,8 @@ else if ( brek_saved != null )
         chHealth -= damage;
         
         // Create damage ticker
-        var ticker = instance_create(dx,dy, floaterDmgTicker);
-            ticker.value = damage;
+        //var ticker = instance_create(dx,dy, floaterDmgTicker);
+        //    ticker.value = damage;
         
         // Create hit sound
         var sound_hit = sound_play_at(dx,dy, Sound_Impact(chBloodtype));

@@ -21,8 +21,8 @@ var c_x2 = x-sprite_xoffset+sprite_width;
 var c_y2 = y-sprite_yoffset+sprite_height;
 
 // Create damage ticker
-var ticker = instance_create(random_range(c_x1,c_x2), random_range(c_y1,c_y2), floaterDmgTicker);
-    ticker.value = actualDamage;
+//var ticker = instance_create(random_range(c_x1,c_x2), random_range(c_y1,c_y2), floaterDmgTicker);
+//    ticker.value = actualDamage;
 
 if (do_hitparticles)
 {

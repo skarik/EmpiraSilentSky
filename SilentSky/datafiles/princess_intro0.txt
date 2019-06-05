@@ -53,8 +53,8 @@ wait
 lines
 {
     target princess
-    1 The great master of alchemy!
-    2 And the beautiful demon $bprincess$$ of Akaith!
+    1 The great master of $4alchemy$$!
+    2 And the $wbeautiful$$ demon $bprincess$$ of Akaith!
 }
 wait
 {
@@ -80,8 +80,8 @@ wait
 lines
 {
     target paladin
-    1 A demon?! In your dreams I would help you!
-    2 On my honor as a paladin, prepare to be vanquished!
+    1 A $sdemon?!$$ In your dreams I would help you!
+    2 On my honor as a paladin, prepare to be $bvanquished!
 }
 // Comedic input time here
 wait
@@ -108,7 +108,7 @@ lines
 lines
 {
     target princess
-    1 There's hell pouring out of the sky and there's no magic locks for me to dispel.
+    1 There's $5hell$0 pouring out of the sky and there's no magic locks for me to dispel.
 }
 lines
 {
@@ -119,7 +119,7 @@ lines
 lines
 {
     target paladin
-    1 You can dispel magic? Then you can dispel the rift!
+    1 You can dispel magic? Then you can dispel the $5rift$0!
 }
 lines
 {
@@ -130,7 +130,7 @@ lines
 lines
 {
     target paladin
-    1 Here, I shall help you out of those chains.
+    1 Here, I shall help you out of that cell.
 }
 
 wait
@@ -175,7 +175,7 @@ wait
 lines
 {
     target princess
-    1 Why help me?
+    1 So you've come to your sense, helping the $wglorious royalty$$?
 }
 lines
 {
@@ -186,7 +186,7 @@ lines
 lines
 {
     target princess
-    1 Isn't always a friend. Aren’t you taking a risk, trusting me?
+    1 Isn't always a friend. I take it back, you're still a moron.
 }
 
 wait
@@ -198,7 +198,7 @@ wait
 lines
 {
     target princess
-    1 Thanks.
+    1 About time.
 }
 
 wait

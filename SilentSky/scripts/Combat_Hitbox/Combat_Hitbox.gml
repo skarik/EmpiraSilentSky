@@ -35,8 +35,8 @@ with (bloxDestroyable)
         var c_y2 = min( y2, y-sprite_yoffset+sprite_height );
         
         // Create damage ticker
-        var ticker = instance_create(random_range(c_x1,c_x2), random_range(c_y1,c_y2), floaterDmgTicker);
-            ticker.value = damage;
+        //var ticker = instance_create(random_range(c_x1,c_x2), random_range(c_y1,c_y2), floaterDmgTicker);
+        //    ticker.value = damage;
         
         // Create hit sound
         var sound_hit = sound_play_at(random_range(c_x1,c_x2), random_range(c_y1,c_y2), Sound_Impact(chBloodtype));
@@ -70,8 +70,8 @@ with (enemyBase)
         var c_y2 = min( y2, y-sprite_yoffset+sprite_height );
         
         // Create damage ticker
-        var ticker = instance_create(random_range(c_x1,c_x2), random_range(c_y1,c_y2), floaterDmgTicker);
-            ticker.value = actualDamage;
+        //var ticker = instance_create(random_range(c_x1,c_x2), random_range(c_y1,c_y2), floaterDmgTicker);
+        //    ticker.value = actualDamage;
         
         // Create hit sound
         var sound_hit = sound_play_at(random_range(c_x1,c_x2), random_range(c_y1,c_y2), Sound_Impact(chBloodtype));

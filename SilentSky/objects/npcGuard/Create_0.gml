@@ -11,6 +11,16 @@ aiIdleWander = true;
 aiAngry = false;
 aiWanderTimer = 0;
 
+moAtkStateOverride0 = null;
+moAtkKey0 = 0.3;
+moAtkSpeed0 = 0.9;
+moAtkDamage0 = 7.0;
+moAtkStamina0 = 15;
+moAtkStateOverride1 = null;
+moAtkKey1 = 0.4;
+moAtkSpeed1 = 1.0;
+moAtkDamage1 = 7.0;
+moAtkStamina1 = 10;
 
 spStand = sprGuard0Stand;
 spWalk  = sprite_index;

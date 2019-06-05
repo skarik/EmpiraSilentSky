@@ -5,6 +5,9 @@ if (ctDisablePlayer)
     {
         moPlayer = false;
         moPlayerAvailable = false;
+		
+		xspeed = 0.0;
+		xAxis = 0.0;
     }
 }
 

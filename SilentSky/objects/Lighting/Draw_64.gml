@@ -21,11 +21,25 @@ if (exists(Screen))
             color_get_red(ambient)/255.0, color_get_green(ambient)/255.0, color_get_blue(ambient)/255.0, 1.0);
     
         // Draw the surface across the screen
-        draw_surface_stretched(
+        /*draw_surface_stretched(
             Screen.surf_game,
             Screen.offsetx * xscale, Screen.offsety * yscale,
             window_get_width(), window_get_height()
-        );
+        );*/
+		if (!window_get_fullscreen())
+		{
+			draw_surface_stretched(Screen.surf_game,
+								   Screen.offsetx * xscale, Screen.offsety * yscale,
+								   window_get_width(), window_get_height());
+		}
+		else
+		{
+			var scale_x = Screen.width / display_get_width() * 2;
+			var scale_y = Screen.height / display_get_height() * 2;
+			draw_surface_stretched(Screen.surf_game,
+								   Screen.offsetx * xscale * scale_x, Screen.offsety * yscale * scale_y,
+								   display_get_width() * scale_x, display_get_height() * scale_y);
+		}
         
         // Reset drawing status
         shader_reset();

@@ -919,6 +919,14 @@
             }
         },
         {
+            "Key": "2c19cdeb-41d0-48fa-a8a3-0418b7377344",
+            "Value": {
+                "id": "52eb9ad7-acc8-4a0a-b2c6-3866ef08627f",
+                "resourcePath": "views\\2c19cdeb-41d0-48fa-a8a3-0418b7377344.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2c755348-6567-4539-b01f-a4f46a8aa675",
             "Value": {
                 "id": "278a1e47-c937-4d0e-b340-bbc7612282aa",
@@ -1060,6 +1068,14 @@
                 "id": "5f38245f-9102-441c-b904-3f41e60cc756",
                 "resourcePath": "scripts\\Settings_ControlNames\\Settings_ControlNames.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3351c119-725c-49ae-88c4-17f93c380953",
+            "Value": {
+                "id": "c5adddbd-c83d-441c-a2f8-e57c1ac9f392",
+                "resourcePath": "sprites\\sprPaladinSRun\\sprPaladinSRun.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1316,6 +1332,14 @@
                 "id": "379c0a28-a81d-4047-b619-874baf7249af",
                 "resourcePath": "objects\\doodadClouds0\\doodadClouds0.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3c02b14b-e499-4351-9937-56b3b9cc9699",
+            "Value": {
+                "id": "a4735ebe-7bfa-4d84-8ef4-1d15b2c1e9c1",
+                "resourcePath": "views\\3c02b14b-e499-4351-9937-56b3b9cc9699.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1839,6 +1863,14 @@
             }
         },
         {
+            "Key": "52f2ae89-679a-4e2c-b607-4fb2bc5f54bd",
+            "Value": {
+                "id": "35c290e7-dd25-4b42-94e5-b8bd084abeb3",
+                "resourcePath": "views\\52f2ae89-679a-4e2c-b607-4fb2bc5f54bd.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "5376cd7f-e27b-423c-b9eb-fe291ed24f28",
             "Value": {
                 "id": "7d8115c5-b109-42f0-bdc0-99699bb5f717",
@@ -2188,6 +2220,14 @@
                 "id": "2841efb1-e844-46c7-8d52-7fe96a382d27",
                 "resourcePath": "scripts\\Motion_PU_WallStick\\Motion_PU_WallStick.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "64ed89c4-d50a-4c6b-a21f-d8d966615529",
+            "Value": {
+                "id": "a65dfa16-652b-47af-96f8-2d74123a85fc",
+                "resourcePath": "sprites\\sui_f_arvoVar9Bold\\sui_f_arvoVar9Bold.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2543,6 +2583,14 @@
             }
         },
         {
+            "Key": "70e51a08-edfc-4cb6-ad14-a6a5110c7d6c",
+            "Value": {
+                "id": "cc4a2c1e-b946-421a-98d4-5e1b107ec4db",
+                "resourcePath": "sprites\\sprPaladinSStand\\sprPaladinSStand.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "712b2579-dea3-4abb-b1d3-1af8cedae404",
             "Value": {
                 "id": "3ac0b697-9d28-4f86-8d70-90310baab04e",
@@ -2876,6 +2924,14 @@
                 "id": "14472d99-325a-4283-a890-ad845f7115fa",
                 "resourcePath": "objects\\blox32x\\blox32x.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7d072517-356b-4b46-904a-8a48269291ce",
+            "Value": {
+                "id": "833e1fb8-3b42-402c-be09-9d8d4e4916d6",
+                "resourcePath": "shaders\\sh_colormaskAlphatest\\sh_colormaskAlphatest.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -4103,6 +4159,14 @@
             }
         },
         {
+            "Key": "b0ddd871-255e-4db2-b164-5bbc924f6ff0",
+            "Value": {
+                "id": "ab32423d-a6a0-4e25-aebf-8b717dd4da12",
+                "resourcePath": "sprites\\sui_f_arvoVar9\\sui_f_arvoVar9.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b13e0eb3-f316-41e2-89da-fa0836148bda",
             "Value": {
                 "id": "258c9299-8c11-454b-822c-781e422d4945",
@@ -4748,6 +4812,14 @@
                 "id": "61f72098-af22-4269-b128-0feb63563a49",
                 "resourcePath": "views\\cec111d4-5aa9-43ee-b88f-72438cb4e579.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "cecd0854-7dfe-44ad-ba7b-b4d6a0ae6189",
+            "Value": {
+                "id": "6d397f6d-c287-42af-8185-73cee0afc94d",
+                "resourcePath": "sprites\\sprPaladinSBlock\\sprPaladinSBlock.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

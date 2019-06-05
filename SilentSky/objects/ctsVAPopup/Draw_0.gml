@@ -7,5 +7,5 @@ draw_set_valign(fa_middle);
 draw_set_font(fntTicker);
 draw_set_alpha( 1.0 );
 
-draw_text(x, y, string_hash_to_newline("made in GM:S for \\#1GAM"));
+draw_text(x, y, "");
 
