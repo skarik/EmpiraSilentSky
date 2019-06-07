@@ -37,7 +37,7 @@ if ( current_display_delay <= 0.0 )
     for (var i = previous_display_count; i < index; ++i)
     {
         // Do character-based updates
-        if ( display_flags[ceil(i)] == ord("w") )
+        if ( display_flags[ceil(i)] == ord("p") )
             current_display_delay = 0.5; // Wait for five seconds           
     }
 }

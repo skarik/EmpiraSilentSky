@@ -1,6 +1,6 @@
 width = 1280 / 2;
 height = 720 / 2;
-scale = 2;
+scale = 2.0;
 
 // For debugging the game:
 //width = 1440;
