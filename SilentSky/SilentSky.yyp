@@ -1055,6 +1055,14 @@
             }
         },
         {
+            "Key": "3203537a-efe5-4ba6-806d-f1e4c860be09",
+            "Value": {
+                "id": "410166e1-217d-43b7-a829-bcb705033887",
+                "resourcePath": "scripts\\Cts_GabberReset\\Cts_GabberReset.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3203fa8b-b797-4c64-8515-8e68f095426f",
             "Value": {
                 "id": "08d2e2c1-1640-481b-9e32-38510067dcc1",
@@ -2515,6 +2523,14 @@
             "Value": {
                 "id": "82927ea4-8c90-4aef-aefc-fa9e4257cf92",
                 "resourcePath": "scripts\\Princess_Basic\\Princess_Basic.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6f3ec62a-b72f-4f35-98f5-2d1b958e6198",
+            "Value": {
+                "id": "34d6adb0-5ce4-4fd6-872b-98fbf6d0d377",
+                "resourcePath": "scripts\\saturate\\saturate.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -6269,6 +6285,7 @@
         "7700e992-cfba-43d4-acac-115eb520485f",
         "e873cd0c-8dac-4ecb-a602-a0bb1451b911",
         "7d456806-d2c0-4a10-a3be-e62853b13f8f",
+        "6f3ec62a-b72f-4f35-98f5-2d1b958e6198",
         "257d4abd-83f7-4f40-affa-c6fa227dc2b8",
         "41576949-6245-4e44-8351-81c7cba88416",
         "13dd0cdc-3973-4f7e-ab13-881c790cb5a3",
@@ -6289,6 +6306,7 @@
         "6a1f2870-e8bf-4f28-b2e2-8dcc3a1dc2c3",
         "74c2846e-8740-4467-a92b-af486d043436",
         "0391ced3-1155-4a0f-ada8-62a3fc195b2a",
+        "3203537a-efe5-4ba6-806d-f1e4c860be09",
         "2e9b5367-b032-4e7f-847d-9fb05126fb76",
         "253341f1-debd-4fa0-96e8-7cb7b1b1986c",
         "582bdb99-d9f9-471d-8e07-3ca27e97d357",

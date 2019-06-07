@@ -83,8 +83,10 @@ case SEQTYPE_LINES:
         // On the next step
         cts_execute_state = 1;
     }
-    // No longer exists? We go to the enxt entry.
-    else if (!exists(ctsTalkerBox) && !exists(ctsGabberBox))
+    // No longer exists? We go to the next entry.
+   else if (  (!exists(ctsTalkerBox) ) // Check talker boxes normally
+			// But gabber boxes are special: we can continue as soon as they fade, to keep dialogue snappy.
+			&& (!exists(ctsGabberBox) || (instance_number(ctsGabberBox) == 1 && ctsGabberBox.input_fadeout))  )
     {
         cts_entry_current++;
         cts_execute_state = 0;   

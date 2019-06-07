@@ -4,7 +4,7 @@ var dx, dy;
 
 draw_set_font(display_font);
 var boxw_st = display_width + 8;
-var boxh_st = ceil( font_get_size(display_font)*0.5 + (font_get_size(display_font)+3) * ceil(1.3 * string_width(string_hash_to_newline(display_text)) / display_width) );
+var boxh_st = Gabber_BoxHeight(); //ceil( font_get_size(display_font)*0.5 + (font_get_size(display_font)+3) * ceil(1.3 * string_width(string_hash_to_newline(display_text)) / display_width) );
 var boxw = ceil( boxw_st * smoothstep(image_alpha*2) );
 var boxh = max(10, ceil( boxh_st * bouncestep((image_alpha-0.5)*2) ));
 

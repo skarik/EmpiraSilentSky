@@ -13,6 +13,10 @@ else
     }
 }
 
+// Blend the height (starts at 1.0, so for one-offs this does nothing).
+// This is used for reused boxes when height needs to change.
+display_height_blend += Time.deltaTime * 4.0;
+
 // Count time textbox was on screen
 current_display_time += Time.dt;
 
@@ -43,14 +47,21 @@ else
 }
 
 // Has the counter hit the end?
+var l_can_end = false; // Value for paranoia, in case bad button contact
 if (current_display_count >= string_length(display_text))
 {
+	l_can_end = true;
     done_alpha += Time.dt * 4.0;
     if (done_alpha > 1) done_alpha = 1;
 }
+else
+{	// Fade the done alpha if the text comes back (for reused boxes).
+	done_alpha -= Time.dt * 4.0;
+	if (done_alpha < 0) done_alpha = 0;
+}
 
 // If the done button showing?
-if ( done_alpha > 0.5 )
+if ( done_alpha > 0.5 && l_can_end )
 {
     Controls_Update(true);
     if ( xButton > 0.8 && xButtonPrev < 0.8 )
