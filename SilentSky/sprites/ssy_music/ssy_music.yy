@@ -2,7 +2,7 @@
     "id": "0025992c-bf67-4554-aa38-025431eef3a3",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sssMus",
+    "name": "ssy_music",
     "For3D": false,
     "HTile": false,
     "VTile": false,

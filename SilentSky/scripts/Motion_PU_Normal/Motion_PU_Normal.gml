@@ -93,7 +93,12 @@ else if ( !isGlued && inventory.sword && xButton >= 0.8 && xButtonPrev < 0.8 )
         var enemy = collision_circle(x,y,72,enemyBase,false,true);
         if ( enemy == null || !Combat_CanHit(id,enemy) )
         {   // No enemy? Push the button
-            with (button) event_user(1);
+			var current_user = id;
+            with (button)
+			{
+				user = current_user;
+				event_user(1);
+			}
             pressed = true;
         }
     }

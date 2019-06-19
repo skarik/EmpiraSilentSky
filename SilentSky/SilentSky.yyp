@@ -42,7 +42,7 @@
             "Key": "0025992c-bf67-4554-aa38-025431eef3a3",
             "Value": {
                 "id": "3d6f60d6-62ce-44b8-ba75-628cd27aec1c",
-                "resourcePath": "sprites\\sssMus\\sssMus.yy",
+                "resourcePath": "sprites\\ssy_music\\ssy_music.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1375,6 +1375,14 @@
             }
         },
         {
+            "Key": "3cc818c2-92ef-4526-8f82-0b94383c615d",
+            "Value": {
+                "id": "5f77b2f0-9587-486c-bf69-5ecbc3412ed5",
+                "resourcePath": "sprites\\ssy_cutscene\\ssy_cutscene.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3d181873-ca25-40da-9cc5-2c50b4be7c3d",
             "Value": {
                 "id": "35e739cb-3970-4d99-89cf-e8397469af94",
@@ -1455,6 +1463,14 @@
             }
         },
         {
+            "Key": "41dd3043-e8b1-4eed-ba91-63716ec5886f",
+            "Value": {
+                "id": "cc1e1ffe-54d2-445a-8541-c5f8282151da",
+                "resourcePath": "objects\\ctsJail0_PaladinIntro2\\ctsJail0_PaladinIntro2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "42253bdb-0b15-442a-b6ff-74f4fd32a1f2",
             "Value": {
                 "id": "7c7c32fe-9fd8-4df3-9c6c-7e102d5f2e17",
@@ -1532,6 +1548,14 @@
                 "id": "a80dc3f7-b203-4f71-9671-616fac11e4dd",
                 "resourcePath": "sounds\\sndFireLoop\\sndFireLoop.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "457c95a7-c291-405a-b215-b53064823cfe",
+            "Value": {
+                "id": "39483b28-7411-41b8-994e-17bc1b0fd0a9",
+                "resourcePath": "objects\\ob_door\\ob_door.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3898,7 +3922,7 @@
             "Key": "a47241eb-7708-4476-8093-afa266477ba5",
             "Value": {
                 "id": "96e9566b-d6fc-4852-992f-b901084ebeb3",
-                "resourcePath": "sprites\\sssBg\\sssBg.yy",
+                "resourcePath": "sprites\\ssy_background\\ssy_background.yy",
                 "resourceType": "GMSprite"
             }
         },
