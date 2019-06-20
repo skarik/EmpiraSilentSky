@@ -72,6 +72,14 @@ while (!file_text_eof(fp))
         {
             read_object_type = SEQTYPE_WAIT;
         }
+		else if (string_pos("signal", line) != 0)
+		{
+			read_object_type = SEQTYPE_SIGNAL;	
+		}
+		else if (string_pos("goto", line) != 0)
+		{
+			read_object_type = SEQTYPE_GOTO;
+		}
         
         // If an object was read - prepare to read it in
         if (read_object_type != SEQTYPE_NULL)
@@ -102,22 +110,7 @@ while (!file_text_eof(fp))
                 var actual_map = ds_map_create();
             
 				var target = ds_map_find_value(read_object_map, "target");
-                if (is_undefined(target))
-                    target = null;
-                else if (target == "imp")
-                    target = objPlayerImp;
-                else if (target == "paladin")
-                    target = objPlayerPaladin;
-                else if (target == "princess" || target == "kyin")
-                    target = objPlayerPrincess;
-                else if (target == "tinkerer" || target == "buzzbrain")
-                    target = objPlayerTinkerer;
-                else if (target == "rebel")
-                    target = npcRebel;
-                else if (target == "guard")
-                    target = npcGuard;
-                else
-                    target = null;
+					target = _cutsceneParseTarget(target);
 			
                 var name = ds_map_find_value(read_object_map, "id");
 				
@@ -161,22 +154,7 @@ while (!file_text_eof(fp))
                 // We actually need to make multiple objects
                 // First grab the target
                 var target = ds_map_find_value(read_object_map, "target");
-                if (is_undefined(target))
-                    target = null;
-                else if (target == "imp")
-                    target = objPlayerImp;
-                else if (target == "paladin")
-                    target = objPlayerPaladin;
-                else if (target == "princess" || target == "kyin")
-                    target = objPlayerPrincess;
-                else if (target == "tinkerer" || target == "buzzbrain")
-                    target = objPlayerTinkerer;
-                else if (target == "rebel")
-                    target = npcRebel;
-                else if (target == "guard")
-                    target = npcGuard;
-                else
-                    target = null;
+					target = _cutsceneParseTarget(target);
                 var targeti = ds_map_find_value(read_object_map, "targeti");
                 if (is_undefined(targeti))
                     targeti = "0";
@@ -201,7 +179,9 @@ while (!file_text_eof(fp))
                     facing = -1;
                 else if (facing == "right")
                     facing = 1;
-                else if (facing == "imp")
+                else 
+					facing = _cutsceneParseTarget(facing);
+				/*else if (facing == "imp")
                     facing = objPlayerImp;
                 else if (facing == "paladin")
                     facing = objPlayerPaladin;
@@ -214,7 +194,7 @@ while (!file_text_eof(fp))
                 else if (facing == "guard")
                     facing = npcGuard;
                 else
-                    facing = null;
+                    facing = null;*/
                     
                 // Now, loop through the input map and select lines
                 var index = 0;
@@ -271,6 +251,38 @@ while (!file_text_eof(fp))
                 cts_entry_type[cts_entry_count] = SEQTYPE_WAIT;
                 cts_entry_count++;
             }
+			else if (read_object_type == SEQTYPE_SIGNAL)
+            {
+                var name = ds_map_find_value(read_object_map, "id");
+                if (is_undefined(name)) name = "";
+                
+                var new_map = ds_map_create();
+                ds_map_add(new_map, SEQI_ID, name);
+                    
+                 // Delete original map
+                ds_map_destroy(read_object_map);
+                
+                // Save the new map data
+                cts_entry[cts_entry_count] = new_map;
+                cts_entry_type[cts_entry_count] = SEQTYPE_SIGNAL;
+                cts_entry_count++;
+            }
+			else if (read_object_type == SEQTYPE_GOTO)
+			{
+				var target = ds_map_find_value(read_object_map, "target");
+				if (is_undefined(target)) show_error("goto objects must have a 'target' field", true);
+				
+				var new_map = ds_map_create();
+				ds_map_add(new_map, SEQI_TARGET, target);
+				
+				// Delete original map
+                ds_map_destroy(read_object_map);
+                
+                // Save the new map data
+                cts_entry[cts_entry_count] = new_map;
+                cts_entry_type[cts_entry_count] = SEQTYPE_GOTO;
+                cts_entry_count++;
+			}
             
             read_state = STATE_READ_LINES;
             continue;

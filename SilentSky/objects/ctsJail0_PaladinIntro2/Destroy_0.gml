@@ -1,0 +1,3 @@
+/// @description Free cutscene
+cutsceneFree();
+

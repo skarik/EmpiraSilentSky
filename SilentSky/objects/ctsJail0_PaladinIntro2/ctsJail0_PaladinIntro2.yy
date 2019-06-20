@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "ctsJail0_PaladinIntro2",
     "eventList": [
-        
+        {
+            "id": "7061138d-5d60-42c8-8c0e-c30d61e155bd",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "41dd3043-e8b1-4eed-ba91-63716ec5886f"
+        },
+        {
+            "id": "44e29110-7b1e-4822-b1fe-fd9e5d21f8ab",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "41dd3043-e8b1-4eed-ba91-63716ec5886f"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

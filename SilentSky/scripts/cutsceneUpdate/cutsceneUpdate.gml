@@ -18,6 +18,8 @@ case SEQTYPE_NULL:
     cts_execute_state = 0;
     break;
 
+#region Signal Entries
+
 case SEQTYPE_WAIT:
     if (cts_execute_state == 0)
     {   // Go to timer state
@@ -41,6 +43,23 @@ case SEQTYPE_WAIT:
         }
     }
     return false;
+	
+case SEQTYPE_SIGNAL:
+	// Change the palette
+	cts_last_signal = ds_map_find_value(entry, SEQI_ID);
+	cts_last_signal_consumed = false;
+	
+	// Debug output
+	debugOut("Doing signal " + cts_last_signal + "...");
+	
+	// We're done here. Onto the next event
+	cts_entry_current++;
+    cts_execute_state = 0;
+	break;
+	
+#endregion
+
+#region Dialogue Entries
     
 case SEQTYPE_LINES:
     if (cts_execute_state == 0)
@@ -139,6 +158,38 @@ case SEQTYPE_CHOICES:
         return false;
     }
     break;
+	
+#endregion
+
+#region Flow Entries
+	
+case SEQTYPE_GOTO:
+	var target = ds_map_find_value(entry, SEQI_TARGET);
+	if (target != undefined)
+	{
+		if (!cutsceneJumpToLabel(target))
+		{
+			// Show error about this label
+			show_error("Could not find the label \"" + target + "\" in the sequence.", false);
+			// We're done here. Onto the next event
+			cts_entry_current++;
+		    cts_execute_state = 0;
+		}
+	}
+	else
+	{
+		// We're done here. Onto the next event
+		cts_entry_current++;
+	    cts_execute_state = 0;
+	}
+	
+	// Debug output
+	debugOut("Doing goto...");
+
+	break;
+
+#endregion
+	
 }
 
 return true;
