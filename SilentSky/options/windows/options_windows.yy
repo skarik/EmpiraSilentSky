@@ -7,8 +7,9 @@
     "option_windows_borderless": false,
     "option_windows_company_info": "EpicHouse Studios LLC",
     "option_windows_copy_exe_to_dest": false,
-    "option_windows_copyright_info": "2017",
+    "option_windows_copyright_info": "2017-2019",
     "option_windows_description_info": "Three heroes band up together to save themselves. What better heroic thing to do?",
+    "option_windows_disable_sandbox": true,
     "option_windows_display_cursor": false,
     "option_windows_display_name": "Empira: Silent Sky",
     "option_windows_enable_steam": false,
@@ -26,6 +27,7 @@
     "option_windows_sleep_margin": 1,
     "option_windows_splash_screen": "${options_dir}\\windows\\splash.png",
     "option_windows_start_fullscreen": false,
+    "option_windows_steam_use_alternative_launcher": false,
     "option_windows_texture_page": "2048x2048",
     "option_windows_use_splash": false,
     "option_windows_version": {

@@ -111,10 +111,24 @@ wait
     type time
     time 0.4
 }
+ai
+{
+	target paladin
+	style cts
+	command animation
+	animation victory
+	loop true
+}
 lines
 {
     target paladin
     1 I don’t think so.
+}
+ai
+{
+	target paladin
+	style cts
+	command stop
 }
 
 #ended
