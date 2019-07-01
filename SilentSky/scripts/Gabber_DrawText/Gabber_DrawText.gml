@@ -11,8 +11,8 @@ draw_set_font(display_font);
 var text_dx = font_get_size(display_font);
 var text_refw = string_width(string_hash_to_newline("m"));
 
-var seed = random_get_seed();
-random_set_seed(floor(current_time / 1000.0 * 30.0));
+var seed = mt19937_get_state();
+mt19937_seed(floor(current_time / 1000.0 * 30.0));
 
 var text_w = display_width + 8;
 var penx = 0;
@@ -76,8 +76,8 @@ for (var i = 0; i < floor(current_display_count); ++i)
 	if (penwigglex)
 		xoffset += round(sin(current_time / 230.0 - i * 0.96) * (penw + 0.4));
 	if (penshake) {
-		xoffset += round(random_range(-1.4, 1.4));
-		yoffset += round(random_range(-1.4, 1.4));
+		xoffset += round(mt19937_random_range(-1.4, 1.4));
+		yoffset += round(mt19937_random_range(-1.4, 1.4));
 	}
     
     // draw the text
@@ -116,7 +116,7 @@ for (var i = 0; i < floor(current_display_count); ++i)
     }
 }
 
-random_set_seed(seed);
+mt19937_set_state(seed);
 
 draw_set_alpha(1.0);
 
