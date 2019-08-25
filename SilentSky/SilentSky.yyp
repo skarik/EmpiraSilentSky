@@ -1167,6 +1167,14 @@
             }
         },
         {
+            "Key": "34a17254-3065-4488-b35c-43c47e8dde92",
+            "Value": {
+                "id": "e8527154-f23e-4d61-b297-f26d9f2fb1cc",
+                "resourcePath": "datafiles_yy\\paladin_intro0v2.txt.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "356d0b04-ea11-442e-9f5b-625c966e967d",
             "Value": {
                 "id": "56d32d30-8444-4ce9-a47e-f06904fc1db8",
@@ -3751,6 +3759,14 @@
             }
         },
         {
+            "Key": "9b7be9bc-da39-4ef1-9081-b6bed6c5c571",
+            "Value": {
+                "id": "d7e87a0c-e85d-437e-85fa-d9abe3fd077d",
+                "resourcePath": "views\\9b7be9bc-da39-4ef1-9081-b6bed6c5c571.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "9b88c814-072e-477c-a611-62fc45762334",
             "Value": {
                 "id": "88e065f4-9dcf-43a6-859c-c4c2e77aefe3",
@@ -4780,6 +4796,14 @@
                 "id": "28f955d7-bc57-442b-a525-4066ac7c9ba3",
                 "resourcePath": "scripts\\Motion_UpdateLedgeStick\\Motion_UpdateLedgeStick.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c5ea2a4d-2597-4306-af7c-ee016b0e646f",
+            "Value": {
+                "id": "7f623cf3-431f-4279-92fb-0870fe744821",
+                "resourcePath": "views\\c5ea2a4d-2597-4306-af7c-ee016b0e646f.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

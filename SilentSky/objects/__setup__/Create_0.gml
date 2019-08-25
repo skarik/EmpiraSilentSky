@@ -12,6 +12,8 @@ new(Resources);
 new(Settings);
 // Set up the input manager
 new(Input);
+// Set up new random state
+mt19937_init();
 
 // Setup is now complete.
 
