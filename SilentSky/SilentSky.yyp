@@ -2055,6 +2055,14 @@
             }
         },
         {
+            "Key": "55292ca1-f8b0-4f48-988b-dae67a7c5735",
+            "Value": {
+                "id": "9145afaf-f994-440e-a350-cf688c172c20",
+                "resourcePath": "scripts\\buttonCloseDoor\\buttonCloseDoor.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5553f2f7-4409-4a71-89cf-89abff6f01e6",
             "Value": {
                 "id": "85414a10-3df3-4874-b602-d68b4159e811",
@@ -6569,6 +6577,7 @@
         "257d4abd-83f7-4f40-affa-c6fa227dc2b8",
         "41576949-6245-4e44-8351-81c7cba88416",
         "13dd0cdc-3973-4f7e-ab13-881c790cb5a3",
+        "55292ca1-f8b0-4f48-988b-dae67a7c5735",
         "6919ab58-5fbf-4354-95fd-30f2fac08fec",
         "ab036a80-ad1e-40b4-bb02-6cf8e2ed1b48",
         "75538437-5589-4ebc-9693-f0be26dc7c6f",

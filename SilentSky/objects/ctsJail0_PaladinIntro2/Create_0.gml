@@ -24,5 +24,11 @@ with (objPlayerPaladin)
 ctDisablePlayer = true;
 ctStage = 0;
 
+// Set up the rebel behavior in the background
+rebelState = 0;
+
+// Set up alarm for the delayed Init events.
+alarm[0] = 1;
+
 // Save the game at this point so it can load here.
 Game_Save();

@@ -16,12 +16,25 @@ signal
 {
     id rebelenter
 }
+// Rebel comes in, kicks the door open...
 lines
 {
     target rebel
     object 0
     1 $bDamn!$$ They haven't evacuated anybody!
-    2 You, $bpaladin$$!$w You can help.
+	end organic
+}
+wait
+{
+	type input
+	id rebelgreet
+}
+// When the rebel has made it inside, they talk to the paladin.
+lines
+{
+    target rebel
+    object 0
+    1 You, $bpaladin$$!$p You can help.
 }
 
 // Rebel frees paladin
