@@ -4863,6 +4863,14 @@
             }
         },
         {
+            "Key": "c983547c-f1f1-4d30-b19c-7678015f1c51",
+            "Value": {
+                "id": "93e68224-1f5a-4a3f-a07a-a98a6f3be03e",
+                "resourcePath": "views\\c983547c-f1f1-4d30-b19c-7678015f1c51.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "c9b2bb08-ca4b-4904-ae16-94371b86135a",
             "Value": {
                 "id": "c8ad1165-b69b-4b01-b8b4-7a7a13d9eaba",
@@ -5532,6 +5540,14 @@
                 "id": "bf5176ed-b50d-4aa7-96f7-e28479dd73b3",
                 "resourcePath": "scripts\\AI_Pathfind_NNearestNode\\AI_Pathfind_NNearestNode.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e0c3e056-7d0b-4b6c-8996-332eb421ac23",
+            "Value": {
+                "id": "22273189-5480-44ba-a5f3-cac52606b26d",
+                "resourcePath": "sprites\\sui_f_arvoVar13Bold\\sui_f_arvoVar13Bold.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

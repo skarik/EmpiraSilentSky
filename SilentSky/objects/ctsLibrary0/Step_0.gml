@@ -1,22 +1,20 @@
-
-
 switch (state)
 {
-case 0:
+case 0:	// Fade in is over...
     if (!exists(ctsFadeInLongBlack))
     {
         state = 1;
         timer = 0;
     }
     break;
-case 1:
+case 1: // Play music, continue.
     audio = audio_play_sound(musIntroductory,100,false);
     state = 2;
     break;
     
 case 2:
     // Show logo
-    new(ctsLogoPopup);
+    new(ctsLogoPopup); // Deletes self in Step, so is effectively skipped.
     state = 3;
     break;
 case 3:
@@ -81,7 +79,7 @@ case 10:
     
 }
 
-if (Controls_UpdateAndCheckAny())
+if (Controls_UpdateAndCheckAny() && state != 7)
 {
     delete(ctsLogoPopup);
     state = 8;
