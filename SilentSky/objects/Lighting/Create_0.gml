@@ -1,4 +1,4 @@
-if (SingletonObject()) exit; // Make this object a singleton
+if (singleton_this()) exit; // Make this object a singleton
 // Only enable lighting if shaders supported
 if (!shaders_are_supported())
 {

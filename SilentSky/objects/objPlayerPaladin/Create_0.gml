@@ -1,4 +1,4 @@
-if (SingletonObject()) exit;
+if (singleton_this()) exit;
 
 event_inherited();
 AI_FollowInit();

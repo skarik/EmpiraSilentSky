@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "003687bb-1457-4efe-8b2e-d3c4b76e8369",
+            "Value": {
+                "id": "1afcf0f4-0697-4ced-9cc3-6789e34773ba",
+                "resourcePath": "datafiles_yy\\audio\\paladin-l2-intro.ogg.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "005add1d-fbfd-4be0-bd1c-344affcf4310",
             "Value": {
                 "id": "0e8da3dd-c207-4b04-8ff3-466053ce687b",
@@ -266,7 +274,7 @@
             "Key": "07c94023-88ca-484c-9189-def995dc760f",
             "Value": {
                 "id": "895405bc-a3be-4d7b-86db-c4a28c949d2c",
-                "resourcePath": "scripts\\SingletonObject\\SingletonObject.yy",
+                "resourcePath": "scripts\\singleton_this\\singleton_this.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -487,6 +495,14 @@
             }
         },
         {
+            "Key": "13d6d48b-90bc-4ef7-8d52-21df8f528f54",
+            "Value": {
+                "id": "a51f2eea-5b7a-4ad8-8aee-558cdbbfdad3",
+                "resourcePath": "objects\\o_mus00_PaladinIntro\\o_mus00_PaladinIntro.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "13dd0cdc-3973-4f7e-ab13-881c790cb5a3",
             "Value": {
                 "id": "dacf60c7-059b-4de8-b002-bcb955a29122",
@@ -516,6 +532,14 @@
                 "id": "3510e149-f79b-4d33-8359-3ccb4c194c8c",
                 "resourcePath": "scripts\\gameRestart\\gameRestart.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "14aa6b28-4d27-4eb8-9f82-119cffcd8bc3",
+            "Value": {
+                "id": "40be79c2-7982-4486-b947-f1e8add37738",
+                "resourcePath": "sprites\\ssy_ambientLight\\ssy_ambientLight.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -772,6 +796,14 @@
                 "id": "ba362916-6e10-4b26-aa48-6ef5cc1aba91",
                 "resourcePath": "views\\209a65a7-f412-400c-a351-ad41619ac964.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "217b320b-d719-4eea-8d62-19c3f0ff2989",
+            "Value": {
+                "id": "36b22b5e-5977-4689-90d1-6ee714aeaf09",
+                "resourcePath": "scripts\\fmusic_mark_as_intro\\fmusic_mark_as_intro.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1535,6 +1567,14 @@
             }
         },
         {
+            "Key": "425ee44d-474b-4d30-a221-73d84cb59a40",
+            "Value": {
+                "id": "02262c48-c9d6-40d5-a980-3d7c1a490bec",
+                "resourcePath": "scripts\\fmusic_add_track\\fmusic_add_track.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4266ab7c-9786-4e6b-87de-83cb784d76f9",
             "Value": {
                 "id": "1a047363-a274-4b44-a121-bb78a274ae5a",
@@ -1623,6 +1663,14 @@
             }
         },
         {
+            "Key": "45440c7b-d231-4cba-8314-99efdd6c0705",
+            "Value": {
+                "id": "4c82e643-c916-4c25-8ed3-e4d658a1e4de",
+                "resourcePath": "datafiles_yy\\audio\\paladin-l1.ogg.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "457c95a7-c291-405a-b215-b53064823cfe",
             "Value": {
                 "id": "39483b28-7411-41b8-994e-17bc1b0fd0a9",
@@ -1643,6 +1691,14 @@
             "Value": {
                 "id": "d6e7103c-5506-456a-9cde-ce2b53785a67",
                 "resourcePath": "scripts\\Current_Changelog\\Current_Changelog.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "45edc3f3-6e68-4d80-a778-5192d285a583",
+            "Value": {
+                "id": "bb496334-dae4-420b-bc4b-2bad8d16aeee",
+                "resourcePath": "scripts\\faudio_create_stream\\faudio_create_stream.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1708,6 +1764,14 @@
                 "id": "2298bbfc-d9a1-41d5-88cd-f0e6b82c821c",
                 "resourcePath": "objects\\liBigMoverShine\\liBigMoverShine.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "490008f6-bca4-4f13-8dcc-fefec2251c3c",
+            "Value": {
+                "id": "9b404bbe-4909-4d8c-ac4e-9d7d54c428fe",
+                "resourcePath": "scripts\\fmusic_create\\fmusic_create.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1796,6 +1860,14 @@
                 "id": "50849082-d149-4262-a3df-9bbe81aa9e30",
                 "resourcePath": "scripts\\PowerFlag_Get\\PowerFlag_Get.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4c386286-0071-41f5-904a-e74e5a85566b",
+            "Value": {
+                "id": "9cc0c257-d39f-46e7-a5ce-c44d91935e79",
+                "resourcePath": "sprites\\ssy_cameraFocus\\ssy_cameraFocus.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1967,6 +2039,14 @@
             }
         },
         {
+            "Key": "51ab2fe2-dbf8-4dd6-a721-77e1c47e0c95",
+            "Value": {
+                "id": "9cf13d8c-613f-490e-8677-de23c2ea3b9f",
+                "resourcePath": "views\\51ab2fe2-dbf8-4dd6-a721-77e1c47e0c95.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "51bddae0-3064-4724-908b-92a78df0525c",
             "Value": {
                 "id": "2f1e5ec8-7024-4d14-94c4-1a35af5c5048",
@@ -2127,6 +2207,14 @@
             }
         },
         {
+            "Key": "56c9526c-1015-46f1-a307-a8b615ed0454",
+            "Value": {
+                "id": "6a80541b-77a9-478a-8d94-91ddb042f909",
+                "resourcePath": "objects\\ob_musicPlayer\\ob_musicPlayer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "57587718-50e3-4f4b-86fe-12ed4d910ca1",
             "Value": {
                 "id": "ac5858e7-4e15-42b4-bf4e-1b31865f7fac",
@@ -2247,6 +2335,14 @@
             }
         },
         {
+            "Key": "5e5bba85-f89a-47f4-b7b0-7ccb8db1e2f1",
+            "Value": {
+                "id": "55ee334e-0fdb-4d20-9b44-049d98f17273",
+                "resourcePath": "datafiles_yy\\audio\\paladin-l0.ogg.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "5e603ccb-b4f2-40ef-81e2-7e9d20add530",
             "Value": {
                 "id": "02a6b25c-3c35-4623-9478-5a6ff4dcb970",
@@ -2287,6 +2383,14 @@
             }
         },
         {
+            "Key": "5f4625de-ab97-4b06-bbda-390f2e7ed09f",
+            "Value": {
+                "id": "559f19a7-01d9-4b77-ae0c-f9910b1b7a7f",
+                "resourcePath": "scripts\\fmusic_wants_volume_sync\\fmusic_wants_volume_sync.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5f760058-7de7-4182-96a4-a09ecc31097d",
             "Value": {
                 "id": "7e79b564-39ba-4fae-86e8-ff3c1c650bd5",
@@ -2315,6 +2419,14 @@
             "Value": {
                 "id": "47d9bd0f-76e3-4abf-8c17-795fce9dc339",
                 "resourcePath": "scripts\\mt19937_rand\\mt19937_rand.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6028f3db-1a53-44aa-a326-0689d34b2c7c",
+            "Value": {
+                "id": "d6583457-24d7-47fc-be3e-79b41fcf6d12",
+                "resourcePath": "scripts\\fmusic_start\\fmusic_start.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3071,6 +3183,14 @@
             }
         },
         {
+            "Key": "7be3b45e-7562-431d-9432-92b637ba7f01",
+            "Value": {
+                "id": "2424dcf1-47f1-4b24-af06-ebca98ce2335",
+                "resourcePath": "objects\\ob_musScripter\\ob_musScripter.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7c028488-dcd9-4abe-a9ba-676c20114ed9",
             "Value": {
                 "id": "4fbe1c54-5771-401a-9a98-f87f03c53ffd",
@@ -3431,6 +3551,14 @@
             }
         },
         {
+            "Key": "8d09566f-eeb3-4a4f-baca-d5b5b755e6a0",
+            "Value": {
+                "id": "63c5f717-9d64-4f80-9f5c-ec67cae42752",
+                "resourcePath": "scripts\\fmusic_play_introtrack\\fmusic_play_introtrack.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8d0c0683-f8ad-4465-87fa-f91346596549",
             "Value": {
                 "id": "dd4866dd-676b-4fa3-adcf-594288ec8315",
@@ -3467,6 +3595,14 @@
             "Value": {
                 "id": "9b27339b-252d-45ac-91a3-1b401aede76c",
                 "resourcePath": "objects\\levelGenerator\\levelGenerator.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8e418f44-672d-44b6-ac1e-6984162c1c1d",
+            "Value": {
+                "id": "0713509a-8e1d-4eee-a9c6-19140dc4e2c1",
+                "resourcePath": "objects\\ob_audioPlayer2\\ob_audioPlayer2.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3676,6 +3812,14 @@
                 "id": "a22bfbbb-e725-45a0-816b-bb06979bca57",
                 "resourcePath": "objects\\ctsPopup\\ctsPopup.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "97d1e983-684b-4350-b40b-db4c05058630",
+            "Value": {
+                "id": "119dfebd-c64e-4fc0-84c7-87da4b245919",
+                "resourcePath": "datafiles_yy\\audio\\paladin-l2-loop.ogg.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -4084,6 +4228,14 @@
                 "id": "3c11d28d-4613-4927-9b0f-2536c063ee9d",
                 "resourcePath": "sounds\\sndPickupCloth\\sndPickupCloth.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "a5486110-7f5f-40bf-94fc-54c90ff0b718",
+            "Value": {
+                "id": "bf12291d-4a22-44d9-8d08-a361582a4f5e",
+                "resourcePath": "scripts\\fmusic_is_during_intro\\fmusic_is_during_intro.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -5063,6 +5215,14 @@
             }
         },
         {
+            "Key": "ced73417-cd7a-4031-959b-4b2749043c42",
+            "Value": {
+                "id": "2e5c0735-bdfe-4961-8d86-4ba2e8776c91",
+                "resourcePath": "datafiles_yy\\audio\\paladin-l3.ogg.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "cf1ba6d7-ea0b-476a-9b4f-57a3cc86ce18",
             "Value": {
                 "id": "53ede93c-ca20-4384-8229-1bd2f83bb156",
@@ -5175,6 +5335,14 @@
             }
         },
         {
+            "Key": "d312e13d-5b83-4aa6-b94a-dfc096a7924f",
+            "Value": {
+                "id": "b63082bb-7482-449c-a0c5-2e7a2e610711",
+                "resourcePath": "scripts\\faudio_play_file\\faudio_play_file.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d332d710-4bc1-4c4b-a6ec-985975e60aab",
             "Value": {
                 "id": "d1a6077e-6c61-4394-a000-a00f3ffabb39",
@@ -5252,6 +5420,14 @@
                 "id": "21fed197-1f23-4ab5-8a80-143bb62d8a2e",
                 "resourcePath": "scripts\\cutsceneSetOrganicness\\cutsceneSetOrganicness.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d6fa8023-3479-4fb5-90cd-683d0da8f4ef",
+            "Value": {
+                "id": "76d591c6-5896-4a91-a353-b214f3b724c3",
+                "resourcePath": "datafiles_yy\\audio\\paladin-l6.ogg.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -5631,6 +5807,14 @@
             }
         },
         {
+            "Key": "e3b3d2eb-cad3-4739-982f-3b04b60937c9",
+            "Value": {
+                "id": "1b76cdf4-79f4-455b-8053-83ba4d93f628",
+                "resourcePath": "views\\e3b3d2eb-cad3-4739-982f-3b04b60937c9.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "e3c0ae9d-a1a9-4865-a4e7-5d814bcd06f1",
             "Value": {
                 "id": "ffebdc7f-7d3d-4cac-97ec-020df7563fdf",
@@ -5775,6 +5959,14 @@
             }
         },
         {
+            "Key": "e9053abf-2834-4166-b180-920c8279450a",
+            "Value": {
+                "id": "5055cbf8-138b-4e35-b236-9cb283f85067",
+                "resourcePath": "objects\\AudioStreams\\AudioStreams.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e909ff81-c14b-4bad-84b9-bb0146014aec",
             "Value": {
                 "id": "6abd1e82-7d53-407d-b637-3437357bb00a",
@@ -5836,6 +6028,14 @@
                 "id": "0ce1cfe3-508c-4efd-8496-8a29021c9fee",
                 "resourcePath": "rooms\\rm_jail1_1\\rm_jail1_1.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "eb9477d0-c0dc-49c1-969a-0953577cbeca",
+            "Value": {
+                "id": "3d0cd13d-9384-4c10-a5dc-2b5a3a0b4392",
+                "resourcePath": "datafiles_yy\\audio\\paladin-l4.ogg.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -6311,6 +6511,14 @@
             }
         },
         {
+            "Key": "fc554679-8ed3-40be-a63a-8d86970edb41",
+            "Value": {
+                "id": "5db7eb44-583b-4989-8a91-aaeec7d9c7d3",
+                "resourcePath": "datafiles_yy\\audio\\paladin-l5.ogg.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "fcce8fd3-010d-4f78-966d-e6a14824cc1f",
             "Value": {
                 "id": "8cbb7e96-d3bb-4c74-9020-7c41777fd35a",
@@ -6439,9 +6647,6 @@
         "6ee829f3-df33-40d6-8704-33a0a215ed80",
         "4d0904c4-9f55-48b6-9aa1-e84d20e02ac0",
         "ceaa5c2e-a37e-4c9b-aeca-238934d53df4",
-        "1c31d020-e3c3-448c-9cbc-557f3eeef5dd",
-        "e9d1e157-b4f0-47c9-8bd5-a660e34dd94b",
-        "dda5aac4-ac15-4a32-991e-11f216bf0cba",
         "e1c9ab9e-a652-48b5-bf8f-0c7352f26f47",
         "de8bdae4-5bb3-445e-a542-0b500c9b581b",
         "8beeb2cc-f3ac-4af3-b717-a4de5267537a",
@@ -6452,7 +6657,16 @@
         "719dfb88-8a09-4c44-a9cc-c09d0fc20344",
         "5e61e283-4b0d-4010-9868-79b7d0d880fe",
         "6c9dd763-c4cc-440d-b7bb-975e28d8a230",
-        "abd15f04-2ce7-4c24-8a4e-535cfcd43386",
+        "1c31d020-e3c3-448c-9cbc-557f3eeef5dd",
+        "d312e13d-5b83-4aa6-b94a-dfc096a7924f",
+        "490008f6-bca4-4f13-8dcc-fefec2251c3c",
+        "425ee44d-474b-4d30-a221-73d84cb59a40",
+        "217b320b-d719-4eea-8d62-19c3f0ff2989",
+        "6028f3db-1a53-44aa-a326-0689d34b2c7c",
+        "45edc3f3-6e68-4d80-a778-5192d285a583",
+        "8d09566f-eeb3-4a4f-baca-d5b5b755e6a0",
+        "a5486110-7f5f-40bf-94fc-54c90ff0b718",
+        "5f4625de-ab97-4b06-bbda-390f2e7ed09f",
         "ef7bc264-f480-46cb-b555-256d1c238ffc",
         "b927bb19-3454-41a8-a75a-4ae9e1745b30",
         "605515d8-0689-4328-a910-e5c667413819",
@@ -6506,6 +6720,7 @@
         "330f27b8-32d6-4920-8c93-a1507ab5bb32",
         "55687b05-faa1-4a93-9350-e1c561a21f2a",
         "f8eff835-034e-4ca4-9a81-ef14d7aef641",
+        "abd15f04-2ce7-4c24-8a4e-535cfcd43386",
         "53b3f2ad-7609-4c13-b683-388f55853ee2",
         "2e3b0ec3-1575-4589-a7df-a338708e15ac",
         "1337b571-c3dc-4ca7-ac09-5bb7781fa8a6",
@@ -6549,6 +6764,8 @@
         "cd0c3d8f-741f-497f-9e32-f28f23289c2c",
         "54c7361c-91bd-4818-b984-79d86d9e0d60",
         "30bc8ceb-1c2e-4d13-b5f4-396ca8a6152b",
+        "e9d1e157-b4f0-47c9-8bd5-a660e34dd94b",
+        "dda5aac4-ac15-4a32-991e-11f216bf0cba",
         "bcc20956-4d89-4a08-abaa-1ac3c3a952a9",
         "661156a1-e3ad-4bfe-82c8-61dec6c368de",
         "f01c6d7d-dfe2-4b64-a489-7ce0448f95ff",

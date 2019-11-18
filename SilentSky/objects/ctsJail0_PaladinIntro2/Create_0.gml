@@ -32,3 +32,7 @@ alarm[0] = 1;
 
 // Save the game at this point so it can load here.
 gameSave();
+
+
+audioMusic.targetTrack = o_mus00_PaladinIntro;
+audioMusic.targetGain = 1.0;

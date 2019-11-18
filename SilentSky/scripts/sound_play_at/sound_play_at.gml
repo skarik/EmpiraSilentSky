@@ -17,7 +17,7 @@ Options:
     pitch = 1.0;
 */
 
-var snd = instance_create(argument0,argument1,audioSoundPlayer);
+var snd = instance_create(argument0, argument1, audioSoundPlayer);
 snd.sound = argument2;
 snd.emitter = audio_emitter_create();
 

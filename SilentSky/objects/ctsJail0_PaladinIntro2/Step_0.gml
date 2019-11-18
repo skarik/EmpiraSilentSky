@@ -16,6 +16,21 @@ if (!cutsceneIsDone())
 			// Start em moving to the left
 			rebel.xAxis = -1.0;
 			rebelState = 1;
+			// New track
+			with (o_mus00_PaladinIntro) {
+				m_trackVolume[0] = 0.0;
+				m_trackVolume[1] = 1.0;
+			}
+			
+			cutsceneSignalConsume();
+		}
+		
+		if (signal_id == "music_intro_test")
+		{
+			// New track
+			with (o_mus00_PaladinIntro) {
+				fmusic_play_introtrack(m_music, 2);
+			}
 			
 			cutsceneSignalConsume();
 		}

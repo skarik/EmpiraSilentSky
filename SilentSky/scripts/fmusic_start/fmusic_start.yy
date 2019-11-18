@@ -1,8 +1,8 @@
 {
-    "id": "07c94023-88ca-484c-9189-def995dc760f",
+    "id": "6028f3db-1a53-44aa-a326-0689d34b2c7c",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "SingletonObject",
+    "name": "fmusic_start",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -1,4 +1,4 @@
-if (SingletonObject()) exit; // Make this object a singleton
+if (singleton_this()) exit; // Make this object a singleton
 
 // This motherfucker best be alive at all times
 persistent = true;
@@ -7,6 +7,8 @@ persistent = true;
 unscaled_dt = 0;
 dt = 0;
 scale = 1.0;
+time = 0.0;
 
-// aliases
+// Aliases
 deltaTime = 0;
+unscaledDeltaTime = 0;

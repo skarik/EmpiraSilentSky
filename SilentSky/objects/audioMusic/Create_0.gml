@@ -1,5 +1,5 @@
 // Music is a persistent singleton
-if (SingletonObject()) exit;
+if (singleton_this()) exit;
 persistent = true;
 
 // Public vars to set elsewhere

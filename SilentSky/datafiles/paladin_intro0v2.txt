@@ -37,6 +37,11 @@ lines
     1 You, $bpaladin$$!$p You can help.
 }
 
+signal
+{
+    id music_intro_test
+}
+
 // Rebel frees paladin
 wait
 {

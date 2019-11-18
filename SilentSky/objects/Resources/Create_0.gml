@@ -1,4 +1,4 @@
-if (SingletonObject()) exit; // Make this object a singleton
+if (singleton_this()) exit; // Make this object a singleton
 persistent = true;
 
 fontsLoad();

@@ -1,4 +1,4 @@
-Converting GML script: ${project_dir}\scripts\SingletonObject\SingletonObject.gml
+Converting GML script: ${project_dir}\scripts\singleton_this\singleton_this.gml
 Converted description /// @description  Returns true if the calling script should abort
 
 Converting GML script: ${project_dir}\scripts\new\new.gml
