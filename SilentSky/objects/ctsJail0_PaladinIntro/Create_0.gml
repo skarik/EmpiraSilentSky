@@ -17,4 +17,4 @@ with (objPlayerPaladin)
 	xAxis = 0.0;
 }
 
-Game_Save();
+gameSave();

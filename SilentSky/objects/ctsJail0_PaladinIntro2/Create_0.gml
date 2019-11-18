@@ -31,4 +31,4 @@ rebelState = 0;
 alarm[0] = 1;
 
 // Save the game at this point so it can load here.
-Game_Save();
+gameSave();

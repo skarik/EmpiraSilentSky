@@ -36,7 +36,7 @@ if ( moDead )
 	{
 		if (floaterDead.image_alpha > 4.0)
 		{
-			Game_Load();
+			gameLoad();
 		}
 	}
 }

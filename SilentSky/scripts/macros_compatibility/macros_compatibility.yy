@@ -1,8 +1,8 @@
 {
-    "id": "6b735658-6f38-49c4-afb0-94885ef0ee77",
+    "id": "500c5a54-7cb4-41a0-94b2-8ec47f6ce6c9",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "Game_Save",
+    "name": "macros_compatibility",
     "IsCompatibility": false,
     "IsDnD": false
 }

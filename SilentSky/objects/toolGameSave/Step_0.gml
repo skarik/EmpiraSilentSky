@@ -4,7 +4,7 @@ if (place_meeting(x,y,objPlayerMain))
     {
         sound_play_at(x + 16, y + 48, sndSavegame);
     
-        Game_Save();
+        gameSave();
         game_saved = true;
     }
 }
