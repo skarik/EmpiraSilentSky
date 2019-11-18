@@ -71,13 +71,34 @@ case SEQTYPE_LINES:
         var ending = ds_map_find_value(entry, SEQI_ENDACTION);
         
         var target_inst = instance_find(target, count);
-    
+		var l_organic = (ending == SEQEND_ORGANIC) || cts_organic;
+	
+		// FREYR SPECIFIC:
+		// Replace the line with the player gender-specific line if possible:
+		/*var pl = getPlayer();
+		if (exists(pl))
+		{
+			var new_line = undefined;
+			var gender = pl.pstats.m_gender;
+			
+			if (gender == kGenderMale)
+				new_line = ds_map_find_value(entry, SEQI_LINE + SEQI_LINE_OFFSET_MALE);
+			if (gender == kGenderFemale)
+				new_line = ds_map_find_value(entry, SEQI_LINE + SEQI_LINE_OFFSET_FEMALE);
+			if (gender == kGenderNonbi)
+				new_line = ds_map_find_value(entry, SEQI_LINE + SEQI_LINE_OFFSET_NONBI);
+				
+			if (!is_undefined(new_line))
+				line = new_line;
+		}*/
+	
         // Make a talker with all the input info
         var gabber = Cts_MakeGabber(target_inst, "", line);
-            gabber.input_priority = !cts_organic;
-            gabber.input_disable = cts_organic;
+            gabber.input_priority = !l_organic;
+            gabber.input_disable = l_organic;
             gabber.input_autoclose = (ending == SEQEND_AUTO);
-            
+        
+		// SILENT SKY SPECIFIC:
         // Update talker's sprites
         if (target == objPlayerImp)
         {
