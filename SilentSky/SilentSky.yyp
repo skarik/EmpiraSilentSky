@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "017c9688-f94a-4bed-bbf9-5776bdfd760c",
+            "Value": {
+                "id": "e4e03d79-411d-4944-983b-5beb80b4b76d",
+                "resourcePath": "views\\017c9688-f94a-4bed-bbf9-5776bdfd760c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "01e9c4ae-7d77-4124-9f00-ddefa866a97e",
             "Value": {
                 "id": "5a44a41f-9d4f-4d1d-9374-b150dcf74c83",
@@ -527,6 +535,14 @@
             }
         },
         {
+            "Key": "14747ec7-810c-4a94-926a-fad0b9b3d2af",
+            "Value": {
+                "id": "7cf5e06f-3ca1-43f2-8eac-e19d80d74e87",
+                "resourcePath": "scripts\\mapVisibilityLoad\\mapVisibilityLoad.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "147ca3ad-abae-49e0-8bea-40eb4298862f",
             "Value": {
                 "id": "3510e149-f79b-4d33-8359-3ccb4c194c8c",
@@ -943,6 +959,14 @@
             }
         },
         {
+            "Key": "2a971c47-85de-4e25-acb2-85823bdcdf78",
+            "Value": {
+                "id": "6e5307b4-0512-4e10-802a-6aa988191255",
+                "resourcePath": "objects\\musicAmbientJailSilence\\musicAmbientJailSilence.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2af012ea-53d7-40f4-9a5f-2f83f0527fb9",
             "Value": {
                 "id": "e6604dea-5379-4b0d-88a4-b3e4f9d55640",
@@ -1012,6 +1036,14 @@
                 "id": "58a0bf59-aed4-46ae-b1fd-dc16e2b8bc95",
                 "resourcePath": "fonts\\fntBevan\\fntBevan.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "2d78030c-b1ba-4848-9723-eb3970b9f645",
+            "Value": {
+                "id": "d7c481fb-9584-4078-9116-f1f332e8c302",
+                "resourcePath": "objects\\o_genMapTool\\o_genMapTool.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1235,6 +1267,14 @@
             "Value": {
                 "id": "b813cb71-fc41-4bae-bf3a-0c335e3830eb",
                 "resourcePath": "views\\35ad625d-0873-4adc-9045-f45aa72a5c53.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "36585ac5-8108-449e-b0ec-215046a8c6eb",
+            "Value": {
+                "id": "21a35a6b-118b-4011-a3d3-d599dbed604e",
+                "resourcePath": "views\\36585ac5-8108-449e-b0ec-215046a8c6eb.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -2783,6 +2823,14 @@
             }
         },
         {
+            "Key": "6e449ddf-d020-4d99-87c8-41f7f7324d20",
+            "Value": {
+                "id": "78edaaa3-1ba0-474b-a923-7f989e15b66c",
+                "resourcePath": "scripts\\mapVisibilitySave\\mapVisibilitySave.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6e50fa2a-bac8-4114-a00d-8aa51176121e",
             "Value": {
                 "id": "82927ea4-8c90-4aef-aefc-fa9e4257cf92",
@@ -3183,6 +3231,14 @@
             }
         },
         {
+            "Key": "7b8a9e4e-a57c-4807-a091-6e3fc7832205",
+            "Value": {
+                "id": "dfe239fe-43b8-4b7e-bf14-0044085108cf",
+                "resourcePath": "datafiles_yy\\sys\\mapinfo.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "7be3b45e-7562-431d-9432-92b637ba7f01",
             "Value": {
                 "id": "2424dcf1-47f1-4b24-af06-ebca98ce2335",
@@ -3388,6 +3444,14 @@
                 "id": "53300e25-6bb5-40d5-b5d9-020422ac3921",
                 "resourcePath": "views\\835dacb3-145f-4968-b9d4-1ce8da09b103.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "83d24afb-a158-460b-bd4a-1f89610883fa",
+            "Value": {
+                "id": "16c8bb1c-18d9-4cd6-9e3d-e48d242b9c1f",
+                "resourcePath": "scripts\\mapSave\\mapSave.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -4527,6 +4591,14 @@
             }
         },
         {
+            "Key": "b140e22c-d1c1-4304-8425-da75118637a1",
+            "Value": {
+                "id": "76f0f20f-49de-49fc-ba14-287b67b740ca",
+                "resourcePath": "views\\b140e22c-d1c1-4304-8425-da75118637a1.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b1546d73-ae37-4161-acda-5b1406a9a213",
             "Value": {
                 "id": "d00cd44e-16a2-4039-a91e-4ce1b3de71ff",
@@ -4795,6 +4867,14 @@
             "Value": {
                 "id": "7cd087d5-69cd-42af-afdc-60e84c5e2872",
                 "resourcePath": "scripts\\Choice_DrawText\\Choice_DrawText.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "bf029deb-01e9-494a-a947-731546b65525",
+            "Value": {
+                "id": "fe04b6ff-b4fb-4e52-94b2-cf062a1786f0",
+                "resourcePath": "scripts\\mapLoad\\mapLoad.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -5399,6 +5479,14 @@
             }
         },
         {
+            "Key": "d4e0d5ba-848a-4435-965e-f000275284bb",
+            "Value": {
+                "id": "365c4b40-3379-4be3-90b4-42c9af39bd99",
+                "resourcePath": "views\\d4e0d5ba-848a-4435-965e-f000275284bb.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "d5235c67-f7f6-4049-a5da-af5dbfeaab62",
             "Value": {
                 "id": "8edeb3f9-ed1e-4ee4-ac3b-1028adfca6f2",
@@ -5455,6 +5543,14 @@
             }
         },
         {
+            "Key": "d7fb4108-5260-4f58-8aa6-946cc6db188f",
+            "Value": {
+                "id": "5b8ea2db-210b-43c9-baf4-1651dade822e",
+                "resourcePath": "views\\d7fb4108-5260-4f58-8aa6-946cc6db188f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "d813c120-0a4f-4e99-be2b-8e6acc408512",
             "Value": {
                 "id": "f0ead5d8-02a9-4b4d-af1d-e979ae5da11e",
@@ -5508,6 +5604,14 @@
                 "id": "6a57b50f-3745-4c7c-be85-a0a9b0219dc5",
                 "resourcePath": "scripts\\@__background_set_element\\__background_set_element.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "da0d8fc9-3c5a-470e-870c-dd072e194d0b",
+            "Value": {
+                "id": "7d89abdf-149b-4dd8-9ff6-871543ae97bb",
+                "resourcePath": "rooms\\rm_map_editor\\rm_map_editor.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -6828,6 +6932,10 @@
         "4ac00b38-d9b3-46f8-b594-9a18bbfbfc7a",
         "294e0280-8af8-4825-8bd0-86b0556c9b37",
         "be57ecb8-ba34-4483-91ba-56b92419a954",
+        "bf029deb-01e9-494a-a947-731546b65525",
+        "83d24afb-a158-460b-bd4a-1f89610883fa",
+        "14747ec7-810c-4a94-926a-fad0b9b3d2af",
+        "6e449ddf-d020-4d99-87c8-41f7f7324d20",
         "6919ab58-5fbf-4354-95fd-30f2fac08fec",
         "ab036a80-ad1e-40b4-bb02-6cf8e2ed1b48",
         "75538437-5589-4ebc-9693-f0be26dc7c6f",

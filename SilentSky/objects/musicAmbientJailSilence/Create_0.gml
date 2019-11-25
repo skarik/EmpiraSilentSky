@@ -1,0 +1,5 @@
+with (audioMusic)
+{
+    ambientTrack = null;
+}
+

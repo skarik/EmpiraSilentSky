@@ -10,6 +10,7 @@ uiPlayers[1] = objPlayerPrincess;
 uiPlayers[2] = objPlayerTinkerer;
 
 uiShowControls = true;
+uiShowMap = true;
 
 uiButtonFade = 0;
 uiButtonX = 0;

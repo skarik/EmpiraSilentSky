@@ -40,6 +40,7 @@ pl.facingDir    = buffer_read(buf, buffer_f32);
 with (Game)
 {
     Flags_Load(buf);
+	mapVisibilityLoad(buf);
 }
 
 // Free resources

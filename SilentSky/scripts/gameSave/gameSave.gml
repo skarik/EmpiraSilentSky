@@ -22,6 +22,7 @@ buffer_write(buf, buffer_f32, sign(pl.facingDir));
 with (Game)
 {
     Flags_Save(buf);
+	mapVisibilitySave(buf);
 }
 
 // Save buffer to file
