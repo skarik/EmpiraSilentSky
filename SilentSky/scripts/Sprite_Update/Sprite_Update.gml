@@ -14,12 +14,12 @@ else if ( moState == MO_NORMAL )
     }
     else if ( isOnGround && jumpTimer <= 0.0 )
     {
-        if ( inventory.cloak && abs(xAxis) > 0.7 )
+        if ( inventory.cloak && abs(xAxis.value) > 0.7 )
         {
             sprite_index = spRun;
             animSpeed = 23 * abs(xspeed) / 128 * (image_number / 12);
         }
-        else if ( abs(xAxis) > 0.2 )
+        else if ( abs(xAxis.value) > 0.2 )
         {
             sprite_index = spWalk;
             animSpeed = 28 * abs(xspeed) / moSpeedRun * (image_number / 12);

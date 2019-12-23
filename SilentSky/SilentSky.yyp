@@ -887,6 +887,14 @@
             }
         },
         {
+            "Key": "240761b4-8494-45bd-8d7b-0beaaeef4452",
+            "Value": {
+                "id": "7684fa3e-8f59-4825-9444-780e77c8db33",
+                "resourcePath": "scripts\\controlZero\\controlZero.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "25120de9-c6ba-4dcf-86c2-2f206c95e4d6",
             "Value": {
                 "id": "a302b6c0-ca27-41c3-9b52-52b2a381abd0",
@@ -1596,6 +1604,14 @@
                 "id": "8d04e248-922d-4ae7-90b8-0d663543f486",
                 "resourcePath": "objects\\playerHudSpellbook\\playerHudSpellbook.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "413c2198-3843-4bed-bfda-2bbdfa696f44",
+            "Value": {
+                "id": "aebb3a06-a322-4ac6-a8de-68a31bd734f5",
+                "resourcePath": "scripts\\controlCleanup\\controlCleanup.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3819,6 +3835,14 @@
             "Value": {
                 "id": "4d3ce361-6032-412e-ae88-b4e89c804901",
                 "resourcePath": "scripts\\Princess_PotionSetDeathtar\\Princess_PotionSetDeathtar.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "94deb72f-a45a-42aa-b324-e813b6b293cb",
+            "Value": {
+                "id": "2a05a08a-97f7-4c1d-92d8-12bc2e6edb11",
+                "resourcePath": "scripts\\string_split\\string_split.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -6829,6 +6853,14 @@
                 "resourcePath": "scripts\\@__background_get_element\\__background_get_element.yy",
                 "resourceType": "GMScript"
             }
+        },
+        {
+            "Key": "ffe83b60-6622-48b3-ad13-f8e245e1ebfc",
+            "Value": {
+                "id": "6d98d56f-f6b5-4ff7-828a-b925b50c3199",
+                "resourcePath": "scripts\\_controlStructUpdatePrevious\\_controlStructUpdatePrevious.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
@@ -6846,6 +6878,7 @@
         "4d3d162d-5451-4e7e-a127-9a17187b0bc9",
         "cf1ba6d7-ea0b-476a-9b4f-57a3cc86ce18",
         "075a9ae4-8c3a-4270-92d7-9cca7a7d47cc",
+        "94deb72f-a45a-42aa-b324-e813b6b293cb",
         "95514378-97ed-44b8-9d3e-d553b8a22587",
         "52489f58-a8f3-4ba6-80d7-c2a283437154",
         "650d99e6-85db-4d82-bf07-289b718ca087",
@@ -6875,11 +6908,14 @@
         "330f27b8-32d6-4920-8c93-a1507ab5bb32",
         "b78e32e0-5cde-4f40-a681-d685c79f1a26",
         "bcc20956-4d89-4a08-abaa-1ac3c3a952a9",
+        "413c2198-3843-4bed-bfda-2bbdfa696f44",
+        "240761b4-8494-45bd-8d7b-0beaaeef4452",
         "661156a1-e3ad-4bfe-82c8-61dec6c368de",
         "f01c6d7d-dfe2-4b64-a489-7ce0448f95ff",
         "6d6370c2-b913-4eb8-8129-f1dea82ca9e3",
         "78ca00be-351c-4d7f-9b0f-560e963f7d00",
         "4a6df8fa-7dfd-459b-8661-97f5e05d936c",
+        "ffe83b60-6622-48b3-ad13-f8e245e1ebfc",
         "ddf40903-15f7-4bba-970b-f5bb49f569bc",
         "5f64c35e-315f-4806-a102-256e9f9ce485",
         "5f5499ab-e9f7-43da-816b-ac12877a1899",

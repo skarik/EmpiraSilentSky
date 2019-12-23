@@ -50,7 +50,7 @@ if (exists(aiFollowNode) && aiFollowStuckFixState == 0 && !path_super_clear)
     
     if (abs(aiFollowNode.x - x) > 16 || abs(aiFollowNode.y - y) > 16)
     {
-        xAxis = sign(aiFollowNode.x - x);
+        input_xAxis = sign(aiFollowNode.x - x);
     }
     input_yAxis = 0;
     
@@ -132,7 +132,7 @@ else
     // Update unstuck status
     if ( aiFollowStuckFixState == 0 )
     {
-        if ( abs(xAxis) > 0.5 && sqr(aiFollowStuckRefX-x)+sqr((aiFollowStuckRefY-y)*0.25) < 8*8 )
+        if ( abs(input_xAxis) > 0.5 && sqr(aiFollowStuckRefX-x)+sqr((aiFollowStuckRefY-y)*0.25) < 8*8 )
         {
             aiFollowStuckTimer += 2.0 * Time.dt;
             if ( aiFollowStuckTimer > 1.0 )

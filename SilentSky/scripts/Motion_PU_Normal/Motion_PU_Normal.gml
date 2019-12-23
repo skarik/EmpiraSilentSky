@@ -34,10 +34,10 @@ if (isStunned)
 }
 
 // Horizontal player input
-if ( xAxis != 0 )
+if ( xAxis.value != 0 )
 {
     // Get target xspeed (analogue control)
-    var targetXspeed = moSpeedRun * abs(xAxis);
+    var targetXspeed = moSpeedRun * abs(xAxis.value);
     // Change target speed based on status effects
     if ( !inventory.cloak ) targetXspeed *= 0.5;
     if ( isOnGlue ) targetXspeed *= 0.3 + (0.2*moPlayer);
@@ -47,9 +47,9 @@ if ( xAxis != 0 )
     if ( true )
     {
         if ( isOnGround )
-            xspeed += moAccelGround * Time.dt * sign(xAxis) * (1.0 - 0.9*isOnGoo);
+            xspeed += moAccelGround * Time.dt * sign(xAxis.value) * (1.0 - 0.9*isOnGoo);
         else
-            xspeed += moAccelAir * Time.dt * sign(xAxis);
+            xspeed += moAccelAir * Time.dt * sign(xAxis.value);
     }
     if ( abs(xspeed) > targetXspeed )
     {   // Limit at target speed (so when stunned in the air, won't have abrupt motion)
@@ -109,16 +109,16 @@ else if ( !isGlued && inventory.sword && xButton.pressed )
         {   // If have stamina, attack
             atkTimer = 0;
             atkQueued = false;
-            if ( sign(yAxis) == 1 )
+            if ( sign(yAxis.value) == 1 )
                 moState = MO_MELEEGND0;
-            else if ( sign(xAxis) == 0 )
+            else if ( sign(xAxis.value) == 0 )
                 moState = MO_MELEESTAND0;
             else
                 moState = MO_MELEE0;
             // Update facing direction if button pressed
-            if ( sign(xAxis) != 0 )
+            if ( sign(xAxis.value) != 0 )
             {
-                facingDir = sign(xAxis);
+                facingDir = sign(xAxis.value);
             }
         }
         else

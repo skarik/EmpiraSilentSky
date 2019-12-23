@@ -4,5 +4,5 @@ if (singleton_this()) exit; // Make this object a singleton
 persistent = true;
 
 // Load the settings
-Settings_Load();
+settingsLoad();
 

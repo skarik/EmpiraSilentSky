@@ -66,7 +66,7 @@ if (!cutsceneUpdate())
         {
             if (!exists(ctsJail2_GuardTutorial))
             {
-                if (abs(objPlayerPaladin.yAxis) > 0.8)
+                if (abs(objPlayerPaladin.yAxis.value) > 0.8)
                 {
                     ctStage += Time.dt;
                 }
@@ -111,10 +111,10 @@ if (!cutsceneUpdate())
             instance_create( room_width-180, 224, npcGuard );
             with (npcGuard) aiActive = false;
         }
-        with (npcGuard) xAxis = -1;
+        with (npcGuard) inputSet(xAxis, -1);
         if (abs(npcGuard.x - objPlayerPaladin.x) < 180)
         {
-            with (npcGuard) xAxis = 0;
+            with (npcGuard) inputSet(xAxis, 0);
             cutsceneWaitEnd();
             ctStage = 0;
             objPlayerPaladin.moInput = true;

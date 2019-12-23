@@ -9,7 +9,7 @@ if ( abs(xspeed) > moSpeedRun * 0.5 )
 // Create delta values for easy interpolation for player face
 targetOffset = viLastDirection * 32;
 targetDelta = targetOffset-viOffsetX;
-targetSpeed = 256 * Time.dt * abs(xAxis);
+targetSpeed = 256 * Time.dt * abs(xAxis.value);
 if ( abs(targetDelta) < targetSpeed )
 {   
     viOffsetX = targetOffset;

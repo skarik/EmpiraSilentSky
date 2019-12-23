@@ -60,7 +60,7 @@ if (!moPlayer && moPlayerAvailable)
 
 if ( spStand == sprPaladinStand || spStand == sprPaladinBlock )
 {
-    if ( abs(yAxis) > 0.8 )
+    if ( abs(yAxis.value) > 0.8 )
     {
         spStand = sprPaladinBlock;
 		isBlocking = true;

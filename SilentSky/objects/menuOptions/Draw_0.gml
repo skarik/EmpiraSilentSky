@@ -69,10 +69,11 @@ for ( var i = -3; i < 10; ++i )
             case 5: setting = Settings.ctMeleeInteract; break;
             case 6: setting = Settings.ctDodge; break;
             case 7: setting = Settings.ctSpecial; break;
-            case 8: setting = Settings.ctSwapLeft; break;
-            case 9: setting = Settings.ctSwapRight; break;
+            case 8: setting = Settings.ctSwapPrev; break;
+            case 9: setting = Settings.ctSwapNext; break;
         }
-        draw_text(dx+120, dy + 4, controlGetName(setting));
+		// todo: incomplete
+        draw_text(dx+120, dy + 4, controlGetName(setting[0], setting[1]));
         
         // Draw the help input
         if ( i == menu_selection && menu_isAskingForNewControl )

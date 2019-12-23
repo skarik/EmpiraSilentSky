@@ -16,8 +16,8 @@ with (Settings)
 	ctInteract      = [kControlKB, ord("X"),	kControlGamepad, gp_face3];
     ctDodge         = [kControlKB, ord("A"),	kControlGamepad, gp_face2];
     ctSpecial       = [kControlKB, ord("S"),	kControlGamepad, gp_face4];
-    ctSwapLeft      = [kControlKB, ord("Q"),	kControlGamepad, gp_shoulderl];
-    ctSwapRight     = [kControlKB, ord("W"),	kControlGamepad, gp_shoulderr];
+    ctSwapPrev      = [kControlKB, ord("Q"),	kControlGamepad, gp_shoulderl];
+    ctSwapNext      = [kControlKB, ord("W"),	kControlGamepad, gp_shoulderr];
     
     ctMoveLeft      = [kControlKB, vk_left,		kControlGamepad, -gp_axislh];
     ctMoveRight     = [kControlKB, vk_right,	kControlGamepad, gp_axislh];

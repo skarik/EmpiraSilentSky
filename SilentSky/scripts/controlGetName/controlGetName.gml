@@ -43,7 +43,7 @@ else if (ctype == kControlGamepad)
 		case gp_face1:		return generic ? "Button 1" : (ds ? "Cross" : "A");
 		case gp_face2:		return generic ? "Button 2" : (ds ? "Circle" : "B");
 		case gp_face3:		return generic ? "Button 3" : (ds ? "Square" : "X");
-		case gp_face3:		return generic ? "Button 4" : (ds ? "Triangle" : "Y");
+		case gp_face4:		return generic ? "Button 4" : (ds ? "Triangle" : "Y");
 		
 		case gp_shoulderl:	return generic ? "L Shoulder" : (ds ? "L1" : "LB");
 		case gp_shoulderr:	return generic ? "R Shoulder" : (ds ? "R1" : "RB");

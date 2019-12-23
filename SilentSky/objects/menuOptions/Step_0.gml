@@ -24,9 +24,9 @@ else
     // Do menu sleection change
     if ( menu_isAskingForNewControl == false )
     {
-        if ( abs(yAxis) > 0.8 && abs(yAxisPrev) <= 0.8 )
+        if ( abs(yAxis.value) > 0.8 && abs(yAxis.previous) <= 0.8 )
         {
-            menu_selection += sign(yAxis);
+            menu_selection += sign(yAxis.value);
             menu_selection = clamp(menu_selection, -3,9);
             audio_play_sound(sndUiMenuChange,30,false);
         }
@@ -36,7 +36,7 @@ else
             var i = menu_selection;
             if ( i == -3 )
             {   // Accept. Save the settings, and continue
-                Settings_ControlSave();
+                settingsControlSave();
                 audio_play_sound(sndUiMenuSelect, 90, false);
                 
                 // Fade out everything
@@ -47,13 +47,13 @@ else
             else if ( i == -2 )
             {
                 // Reset controls
-                Settings_ControlDefaults();
+                settingsControlDefaults();
                 audio_play_sound(sndUiFail1, 90, false);
             }
             else if ( i == -1 )
             {
                 // Reset controls
-                Settings_ControlDefaults();
+                settingsControlDefaults();
                 Settings.ctDodge         = ord("C");
                 Settings.ctSpecial       = ord("V");
                 audio_play_sound(sndUiFail1, 90, false);
@@ -88,8 +88,8 @@ else
                     case 5: Settings.ctMeleeInteract = keyboard_lastkey; break;
                     case 6: Settings.ctDodge = keyboard_lastkey; break;
                     case 7: Settings.ctSpecial = keyboard_lastkey; break;
-                    case 8: Settings.ctSwapLeft = keyboard_lastkey; break;
-                    case 9: Settings.ctSwapRight = keyboard_lastkey; break;
+                    case 8: Settings.ctSwapPrev = keyboard_lastkey; break;
+                    case 9: Settings.ctSwapNext = keyboard_lastkey; break;
                 }
                 audio_play_sound(sndUiMsgBlip, 90, false);
             }

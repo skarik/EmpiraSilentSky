@@ -1,7 +1,7 @@
-/// @func controlUpdate(isPlayer)
+/// @func controlUpdate(pollInputs)
 /// @desc Updates all input from keyboard or what have you
-/// @param isPlayer {boolean}
-var isPlayer = argument0;
+/// @param pollInputs {boolean}
+var pollInputs = argument0;
 
 //// Update previous state
 //xAxisPrev = xAxis;
@@ -17,10 +17,24 @@ var isPlayer = argument0;
 //tabButtonPrev = tabButton;
 //escButtonPrev = escButton;
 
-if ( !isPlayer )
+if ( !pollInputs )
 {
     //controlInit();
     // Nothing.
+	
+	// Track previous values
+	_controlStructUpdatePrevious(xAxis);
+	_controlStructUpdatePrevious(yAxis);
+	
+	_controlStructUpdatePrevious(zButton);
+	_controlStructUpdatePrevious(xButton);
+	_controlStructUpdatePrevious(aButton);
+	_controlStructUpdatePrevious(sButton);
+	
+	_controlStructUpdatePrevious(lButton);
+	_controlStructUpdatePrevious(rButton);
+	_controlStructUpdatePrevious(tabButton);
+	_controlStructUpdatePrevious(escButton);
 }
 // Is player and has focus?
 else if ( window_has_focus() )
@@ -39,18 +53,18 @@ else if ( window_has_focus() )
     //sButton = keyboard_check(Settings.ctSpecial);
 	
 	_controlStructUpdate(zButton, controlParseAndPoll(Settings.ctJump));
-	_controlStructUpdate(xButton, controlParseAndPoll(Settings.ctMeleeInteract));
+	_controlStructUpdate(xButton, controlParseAndPoll(Settings.ctMelee));
 	_controlStructUpdate(aButton, controlParseAndPoll(Settings.ctDodge));
 	_controlStructUpdate(sButton, controlParseAndPoll(Settings.ctSpecial));
     
     //altButton = keyboard_check(vk_alt);
-    //lButton = keyboard_check(Settings.ctSwapLeft);
-    //rButton = keyboard_check(Settings.ctSwapRight);
+    //lButton = keyboard_check(Settings.ctSwapPrev);
+    //rButton = keyboard_check(Settings.ctSwapNext);
     //tabButton = keyboard_check(vk_tab);
     //escButton = keyboard_check(vk_escape);
     
-	_controlStructUpdate(lButton, controlParseAndPoll(Settings.ctSwapLeft));
-	_controlStructUpdate(rButton, controlParseAndPoll(Settings.ctSwapRight));
+	_controlStructUpdate(lButton, controlParseAndPoll(Settings.ctSwapPrev));
+	_controlStructUpdate(rButton, controlParseAndPoll(Settings.ctSwapNext));
 	_controlStructUpdate(tabButton, keyboard_check(vk_tab));
 	_controlStructUpdate(escButton, keyboard_check(vk_escape));
 	
@@ -76,8 +90,8 @@ else if ( window_has_focus() )
     }*/
     
     // And limit the axis values
-    xAxis = clamp(xAxis,-1,+1);
-    yAxis = clamp(yAxis,-1,+1);
+    //xAxis = clamp(xAxis,-1,+1);
+    //yAxis = clamp(yAxis,-1,+1);
 }
 // Is player and no window focus? 
 else

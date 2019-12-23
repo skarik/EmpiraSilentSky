@@ -21,9 +21,9 @@ else
     depth = objPlayerMain.depth - 1;
     // Update angle and flipping
     image_xscale = objPlayerMain.image_xscale;
-    if ( abs(objPlayerMain.yAxis) > 0.5 )
+    if ( abs(objPlayerMain.yAxis.value) > 0.5 )
     {
-        image_angle = -image_xscale * sign(objPlayerMain.yAxis) * 45;
+        image_angle = -image_xscale * sign(objPlayerMain.yAxis.value) * 45;
     }
     else
     {

@@ -17,7 +17,7 @@ with (objPlayerPaladin)
 		
 	// Stop any initial speed
 	xspeed = 0.0;
-	xAxis = 0.0;
+	inputSet(xAxis, 0.0);
 }
 
 // Stop the player motion

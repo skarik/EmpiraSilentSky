@@ -34,7 +34,7 @@ if ( place_meeting(x + xspeed * Time.dt, y, bloxBase ) )
                 break;
             }
             // Is it a ledge?
-            else if ( yAxis < 0.3 ) // Don't climb ledge if player pressing down
+            else if ( yAxis.value < 0.3 ) // Don't climb ledge if player pressing down
             {   // Need to go to ledge state
                 ledgeDir = sign(xspeed);
                 moState = MO_LEDGECLIMB;

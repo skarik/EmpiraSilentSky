@@ -3,11 +3,12 @@ with (Settings)
     ini_open("settings.ini");
     
     ctJump          = _settingsControlLoadArray("jump",ctJump);
-    ctMeleeInteract = _settingsControlLoadArray("meleeInteract",ctMeleeInteract);
+    ctMelee         = _settingsControlLoadArray("melee",ctMelee);
+	ctInteract      = _settingsControlLoadArray("interact",ctInteract);
     ctDodge         = _settingsControlLoadArray("dodge",ctDodge);
     ctSpecial       = _settingsControlLoadArray("special",ctSpecial);
-    ctSwapLeft      = _settingsControlLoadArray("swapLeft",ctSwapLeft);
-    ctSwapRight      = _settingsControlLoadArray("swapRight",ctSwapRight);
+    ctSwapPrev      = _settingsControlLoadArray("swapNext",ctSwapPrev);
+    ctSwapNext     = _settingsControlLoadArray("swapPrev",ctSwapNext);
     
     ctMoveLeft      = _settingsControlLoadArray("moveLeft",ctMoveLeft);
     ctMoveRight     = _settingsControlLoadArray("moveRight",ctMoveRight);

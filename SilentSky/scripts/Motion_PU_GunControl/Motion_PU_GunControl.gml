@@ -28,7 +28,7 @@ else if ( aButton.pressed )
     // Show gun
     if (exists(gun)) gun.isHeld = true;
 
-    var shoot_direction = 90 - (90 + 45*yAxis)*facingDir + random_range(-2,2);
+    var shoot_direction = 90 - (90 + 45*yAxis.value)*facingDir + random_range(-2,2);
     if ( plCurrentGun == GUN_AIR )
     {
         if ( gunTimer > moGunTime )

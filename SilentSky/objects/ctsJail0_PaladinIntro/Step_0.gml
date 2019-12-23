@@ -7,7 +7,7 @@ if (ctDisablePlayer)
         moPlayerAvailable = false;
 		
 		xspeed = 0.0;
-		xAxis = 0.0;
+		inputSet(xAxis, 0.0);
     }
 }
 
@@ -20,10 +20,10 @@ if (!cutsceneUpdate())
             instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )+16, objPlayerPaladin.y, npcRebel);
         }
         // Have the rebel run in. If the rebel finally gets in, then we continue.
-        npcRebel.xAxis = -1;
+        inputSet(npcRebel.xAxis, -1);
         if (abs(npcRebel.x - objPlayerPaladin.x) < 100)
         {
-            npcRebel.xAxis = 0;
+            inputSet(npcRebel.xAxis, 0);
             cutsceneWaitEnd();
         }
         
@@ -33,10 +33,10 @@ if (!cutsceneUpdate())
         if (ctStage == 0)
         {
             // Have rebel move to the paladin to release him.
-            npcRebel.xAxis = -1;
+            inputSet(npcRebel.xAxis, -1);
             if (abs(npcRebel.x - objPlayerPaladin.x) < 15)
             {
-                npcRebel.xAxis = 0;
+                inputSet(npcRebel.xAxis, 0);
                 ctStage = 1;
                 
                 objPlayerPaladin.spStand = sprPaladinChainsBreak;
@@ -51,10 +51,10 @@ if (!cutsceneUpdate())
                 objPlayerPaladin.spStand = sprPaladinChainsGround;
             }
         
-            npcRebel.xAxis = 0.7;
+            inputSet(npcRebel.xAxis, 0.7);
             if (abs(npcRebel.x - objPlayerPaladin.x) > 46)
             {
-                npcRebel.xAxis = 0;
+                inputSet(npcRebel.xAxis, 0);
                 npcRebel.facingDir = -1;
                 objPlayerPaladin.spStand = sprPaladinChainsGround;
                 cutsceneWaitEnd();
@@ -95,10 +95,10 @@ if (!cutsceneUpdate())
             instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )+16, objPlayerPaladin.y, npcGuard);
             instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )+50, objPlayerPaladin.y, npcGuard);
         }
-        with (npcGuard) xAxis = -1;
+        with (npcGuard) inputSet(xAxis, -1);
         if (abs(npcGuard.x - objPlayerPaladin.x) < 160)
         {
-            npcGuard.xAxis = 0;
+            with (npcGuard) inputSet(xAxis, 0);
             cutsceneWaitEnd();
             ctStage = 0;
         }

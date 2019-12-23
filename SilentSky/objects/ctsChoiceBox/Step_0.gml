@@ -25,12 +25,12 @@ if ( image_alpha >= 1.0 )
     // Do selection changes
     if (!input_fadeout)
     {
-        if ( yAxis > 0.8 && yAxisPrev < 0.8 )
+        if ( yAxis.value > 0.8 && yAxis.previous < 0.8 )
         {
             display_choice += 1;
             audio_play_sound(sndUiMenuChange, 50, false);
         }
-        else if ( yAxis < -0.8 && yAxisPrev > -0.8 )
+        else if ( yAxis.value < -0.8 && yAxis.previous > -0.8 )
         {
             display_choice -= 1;
             audio_play_sound(sndUiMenuChange, 50, false);

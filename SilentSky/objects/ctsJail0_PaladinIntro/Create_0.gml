@@ -14,7 +14,7 @@ with (objPlayerPaladin)
     moPlayerAvailable = false;
 		
 	xspeed = 0.0;
-	xAxis = 0.0;
+	inputSet(xAxis, 0.0);
 }
 
 gameSave();

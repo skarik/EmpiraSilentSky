@@ -63,7 +63,7 @@
 	
 	// get center of map
 	//var room_info = rooms_info[room]; // dangerous. need to make it a list
-	if (room < array_length_1d(rooms_info))
+	if (exists(pl) && room < array_length_1d(rooms_info))
 	{
 		var room_info = rooms_info[room]
 		var room_info_min = room_info[0];

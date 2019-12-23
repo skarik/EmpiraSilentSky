@@ -1,5 +1,5 @@
 // If the player does an attack, then we go back to the game
-if (abs(objPlayerPaladin.yAxis) > 0.8 )
+if (abs(objPlayerPaladin.yAxis.value) > 0.8 )
 {
     fade = true;
 }
