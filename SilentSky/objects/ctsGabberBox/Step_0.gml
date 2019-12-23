@@ -63,8 +63,8 @@ else
 // If the done button showing?
 if ( done_alpha > 0.5 && l_can_end )
 {
-    Controls_Update(true);
-    if ( xButton > 0.8 && xButtonPrev < 0.8 )
+    controlUpdate(true);
+    if ( xButton.pressed )
     {
         if (!input_fadeout)
         {
@@ -75,7 +75,7 @@ if ( done_alpha > 0.5 && l_can_end )
 }
 else
 {
-    Controls_Update(false);
+    controlUpdate(false);
 }   
 
 // Fade automatically over time if the option is given

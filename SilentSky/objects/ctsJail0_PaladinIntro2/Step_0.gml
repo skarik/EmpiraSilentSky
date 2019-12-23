@@ -14,7 +14,7 @@ if (!cutsceneIsDone())
 			// Create the rebel
 			rebel = instance_create_depth(640, paladin.y, 1, npcRebel);
 			// Start em moving to the left
-			rebel.xAxis = -1.0;
+			inputSet(rebel.xAxis, -1.0);
 			rebelState = 1;
 			// New track
 			with (o_mus00_PaladinIntro) {
@@ -45,7 +45,7 @@ if (!cutsceneIsDone())
 			{
 				if (rebel.x < paladin.x + 100)
 				{
-					rebel.xAxis = 0.0;
+					inputSet(rebel.xAxis, 0.0);
 					cutsceneWaitEnd();
 				}
 			}
@@ -61,15 +61,15 @@ if (exists(rebel))
 	// Walk until we hit door.
 	if (rebelState == 1)
 	{
-		rebel.xAxis = -1.0;
+		inputSet(rebel.xAxis, -1.0);
 		
 		// Open door on collision
 		with (rebel)
 		{
 			if (place_meeting(x, y, ob_door))
 			{
-				xButton = 1.0;
-				xAxis = 0.0;
+				inputSet(xButton, 1.0);
+				inputSet(xAxis, 0.0);
 				
 				other.rebelState = 2;
 			}
@@ -91,12 +91,12 @@ if (exists(rebel))
 	// Continue to walk up to the paladin.
 	else if (rebelState == 3)
 	{
-		xButton = 0.0;
-		rebel.xAxis = -1.0;
+		inputSet(rebel.xButton, 0.0);
+		inputSet(rebel.xAxis, -1.0);
 		
 		if (rebel.x < paladin.x + 100)
 		{
-			rebel.xAxis = 0.0;
+			inputSet(rebel.xAxis, 0.0);
 			rebelState = 4; // Next state!
 		}
 	}

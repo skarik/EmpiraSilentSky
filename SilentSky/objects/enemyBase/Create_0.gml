@@ -56,7 +56,7 @@ guSpawnCount = 0;
 guTimer = 0;
 guGlueTime = 3.0;
 
-Controls_Init();
+controlInit();
 
 inventory = new(enemyInventory);
 gun = null;

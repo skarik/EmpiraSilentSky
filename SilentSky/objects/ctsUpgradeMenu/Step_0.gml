@@ -2,7 +2,7 @@ x = __view_get( e__VW.XView, 0 );
 y = __view_get( e__VW.YView, 0 );
 
 // Update controls
-Controls_Update(1);
+controlUpdate(1);
 
 // Show/hide menu
 if (killme)
@@ -19,20 +19,20 @@ else
     image_alpha = min( image_alpha + Time.dt * 2.0, 1.0 );
     
     // Do menu hiding
-    if ( sButton > 0.8 && sButtonPrev <= 0.8 )
+    if ( sButton.pressed )
     {
         killme = true;
         audio_play_sound(sndUiFail2,30,false);
     }
     // Do menu sleection change
-    if ( abs(yAxis) > 0.8 && abs(yAxisPrev) <= 0.8 )
+    if ( abs(yAxis.value) > 0.8 && abs(yAxis.previous) <= 0.8 )
     {
-        menu_selection += sign(yAxis);
+        menu_selection += sign(yAxis.value);
         menu_selection = clamp(menu_selection,0,menu_size-1);
         audio_play_sound(sndUiBlip2,30,false);
     }
     // Do purchase (if possible)
-    if ( (xButton > 0.8 && xButtonPrev <= 0.8) || (zButton > 0.8 && zButtonPrev <= 0.8) )
+    if ( xButton.pressed || zButton.pressed )
     {
         var i = menu_selection;
         if (playerInventory.ammo_goo < menu_cost_goo[i] || playerInventory.ammo_glue < menu_cost_glue[i])

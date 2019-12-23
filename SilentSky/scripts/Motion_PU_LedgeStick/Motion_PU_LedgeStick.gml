@@ -1,9 +1,9 @@
 // Player controls start:
-if (moPlayer) Controls_Update(moPlayer);
+if (moPlayer) controlUpdate(moPlayer);
 if (isStunned) exit;
 
 // Directional input
-if ( xAxis * ledgeDir < -0.5 )
+if ( xAxis.value * ledgeDir < -0.5 )
 {   // Player faces the opposite direction of input
     facingDir = -ledgeDir;
 }
@@ -13,17 +13,17 @@ else
 }   
 
 // Jumping player input
-if ( zButton >= 0.8 && zButtonPrev < 0.8 )
+if ( zButton.pressed )
 {
     // If the controls say drop down, then drop down
-    if ( yAxis > 0.3 )
+    if ( yAxis.value > 0.3 )
     {
         // Fall down
         moState = MO_NORMAL;
         xspeed += -sign(ledgeDir) * moSpeedRun * 0.25;
     }
     // If the controls are facing away from the ledge when jumping...
-    else if ( xAxis * ledgeDir < -0.5 )
+    else if ( xAxis.value * ledgeDir < -0.5 )
     {   // Then jump away
         xspeed += -sign(ledgeDir) * moSpeedRun;
         yspeed += moSpeedJump;

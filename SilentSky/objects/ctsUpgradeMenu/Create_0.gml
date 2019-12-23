@@ -2,13 +2,13 @@
 audio_play_sound(musItemFanfare, 90, false);
 
 
-Controls_Init();
-Controls_Update(1);
+controlInit();
+controlUpdate(1);
 
 objPlayerMain.moPlayer = false;
-objPlayerMain.xAxis = 0;
-objPlayerMain.yAxis = 0;
-objPlayerMain.xButton = 0;
+objPlayerMain.xAxis.value = 0;
+objPlayerMain.yAxis.value = 0;
+objPlayerMain.xButton.value = 0;
 
 killme = false;
 image_alpha = 0.0;

@@ -1,10 +1,10 @@
-Controls_Update(1);
+controlUpdate(1);
 
 // Fade in over time
 gain = min(1.0, gain + Time.dt * 0.1);
 
 // If anything is pressed...
-if (true || zButton || xButton || aButton || sButton || lButton || rButton || tabButton || escButton)
+if (true)// || zButton || xButton || aButton || sButton || lButton || rButton || tabButton || escButton)
 {
     //if (exists(floaterLogo))
     //    floaterLogo.fadeout = true;

@@ -1,5 +1,5 @@
 // Player controls start:
-if (moPlayer) Controls_Update(moPlayer);
+if (moPlayer) controlUpdate(moPlayer);
 if (isStunned) exit;
 
 // Directional input

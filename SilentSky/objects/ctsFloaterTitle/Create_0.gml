@@ -1,4 +1,4 @@
-Controls_Init();
+controlInit();
 
 image_alpha = 0;
 fadeout = false;

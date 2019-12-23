@@ -13,7 +13,7 @@ fiShockValue = 0.1;
 goGooTime = 4.0;
 guGlueTime = 2.0;
 
-Controls_Init();
+controlInit();
 
 chMaxHealth = 100;
 chRegen = 0.25;

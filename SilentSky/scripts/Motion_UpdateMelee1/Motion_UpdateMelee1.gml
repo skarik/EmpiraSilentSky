@@ -56,7 +56,7 @@ if (Motion_Common_LookaheadNoGround())
 
 
 // Player controls start:
-Controls_Update(moPlayer);
+controlUpdate(moPlayer);
 // Update gun timer
 gunTimer += Time.dt;
 // Update combos
@@ -66,7 +66,7 @@ if (moState != MO_MELEE2)
     if ( chStamina > 0 && atkTimer > moAtkKey0 )
     {
         // Melee attack input
-        if ( xButton >= 0.8 && xButtonPrev < 0.8 )
+        if ( xButton.pressed )
         {
             atkQueued = true;
         }

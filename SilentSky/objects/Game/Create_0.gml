@@ -16,8 +16,6 @@ randomize();
 // Create the world:
 // Fade in
 new(fxScreenFadeIn);
-// Create introduction cutscene
-new(ctsIntro);
 // create the goddamn lighting
 new(Lighting);
 // Create music

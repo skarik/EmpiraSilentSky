@@ -32,7 +32,7 @@ mgCastCost[]
 
 */
 // Player controls start:
-if (moPlayer) Controls_Update(moPlayer);
+if (moPlayer) controlUpdate(moPlayer);
 
 if (spellState == SPELL_INBOOK)
 {

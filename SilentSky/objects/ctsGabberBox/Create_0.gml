@@ -33,7 +33,7 @@ current_display_letterShake = false;
 image_alpha = 0;
 done_alpha = 0;
 
-Controls_Init();
+controlInit();
 
 // Set up UI for first frame
 uiPosX = 0;

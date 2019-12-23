@@ -51,5 +51,5 @@ bk_crumbleAlpha = 0.0;
 bk_crumbleX = 0.0;
 bk_crumbleY = 0.0;
 
-Controls_Init();
+controlInit();
 

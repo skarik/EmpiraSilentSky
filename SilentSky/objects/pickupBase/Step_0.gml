@@ -23,7 +23,7 @@ if ( place_meeting(x,y, objPlayerMain) )
 {
     pkInRange = true;
     // Pick up shit
-    if ( objPlayerMain.xButton > 0.5 )
+    if ( objPlayerMain.xButton.value > 0.5 )
     {   // Pickup item in 2 seconds
         pkTimer += Time.dt * (2.2 + (!pkBigItem * 2.0));
     }

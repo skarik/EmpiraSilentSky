@@ -16,7 +16,7 @@ aiCombatTargetY = aiCombatTarget.y;
 AI_CombatStepMove();
 
 // Reset button presses
-xButton = 0.0;
+var input_xButton = 0.0;
 
 // Check if we perform action (20 FPS input)
 var combat_action = false;
@@ -41,16 +41,17 @@ if (absdistx < 12)
 {
     if (sign(facingDir) != sgnx)
     {
-        xAxis = sgnx;
+        xAxis.value = sgnx;
     }
     else
     {
-        xAxis = 0;
+        xAxis.value = 0;
     }
 
     if (combat_action)
     {
-        xButton = 1.0;
+        input_xButton = 1.0;
     }
 }
 
+inputSet(xButton, input_xButton);

@@ -20,7 +20,7 @@ if ( image_alpha > 0.5 )
 // If the done button showing?
 if ( image_alpha >= 1.0 )
 {
-    Controls_Update(true);
+    controlUpdate(true);
     
     // Do selection changes
     if (!input_fadeout)
@@ -39,7 +39,7 @@ if ( image_alpha >= 1.0 )
     display_choice = clamp(display_choice, 0, input_choice_count-1);
     
     // Do confirm selection
-    if ( xButton > 0.8 && xButtonPrev < 0.8 )
+    if ( xButton.pressed )
     {
         if (!input_fadeout)
         {
@@ -50,6 +50,6 @@ if ( image_alpha >= 1.0 )
 }
 else
 {
-    Controls_Update(false);
+    controlUpdate(false);
 }   
 

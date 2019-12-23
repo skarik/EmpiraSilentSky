@@ -1,4 +1,4 @@
-Controls_Init();
+controlInit();
 
 timer = 0;
 fade = false;

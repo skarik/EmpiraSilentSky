@@ -4,9 +4,9 @@ y = __view_get( e__VW.YView, 0 );
 
 // Update controls
 if ( image_alpha > 0.95 )
-    Controls_Update(1);
+    controlUpdate(1);
 else
-    Controls_Update(0);
+    controlUpdate(0);
 
 if (fade)
 {
@@ -31,7 +31,7 @@ else
             audio_play_sound(sndUiMenuChange,30,false);
         }
         // Do button press
-        if ( (xButton > 0.8 && xButtonPrev <= 0.8) || (zButton > 0.8 && zButtonPrev <= 0.8) )
+        if ( xButton.pressed || zButton.pressed )
         {
             var i = menu_selection;
             if ( i == -3 )

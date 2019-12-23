@@ -22,7 +22,7 @@ else if (mgCount <= 1)
 else
 {
     // Do left-right selection
-    /*if ( abs(xAxis) >= 0.8 && abs(xAxisPrev) < 0.8 )
+    /*if ( abs(xAxis.value) >= 0.8 && abs(xAxis.previous) < 0.8 )
     {
         spellSelection += sign(xAxis);
         spellSelection = clamp(spellSelection, 0, mgCount-1);
@@ -30,7 +30,7 @@ else
         audio_play_sound(sndUiBlip1,50,false);
     }
     // Check for inputs to cancel
-    if ( (aButtonPrev < 0.8 && aButton >= 0.8) || (xButtonPrev < 0.8 && xButton >= 0.8) )
+    if ( aButton.pressed || xButton.pressed )
     {
         // Go back to normal state
         moState = MO_NORMAL;
@@ -39,27 +39,27 @@ else
         Motion_PU_Normal();
     }
     // Check for inputs to continue
-    if ( sButtonPrev < 0.8 && sButton >= 0.8 )
+    if ( sButton.pressed )
     {   // Spell selected: we're casting now!
         spellState = SPELL_CASTING;
     }*/
     // Check for inputs to continue
-    if ( sButtonPrev < 0.8 && sButton >= 0.8 )
+    if ( sButton.pressed )
     {   // Spell selected: we're casting now!
         spellSelection = 0; // first
         spellState = SPELL_CASTING;
     }
-    else if ( xButtonPrev < 0.8 && xButton >= 0.8 )
+    else if ( xButton.pressed )
     {   // Spell selected: we're casting now!
         spellSelection = 1;
         spellState = SPELL_CASTING;
     }
-    else if ( aButtonPrev < 0.8 && aButton >= 0.8 )
+    else if ( aButton.pressed )
     {   // Spell selected: we're casting now!
         spellSelection = 3;
         spellState = SPELL_CASTING;
     }
-    else if ( zButtonPrev < 0.8 && zButton >= 0.8 )
+    else if ( zButton.pressed )
     {   // Spell selected: we're casting now!
         spellSelection = 2;
         spellState = SPELL_CASTING;

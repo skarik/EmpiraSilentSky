@@ -1,5 +1,5 @@
-Controls_Init();
-Controls_Update(1);
+controlInit();
+controlUpdate(1);
 
 gain = 0;
 if (audio_is_playing(musMenu))

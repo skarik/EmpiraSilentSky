@@ -79,7 +79,7 @@ case 10:
     
 }
 
-if (Controls_UpdateAndCheckAny() && state != 7)
+if (controlUpdateAndCheckAny() && state != 7)
 {
     delete(ctsLogoPopup);
     state = 8;

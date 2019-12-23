@@ -11,7 +11,7 @@ if (!ctEnabled)
 {
     if (objPlayerPaladin.x < x)
     {
-        with (objPlayerPaladin) Controls_Init();
+        with (objPlayerPaladin) controlInit();
         ctEnabled = true;
         //CutsceneFlag_AutoSet();
     }

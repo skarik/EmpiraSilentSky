@@ -4,7 +4,7 @@ y = __view_get( e__VW.YView, 0 ) + __view_get( e__VW.HView, 0 ) / 2;
 gain = min(1.0, gain + Time.dt * 0.1);
 audio_sound_gain(music, gain, 0);
 
-if (image_alpha > 0.75 && Controls_UpdateAndCheckAny())
+if (image_alpha > 0.75 && controlUpdateAndCheckAny())
 {
     if (!fadeout)
     {

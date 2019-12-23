@@ -31,7 +31,7 @@ if ( incanting )
     spellCastTimer = min( 1.01, spellCastTimer );
     
     // Check for inputs to cancel
-    if ( (aButtonPrev < 0.8 && aButton >= 0.8) || (xButtonPrev < 0.8 && xButton >= 0.8) )
+    if (aButton.pressed || xButton.pressed)
     {
         // Go back to normal state
         moState = MO_NORMAL;
@@ -58,9 +58,9 @@ else
     spellCastTimer += Time.dt;
     
     // Check for inputs to release spell
-    if ( (aButtonPrev < 0.8 && aButton >= 0.8) ||
-         (xButtonPrev < 0.8 && xButton >= 0.8) ||
-         (sButtonPrev < 0.8 && sButton >= 0.8) ||
+    if ( aButton.pressed ||
+         xButton.pressed ||
+         sButton.pressed ||
          spellCastTimer > 1.09 )
     {
         // Go to followthru special state for now in order to end this

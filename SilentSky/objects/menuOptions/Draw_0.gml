@@ -72,12 +72,12 @@ for ( var i = -3; i < 10; ++i )
             case 8: setting = Settings.ctSwapLeft; break;
             case 9: setting = Settings.ctSwapRight; break;
         }
-        draw_text(dx+120, dy + 4, string_hash_to_newline(Settings_ControlNames(setting)));
+        draw_text(dx+120, dy + 4, controlGetName(setting));
         
         // Draw the help input
         if ( i == menu_selection && menu_isAskingForNewControl )
         {
-            draw_text(dx + 4, dy - dh, string_hash_to_newline("Press new key or Escape to cancel."));
+            draw_text(dx + 4, dy - dh, "Press new key or Escape to cancel.");
         }
     }
 }

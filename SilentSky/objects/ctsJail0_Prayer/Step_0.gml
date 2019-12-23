@@ -6,7 +6,7 @@ if (!ctEnabled)
     if (buttonInvisi.triggered)
     {
         /*with (objPlayerPaladin) {
-            Controls_Init();
+            controlInit();
             moState = MO_NORMAL;
             isPlayer = false;
         }*/

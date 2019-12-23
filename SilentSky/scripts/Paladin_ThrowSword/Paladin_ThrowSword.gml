@@ -85,21 +85,21 @@ if (isOnGround)
 
 
 // Player controls start:
-Controls_Update(moPlayer);
+controlUpdate(moPlayer);
 // Update gun timer
 gunTimer += Time.dt;
 // Queue up attacks
 /*if ( chStamina > 0 && atkTimer > moAtkKey0 )
 {
     // Melee attack input
-    if ( xButton >= 0.8 && xButtonPrev < 0.8 )
+    if ( xButton.pressed )
     {
         atkQueued = true;
     }
 }*/
 
 // Interrupt with a roll
-if ( aButton >= 0.8 && aButtonPrev < 0.8 )
+if ( aButton.pressed )
 {
     if ( isOnGround && dashTimer > moDashCooldown )
     {

@@ -1,3 +1,7 @@
+// Grab control
+var input_xAxis		= inputGet(xAxis);
+var input_yAxis		= inputGet(yAxis);
+var input_zButton	= inputGet(zButton);
 
 // We need to trace out the world ahead
 AI_CalcRaytrace(-70); // Look down at the ground
@@ -19,21 +23,25 @@ if ( absdistx > 8 || !isOnGround && absdistx > 4 )
     var speed_multiplier = min((absdistx + updisty*0.5) / moSpeedRun + 0.25, 1.0);
     if (!isOnGround || upcoming_wall || upcoming_no_ground)
         speed_multiplier = 1.0;
-    xAxis = sign(aiCombatTargetX - x) * speed_multiplier;
+    input_xAxis = sign(aiCombatTargetX - x) * speed_multiplier;
 }
 else
 {
-    xAxis = 0;
+    input_xAxis = 0;
 }
-yAxis = 0;
+input_yAxis = 0;
 
 // No ground or coming wall? Jump.
 if (upcoming_no_ground || (absdistx > 8 && upcoming_wall) || (updisty > 48 && absdistx < updisty))
 {
-    zButton = !zButton;
+    input_zButton = !input_zButton;
 }
 else
 {
-    zButton = 0;
+    input_zButton = 0;
 }
 
+// Apply the output
+inputSet(xAxis, input_xAxis);
+inputSet(yAxis, input_yAxis);
+inputSet(zButton, input_zButton);

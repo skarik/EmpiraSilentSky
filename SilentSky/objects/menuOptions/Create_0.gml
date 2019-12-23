@@ -15,6 +15,6 @@ ctNames[9] = "Swap to Next";
 menu_selection = -3;
 menu_isAskingForNewControl = false;
 
-Controls_Init();
-Controls_Update(1);
+controlInit();
+controlUpdate(1);
 

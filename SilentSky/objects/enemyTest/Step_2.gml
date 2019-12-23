@@ -20,36 +20,41 @@ if ( nearest_pickup == this && playerInventory.cloak && (playerInventory.sword||
 }
 
 // Set previous control state
-Controls_Update(false);
+controlUpdate(false);
 
 // Perform AI
 //var pl = objPlayerMain;
+
+// Grab control
+var input_zButton	= inputGet(zButton);
+var input_xAxis		= inputGet(xAxis);
+var input_xButton	= inputGet(xButton);
 
 // Move towards player
 var pl_distx = abs(pl.x - x);
 var pl_disty = abs(pl.y - y);
 if ( moState == MO_LEDGESTICK || moState == MO_WALLSTICK )
 {
-    zButton = !zButton;
+    input_zButton = !input_zButton;
 }
 if ( pl_distx < 130 && pl_disty < 64 )
 {
     if ( pl_distx > 50 )
     {   // Move to player
-        xAxis = sign(pl.x-x);
+        input_xAxis = sign(pl.x-x);
     }
     else if ( pl_distx > 25 && image_xscale != sign(pl.x-x) )
     {   // Face the player when in-range
-        xAxis = sign(pl.x-x);
+        input_xAxis = sign(pl.x-x);
     }
     else if ( pl_distx < 25 )
     {   // Step away from the player when too close
-        xAxis = -sign(pl.x-x);
+        input_xAxis = -sign(pl.x-x);
     }
     else
     {   // Attack otherwise
-        xAxis = 0;
-        xButton = !xButton;
+        input_xAxis = 0;
+        input_xButton = !input_xButton;
     }
 }
 // Wander if player is out of range
@@ -58,16 +63,20 @@ else
     aiWanderTimer -= Time.dt;
     if ( aiWanderTimer < 0.0 )
     {
-        if (xAxis == 0)
+        if (input_xAxis == 0)
         {   // Move for short time
-            xAxis = choose(-1,1);
+            input_xAxis = choose(-1,1);
             aiWanderTimer = random_range(0.8,1.4);
         }
         else
         {   // Stop for longer time
-            xAxis = 0;
+            input_xAxis = 0;
             aiWanderTimer = random_range(1.0,5.0);
         }
     }
 }
 
+// Update control
+inputSet(zButton, input_zButton);
+inputSet(xAxis,   input_xAxis);
+inputSet(xButton, input_xButton);

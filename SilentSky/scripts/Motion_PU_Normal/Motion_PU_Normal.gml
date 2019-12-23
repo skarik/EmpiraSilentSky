@@ -4,16 +4,16 @@ if (moPlayer && exists(ctsTalker))
 {
     if (ctsTalker.input_priority)
     {
-        Controls_Init();
+        controlInit();
         hasControl = false;
     }
 }
 if (!moInput || moDead)
 {
-    Controls_Init();
+    controlInit();
     hasControl = false;
 }
-if (moPlayer) Controls_Update(hasControl);
+if (moPlayer) controlUpdate(hasControl);
 
 // Update stun (prevent input)
 if (isStunned)
@@ -75,7 +75,7 @@ else if ( isOnGround )
     }
 }
 // Jumping player input
-if ( !isGlued && inventory.cloak && isOnGround && zButton >= 0.8 && zButtonPrev < 0.8 )
+if ( !isGlued && inventory.cloak && isOnGround && zButton.pressed )
 {
     if ( jumpTimer <= 0.0 )
     {
@@ -83,7 +83,7 @@ if ( !isGlued && inventory.cloak && isOnGround && zButton >= 0.8 && zButtonPrev 
     }
 }
 // Melee attack input
-else if ( !isGlued && inventory.sword && xButton >= 0.8 && xButtonPrev < 0.8 )
+else if ( !isGlued && inventory.sword && xButton.pressed )
 {
     var pressed = false;
     var button = instance_nearest(x,y,buttonBase);
@@ -132,7 +132,7 @@ else if ( !isGlued && inventory.sword && xButton >= 0.8 && xButtonPrev < 0.8 )
 {
     Motion_PU_GunControl();
 }*/
-else if ( aButton >= 0.8 && aButtonPrev < 0.8 )
+else if ( aButton.pressed )
 {
     if ( isOnGround && dashTimer > moDashCooldown )
     {
@@ -142,7 +142,7 @@ else if ( aButton >= 0.8 && aButtonPrev < 0.8 )
         dashTimer = 0.0;
     }
 }
-else if ( sButton >= 0.8 && sButtonPrev < 0.8 )
+else if ( sButton.pressed )
 {
     // Do the special now
     if ( chMana > moSpecialMana )
@@ -155,7 +155,7 @@ else if ( sButton >= 0.8 && sButtonPrev < 0.8 )
         spellState = SPELL_INBOOK;
     }
 }
-else if (moPlayer && lButton >= 0.8 && lButtonPrev < 0.8 )
+else if (moPlayer && lButton.pressed )
 {
     var playerselection;
     playerselection[0] = objPlayerPaladin;
@@ -177,10 +177,13 @@ else if (moPlayer && lButton >= 0.8 && lButtonPrev < 0.8 )
         {
             with (objPlayerMain) 
             {   // Zero controls
-                Controls_Init();
+                controlInit();
                 // Stop swapping next frame
-                lButton = 1.0; rButton = 1.0;
-                lButtonPrev = 1.0; rButtonPrev = 1.0;
+				repeat (2)
+				{
+					inputSet(lButton, 1.0);
+					inputSet(rButton, 1.0);
+				}
                 // Disable player input
                 moPlayer = false;
             }
@@ -191,7 +194,7 @@ else if (moPlayer && lButton >= 0.8 && lButtonPrev < 0.8 )
         }
     }
 }
-else if (moPlayer && rButton >= 0.8 && rButtonPrev < 0.8 )
+else if (moPlayer && rButton.pressed )
 {
     var playerselection;  // Reverse order
     playerselection[2] = objPlayerPaladin;
@@ -213,10 +216,12 @@ else if (moPlayer && rButton >= 0.8 && rButtonPrev < 0.8 )
         {
             with (objPlayerMain) 
             {   // Zero controls
-                Controls_Init();
-                // Stop swapping next frame
-                lButton = 1.0; rButton = 1.0;
-                lButtonPrev = 1.0; rButtonPrev = 1.0;
+                controlInit();
+                repeat (2)
+				{
+					inputSet(lButton, 1.0);
+					inputSet(rButton, 1.0);
+				}
                 // Disable player input
                 moPlayer = false;
             }

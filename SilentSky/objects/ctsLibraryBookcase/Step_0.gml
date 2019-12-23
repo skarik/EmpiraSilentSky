@@ -6,20 +6,20 @@ y = __view_get( e__VW.HView, 0 ) + 32 - (bouncestep(smoothstep_u(bk_move)) * (96
 // Update controls
 if (!bk_selected && bk_move >= 1.0)
 {
-    Controls_Update(true);
-    if ( xAxis > 0.8 && xAxisPrev < 0.8 )
+    controlUpdate(true);
+    if ( xAxis.value > 0.8 && xAxis.previous < 0.8 )
     {
         audio_play_sound(sndUiBlip2, 50, false);
         bk_selection += 1;
         bk_fade = -0.1;
     }
-    if ( xAxis < -0.8 && xAxisPrev > -0.8 )
+    if ( xAxis.value < -0.8 && xAxis.previous > -0.8 )
     {
         audio_play_sound(sndUiBlip2, 50, false);
         bk_selection -= 1;
         bk_fade = -0.1;
     }
-    if (( xButton > 0.8 && xButtonPrev <= 0.8 ) || ( zButton > 0.8 && zButtonPrev <= 0.8 ))
+    if (xButton.pressed || zButton.pressed)
     {
         if (bk_selection == 7)
         {

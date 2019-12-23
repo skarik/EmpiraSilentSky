@@ -4,7 +4,7 @@ timer += Time.dt;
     delete(this);
 }*/
 
-if (Controls_UpdateAndCheckAny()) fade = true;//delete(this);
+if (controlUpdateAndCheckAny()) fade = true;//delete(this);
 
 if (fade)
 {

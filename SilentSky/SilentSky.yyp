@@ -415,6 +415,14 @@
             }
         },
         {
+            "Key": "0d4c68bc-650f-4975-bad8-f114f2af0693",
+            "Value": {
+                "id": "4ff93fc3-aa79-49e4-b2b1-bbda7c8a965c",
+                "resourcePath": "scripts\\inputGet\\inputGet.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0d827ae7-826f-479e-8b4a-e2e4aa1a90aa",
             "Value": {
                 "id": "8be953b1-f16d-49f5-a39f-f774fe803d5d",
@@ -740,6 +748,14 @@
                 "id": "f9e75c17-a44b-416a-a2bd-71cc6d154e22",
                 "resourcePath": "sounds\\sndPaladinCast\\sndPaladinCast.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "1df0649d-33f1-483a-96ff-63f9321a5aa2",
+            "Value": {
+                "id": "4a569889-fd5b-4c3d-99ba-6505d487995a",
+                "resourcePath": "views\\1df0649d-33f1-483a-96ff-63f9321a5aa2.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1178,7 +1194,7 @@
             "Key": "330f27b8-32d6-4920-8c93-a1507ab5bb32",
             "Value": {
                 "id": "5f38245f-9102-441c-b904-3f41e60cc756",
-                "resourcePath": "scripts\\Settings_ControlNames\\Settings_ControlNames.yy",
+                "resourcePath": "scripts\\controlGetName\\controlGetName.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1871,6 +1887,14 @@
             }
         },
         {
+            "Key": "4a6df8fa-7dfd-459b-8661-97f5e05d936c",
+            "Value": {
+                "id": "20d167c5-3140-4b04-a30c-a28d2240f903",
+                "resourcePath": "scripts\\_controlStructUpdate\\_controlStructUpdate.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4ac00b38-d9b3-46f8-b594-9a18bbfbfc7a",
             "Value": {
                 "id": "59b5e4fd-944d-4aae-a57e-bf0c7ebdf9e7",
@@ -2210,7 +2234,7 @@
             "Key": "55687b05-faa1-4a93-9350-e1c561a21f2a",
             "Value": {
                 "id": "573c387c-31be-459a-80dd-d9183adea957",
-                "resourcePath": "scripts\\Settings_ControlLoad\\Settings_ControlLoad.yy",
+                "resourcePath": "scripts\\settingsControlLoad\\settingsControlLoad.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2431,6 +2455,22 @@
             }
         },
         {
+            "Key": "5f5499ab-e9f7-43da-816b-ac12877a1899",
+            "Value": {
+                "id": "9dcb9e69-ff62-4e9c-bf76-18d6ce945fea",
+                "resourcePath": "scripts\\inputSet\\inputSet.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5f64c35e-315f-4806-a102-256e9f9ce485",
+            "Value": {
+                "id": "1e6d816a-4cac-4828-9c94-c1c50980f7a5",
+                "resourcePath": "scripts\\_controlParseCheckType\\_controlParseCheckType.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5f760058-7de7-4182-96a4-a09ecc31097d",
             "Value": {
                 "id": "7e79b564-39ba-4fae-86e8-ff3c1c650bd5",
@@ -2578,7 +2618,7 @@
             "Key": "661156a1-e3ad-4bfe-82c8-61dec6c368de",
             "Value": {
                 "id": "0ddbcc10-19cb-448f-89e2-6a157e10b7ee",
-                "resourcePath": "scripts\\Controls_Update\\Controls_Update.yy",
+                "resourcePath": "scripts\\controlUpdate\\controlUpdate.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2959,6 +2999,14 @@
             }
         },
         {
+            "Key": "71a7ed80-261c-4ef3-861c-110be18a93cd",
+            "Value": {
+                "id": "df37118f-4f95-46ce-b83e-b819a915b5d4",
+                "resourcePath": "scripts\\_settingsControlLoadArray\\_settingsControlLoadArray.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "71e5c894-3ef8-458e-a5a4-33d2acd7d9da",
             "Value": {
                 "id": "a13771c2-7d62-434e-bd83-a0398df808df",
@@ -3135,6 +3183,14 @@
             }
         },
         {
+            "Key": "78ca00be-351c-4d7f-9b0f-560e963f7d00",
+            "Value": {
+                "id": "7604c6e6-7127-4c74-a23d-4fd344deb8d4",
+                "resourcePath": "scripts\\_controlStructCreate\\_controlStructCreate.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "78cccb61-80ed-4973-acf4-2b8f47d641ac",
             "Value": {
                 "id": "cda67efa-ff79-4a95-a282-cd278c870f27",
@@ -3227,6 +3283,14 @@
             "Value": {
                 "id": "ebf520b6-7c9b-4401-be3f-588fdbcd518f",
                 "resourcePath": "scripts\\AI_CombatStepMove\\AI_CombatStepMove.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7b6a0111-44cb-4160-a7ad-4c0f1be78a2e",
+            "Value": {
+                "id": "ddf849ab-2e70-4d21-a8b8-4b2576a4dc85",
+                "resourcePath": "scripts\\_settingsControlSaveArray\\_settingsControlSaveArray.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4727,6 +4791,14 @@
             }
         },
         {
+            "Key": "b78e32e0-5cde-4f40-a681-d685c79f1a26",
+            "Value": {
+                "id": "ca8c0a5e-a04e-4bf4-84b3-1e5c4273c91a",
+                "resourcePath": "scripts\\controlDraw\\controlDraw.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b7f7c470-802e-4323-abf7-609f59ce56b6",
             "Value": {
                 "id": "40d9a4de-1097-4dcf-a0c1-d3fd71483956",
@@ -4802,7 +4874,7 @@
             "Key": "bc41827f-b22e-4ebc-8b7f-09a1187230e3",
             "Value": {
                 "id": "43f9813d-c523-4d93-bb3b-0d55b105a8ad",
-                "resourcePath": "scripts\\Settings_Load\\Settings_Load.yy",
+                "resourcePath": "scripts\\settingsLoad\\settingsLoad.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4826,7 +4898,7 @@
             "Key": "bcc20956-4d89-4a08-abaa-1ac3c3a952a9",
             "Value": {
                 "id": "1dabe172-6fe5-4457-b9f6-7192c8f31f48",
-                "resourcePath": "scripts\\Controls_Init\\Controls_Init.yy",
+                "resourcePath": "scripts\\controlInit\\controlInit.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -5719,6 +5791,14 @@
             }
         },
         {
+            "Key": "dd2cf662-70e9-4b0d-8c22-ede5b43efcf9",
+            "Value": {
+                "id": "ddcf96a8-94ba-48d9-8982-770c5073031f",
+                "resourcePath": "objects\\_dummy\\_dummy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "dd85835d-2e46-45fe-be86-f2f19adcc2e1",
             "Value": {
                 "id": "87aec1d6-7b18-42ae-ab1f-f5dfee292a03",
@@ -5748,6 +5828,14 @@
                 "id": "c170a9e3-0362-4b83-bd6d-95c72866a4bc",
                 "resourcePath": "views\\dde7f854-6861-49a7-85c1-2793668740b8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ddf40903-15f7-4bba-970b-f5bb49f569bc",
+            "Value": {
+                "id": "95789567-2336-473e-abb2-0ca3c0d4e370",
+                "resourcePath": "scripts\\controlParseAndPoll\\controlParseAndPoll.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -6050,7 +6138,7 @@
             "Key": "e873fa98-5360-4f27-a448-b730ace7f310",
             "Value": {
                 "id": "05b70885-e2ee-4f7b-92e6-beed0ef833d3",
-                "resourcePath": "scripts\\Settings_ControlDefaults\\Settings_ControlDefaults.yy",
+                "resourcePath": "scripts\\settingsControlDefaults\\settingsControlDefaults.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -6231,6 +6319,14 @@
             }
         },
         {
+            "Key": "ef2cabb3-961b-4095-99df-116b40ea1cfa",
+            "Value": {
+                "id": "8f3d8aaa-f793-4696-9100-1fcdc7f89778",
+                "resourcePath": "views\\ef2cabb3-961b-4095-99df-116b40ea1cfa.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "ef7bc264-f480-46cb-b555-256d1c238ffc",
             "Value": {
                 "id": "1a103e8d-01bc-4ef4-9b00-c17d9218dec4",
@@ -6274,7 +6370,7 @@
             "Key": "f01c6d7d-dfe2-4b64-a489-7ce0448f95ff",
             "Value": {
                 "id": "5ad97522-fb70-437b-a8c0-72a0800f7689",
-                "resourcePath": "scripts\\Controls_UpdateAndCheckAny\\Controls_UpdateAndCheckAny.yy",
+                "resourcePath": "scripts\\controlUpdateAndCheckAny\\controlUpdateAndCheckAny.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -6562,7 +6658,7 @@
             "Key": "f8eff835-034e-4ca4-9a81-ef14d7aef641",
             "Value": {
                 "id": "c5d83a6a-9985-4f78-a16c-1522c02ab840",
-                "resourcePath": "scripts\\Settings_ControlSave\\Settings_ControlSave.yy",
+                "resourcePath": "scripts\\settingsControlSave\\settingsControlSave.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -6588,6 +6684,14 @@
                 "id": "0c19917f-2b12-491d-a54c-d8975ca761de",
                 "resourcePath": "sprites\\sprTinkererRun\\sprTinkererRun.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fb00b74b-c725-4e51-b4a2-bcb6734f4a04",
+            "Value": {
+                "id": "e5094bcd-24c3-4f70-a9ba-9900c3e15a72",
+                "resourcePath": "scripts\\settingsSave\\settingsSave.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -6761,6 +6865,25 @@
         "719dfb88-8a09-4c44-a9cc-c09d0fc20344",
         "5e61e283-4b0d-4010-9868-79b7d0d880fe",
         "6c9dd763-c4cc-440d-b7bb-975e28d8a230",
+        "bc41827f-b22e-4ebc-8b7f-09a1187230e3",
+        "fb00b74b-c725-4e51-b4a2-bcb6734f4a04",
+        "e873fa98-5360-4f27-a448-b730ace7f310",
+        "55687b05-faa1-4a93-9350-e1c561a21f2a",
+        "f8eff835-034e-4ca4-9a81-ef14d7aef641",
+        "71a7ed80-261c-4ef3-861c-110be18a93cd",
+        "7b6a0111-44cb-4160-a7ad-4c0f1be78a2e",
+        "330f27b8-32d6-4920-8c93-a1507ab5bb32",
+        "b78e32e0-5cde-4f40-a681-d685c79f1a26",
+        "bcc20956-4d89-4a08-abaa-1ac3c3a952a9",
+        "661156a1-e3ad-4bfe-82c8-61dec6c368de",
+        "f01c6d7d-dfe2-4b64-a489-7ce0448f95ff",
+        "6d6370c2-b913-4eb8-8129-f1dea82ca9e3",
+        "78ca00be-351c-4d7f-9b0f-560e963f7d00",
+        "4a6df8fa-7dfd-459b-8661-97f5e05d936c",
+        "ddf40903-15f7-4bba-970b-f5bb49f569bc",
+        "5f64c35e-315f-4806-a102-256e9f9ce485",
+        "5f5499ab-e9f7-43da-816b-ac12877a1899",
+        "0d4c68bc-650f-4975-bad8-f114f2af0693",
         "1c31d020-e3c3-448c-9cbc-557f3eeef5dd",
         "d312e13d-5b83-4aa6-b94a-dfc096a7924f",
         "490008f6-bca4-4f13-8dcc-fefec2251c3c",
@@ -6819,11 +6942,6 @@
         "5694eae0-dfa6-40d3-ae03-76bebc79ce22",
         "d531a5af-3716-43ff-bb14-d93973961922",
         "42ed31c1-5ad2-4434-9571-37293f46a08c",
-        "bc41827f-b22e-4ebc-8b7f-09a1187230e3",
-        "e873fa98-5360-4f27-a448-b730ace7f310",
-        "330f27b8-32d6-4920-8c93-a1507ab5bb32",
-        "55687b05-faa1-4a93-9350-e1c561a21f2a",
-        "f8eff835-034e-4ca4-9a81-ef14d7aef641",
         "abd15f04-2ce7-4c24-8a4e-535cfcd43386",
         "53b3f2ad-7609-4c13-b683-388f55853ee2",
         "2e3b0ec3-1575-4589-a7df-a338708e15ac",
@@ -6870,10 +6988,6 @@
         "30bc8ceb-1c2e-4d13-b5f4-396ca8a6152b",
         "e9d1e157-b4f0-47c9-8bd5-a660e34dd94b",
         "dda5aac4-ac15-4a32-991e-11f216bf0cba",
-        "bcc20956-4d89-4a08-abaa-1ac3c3a952a9",
-        "661156a1-e3ad-4bfe-82c8-61dec6c368de",
-        "f01c6d7d-dfe2-4b64-a489-7ce0448f95ff",
-        "6d6370c2-b913-4eb8-8129-f1dea82ca9e3",
         "140ae566-ac66-43d2-b34c-4e6df73f2a9a",
         "dd13d2cd-a347-4473-80a4-8aca36960d6f",
         "c8b0683c-08bb-4507-b5b9-ef4fb93136e7",

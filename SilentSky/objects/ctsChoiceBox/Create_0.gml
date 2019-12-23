@@ -17,5 +17,5 @@ current_display_count = 0;
 
 image_alpha = 0;
 
-Controls_Init();
+controlInit();
 

@@ -45,7 +45,7 @@ else
 
 
 // Update controls just to keep track
-Controls_Update(moPlayer);
+controlUpdate(moPlayer);
 // Update gun timer
 gunTimer += Time.dt;
 // Perform common collision

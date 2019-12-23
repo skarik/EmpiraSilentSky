@@ -1,4 +1,10 @@
+// Grab control
+var input_xAxis		= inputGet(xAxis);
+var input_yAxis		= inputGet(yAxis);
+var input_xButton	= inputGet(xButton);
+var input_zButton	= inputGet(zButton);
 
+// Get player
 var target = GetActivePlayer();
 if (!exists(target)) exit;
 
@@ -46,7 +52,7 @@ if (exists(aiFollowNode) && aiFollowStuckFixState == 0 && !path_super_clear)
     {
         xAxis = sign(aiFollowNode.x - x);
     }
-    yAxis = 0;
+    input_yAxis = 0;
     
     var close_to_node_x = abs(aiFollowNode.x - x) < 48;
     var node_is_drop = aiFollowNode.y > y + 64;
@@ -58,11 +64,11 @@ if (exists(aiFollowNode) && aiFollowStuckFixState == 0 && !path_super_clear)
         // Wait for the wall or ground before jumping
         if ((!node_is_drop && upcoming_no_ground) || upcoming_wall || (!node_is_drop && close_to_node_x))
         {
-            zButton = !zButton;
+            input_zButton = !input_zButton;
         }
         else
         {
-            zButton = 0;
+            input_zButton = 0;
         }
     }
     else
@@ -70,11 +76,11 @@ if (exists(aiFollowNode) && aiFollowStuckFixState == 0 && !path_super_clear)
         // No ground or coming wall? Jump.
         if ((!node_is_drop && upcoming_no_ground) || upcoming_wall || (node_is_jump && close_to_node_x))
         {
-            zButton = !zButton;
+            input_zButton = !input_zButton;
         }
         else
         {
-            zButton = 0;
+            input_zButton = 0;
         }
     }
     
@@ -87,13 +93,13 @@ if (exists(aiFollowNode) && aiFollowStuckFixState == 0 && !path_super_clear)
         {
             aiFollowWaiting = false;
         }
-        xAxis = 0;
-        yAxis = 0;
-        zButton = 0;
+        input_xAxis = 0;
+        input_yAxis = 0;
+        input_zButton = 0;
     }
     
     // Update unstuck status
-    if ( !aiFollowWaiting && abs(xAxis) > 0.5 && sqr(aiFollowStuckRefX-x)+sqr((aiFollowStuckRefY-y)*0.25) < 8*8 )
+    if ( !aiFollowWaiting && abs(input_xAxis) > 0.5 && sqr(aiFollowStuckRefX-x)+sqr((aiFollowStuckRefY-y)*0.25) < 8*8 )
     {
         aiFollowStuckTimer += 2.0 * Time.dt;
         if ( aiFollowStuckTimer > 1.0 )
@@ -154,10 +160,10 @@ else
     else
     {
         if ( aiFollowStuckFixState == 1 )
-            xAxis = +1;
+            input_xAxis = +1;
         else if ( aiFollowStuckFixState == 2 )
-            xAxis = -1;
-        zButton = 0;
+            input_xAxis = -1;
+        input_zButton = 0;
         
         aiFollowWaiting = false;
         
@@ -177,9 +183,9 @@ else
         {
             aiFollowWaiting = false;
         }
-        xAxis = 0;
-        yAxis = 0;
-        zButton = 0;
+        input_xAxis = 0;
+        input_yAxis = 0;
+        input_zButton = 0;
     }
     
     // Not stuck? Doing normal following?
@@ -194,22 +200,22 @@ else
             var speed_multiplier = min((absdistx + updisty*0.5) / moSpeedRun + 0.25, 1.0);
             if (!isOnGround || upcoming_wall || upcoming_no_ground)
                 speed_multiplier = 1.0;
-            xAxis = sign(aiFollowTargetX - x) * speed_multiplier;
+            input_xAxis = sign(aiFollowTargetX - x) * speed_multiplier;
         }
         else
         {
-            xAxis = 0;
+            input_xAxis = 0;
         }
-        yAxis = 0;
+        input_yAxis = 0;
         
         // No ground or coming wall? Jump.
         if (upcoming_no_ground || (absdistx > 8 && upcoming_wall) || (updisty > 48 && absdistx < updisty))
         {
-            zButton = !zButton;
+            input_zButton = !input_zButton;
         }
         else
         {
-            zButton = 0;
+            input_zButton = 0;
         }
     }
 }
@@ -221,7 +227,12 @@ else
     if (abs(aiFollowTargetY - y) < 48 &&
         abs(aiFollowTargetX - x) < 48 + 32 * sin(id) )
     {
-        xAxis = 0;
+        input_xAxis = 0;
     }
 }*/
 
+// Apply the output
+inputSet(xAxis, input_xAxis);
+inputSet(yAxis, input_yAxis);
+inputSet(xButton, input_xButton);
+inputSet(zButton, input_zButton);
