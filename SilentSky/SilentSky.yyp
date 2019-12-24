@@ -447,6 +447,14 @@
             }
         },
         {
+            "Key": "0ff92267-b22a-430f-b1d6-ec262ad6e37f",
+            "Value": {
+                "id": "4932d2e9-92ae-4d09-9e97-0eeb0ac0f1a3",
+                "resourcePath": "sprites\\ssy_1x1white\\ssy_1x1white.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1134e371-4368-49eb-9a8a-ac338c93b332",
             "Value": {
                 "id": "605d3f06-b815-4426-bc6d-e29665a479e8",
@@ -932,6 +940,14 @@
                 "id": "f2fb30e1-4851-4a82-8214-eb5cba2f8f87",
                 "resourcePath": "objects\\bgJailhouseOutside\\bgJailhouseOutside.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "27d7c0fe-9e4f-4bc3-a6e9-a3ae6f4a2e85",
+            "Value": {
+                "id": "51663865-2a8f-4072-8c60-f09019554919",
+                "resourcePath": "scripts\\draw_spr_rectangle\\draw_spr_rectangle.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1948,6 +1964,14 @@
                 "id": "9cc0c257-d39f-46e7-a5ce-c44d91935e79",
                 "resourcePath": "sprites\\ssy_cameraFocus\\ssy_cameraFocus.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4c6688b2-3516-4745-974f-2bf8567384dc",
+            "Value": {
+                "id": "e984002b-a983-4db7-afa5-e6e5a4798170",
+                "resourcePath": "scripts\\draw_spr_line\\draw_spr_line.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -6897,6 +6921,8 @@
         "6f3ec62a-b72f-4f35-98f5-2d1b958e6198",
         "719dfb88-8a09-4c44-a9cc-c09d0fc20344",
         "5e61e283-4b0d-4010-9868-79b7d0d880fe",
+        "4c6688b2-3516-4745-974f-2bf8567384dc",
+        "27d7c0fe-9e4f-4bc3-a6e9-a3ae6f4a2e85",
         "6c9dd763-c4cc-440d-b7bb-975e28d8a230",
         "bc41827f-b22e-4ebc-8b7f-09a1187230e3",
         "fb00b74b-c725-4e51-b4a2-bcb6734f4a04",

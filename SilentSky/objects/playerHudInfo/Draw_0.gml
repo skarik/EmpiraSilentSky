@@ -367,121 +367,123 @@ if (uiShowMap)
 	if (room < array_length_1d(Game.rooms_info))
 	{
 		var room_info = Game.rooms_info[room];
-		var room_info_min = room_info[0];
-		var room_info_max = room_info[1];
-	
-		// get position of player
-		var pl_pos_percent = [
-			pl.x / room_width,
-			(pl.y - 64) / (room_height - 64)
-			];
-		var pl_pos_grid = [
-			room_info_min[0] + (room_info_max[0] - room_info_min[0]) * pl_pos_percent[0],
-			room_info_min[1] + (room_info_max[1] - room_info_min[1]) * pl_pos_percent[1]
-			];
-		
-		// set up the bb to render
-		var draw_center = [
-			floor(pl_pos_grid[0]),
-			floor(pl_pos_grid[1])
-			];
-		var draw_min = [
-			draw_center[0] - 2,
-			draw_center[1] - 1
-			];
-		var draw_max = [
-			draw_min[0] + 5,
-			draw_min[1] + 3
-			];
-		
-		var divSize = 16;
-		var dx = round(ddx + Screen.width * 0.5 - 2.5 * divSize);
-		var dy = round(ddy + 1);
-		
-		draw_set_color(merge_color(c_gold, c_dkgray, 0.5));
-		draw_set_alpha(1.0);
-		for (var ix = draw_min[0]; ix < draw_max[0]; ++ix)
+		if (is_array(room_info) && array_length_1d(room_info) > 0)
 		{
-			for (var iy = draw_min[1]; iy < draw_max[1]; ++iy)
+			var room_info_min = room_info[0];
+			var room_info_max = room_info[1];
+	
+			// get position of player
+			var pl_pos_percent = [
+				pl.x / room_width,
+				(pl.y - 64) / (room_height - 64)
+				];
+			var pl_pos_grid = [
+				room_info_min[0] + (room_info_max[0] - room_info_min[0]) * pl_pos_percent[0],
+				room_info_min[1] + (room_info_max[1] - room_info_min[1]) * pl_pos_percent[1]
+				];
+		
+			// set up the bb to render
+			var draw_center = [
+				floor(pl_pos_grid[0]),
+				floor(pl_pos_grid[1])
+				];
+			var draw_min = [
+				draw_center[0] - 2,
+				draw_center[1] - 1
+				];
+			var draw_max = [
+				draw_min[0] + 5,
+				draw_min[1] + 3
+				];
+		
+			var divSize = 16;
+			var dx = round(ddx + Screen.width * 0.5 - 2.5 * divSize);
+			var dy = round(ddy + 1);
+		
+			draw_set_color(merge_color(c_gold, c_dkgray, 0.5));
+			draw_set_alpha(1.0);
+			for (var ix = draw_min[0]; ix < draw_max[0]; ++ix)
 			{
-				var v_ix = ix - draw_min[0];
-				var v_iy = iy - draw_min[1];
-			
-				var room_id = Game.map[ix + iy * Game.map_width];
-				if (room_id != null)
+				for (var iy = draw_min[1]; iy < draw_max[1]; ++iy)
 				{
-					var room_visibility = Game.map_visibility[ix + iy * Game.map_width];
-					if (room_visibility == kMapCelVisHidden)
-						continue;
+					var v_ix = ix - draw_min[0];
+					var v_iy = iy - draw_min[1];
+			
+					var room_id = Game.map[ix + iy * Game.map_width];
+					if (room_id != null)
+					{
+						var room_visibility = Game.map_visibility[ix + iy * Game.map_width];
+						if (room_visibility == kMapCelVisHidden)
+							continue;
 					
-					// draw room background
-					if (room_visibility == kMapCelVisUnvisited)
-					{
-						draw_set_color(c_black);
-					}
-					else if (room_visibility == kMapCelVisVisited)
-					{
-						draw_set_color(merge_color(c_gold, c_dkgray, 0.5));
-					}
-					draw_rectangle(
-						dx +  v_ix      * divSize,     dy +  v_iy      * divSize,
-						dx + (v_ix + 1) * divSize - 1, dy + (v_iy + 1) * divSize - 1,
-						false);
-					// draw glow on current room
-					if (ix == draw_center[0] && iy == draw_center[1])
-					{
-						draw_set_color(c_white);
-						draw_set_alpha(0.2);
-						draw_rectangle(
+						// draw room background
+						if (room_visibility == kMapCelVisUnvisited)
+						{
+							draw_set_color(c_black);
+						}
+						else if (room_visibility == kMapCelVisVisited)
+						{
+							draw_set_color(merge_color(c_gold, c_dkgray, 0.5));
+						}
+						draw_spr_rectangle(
 							dx +  v_ix      * divSize,     dy +  v_iy      * divSize,
 							dx + (v_ix + 1) * divSize - 1, dy + (v_iy + 1) * divSize - 1,
 							false);
-						draw_set_alpha(1.0);
-					}
+						// draw glow on current room
+						if (ix == draw_center[0] && iy == draw_center[1])
+						{
+							draw_set_color(c_white);
+							draw_set_alpha(0.2);
+							draw_spr_rectangle(
+								dx +  v_ix      * divSize,     dy +  v_iy      * divSize,
+								dx + (v_ix + 1) * divSize - 1, dy + (v_iy + 1) * divSize - 1,
+								false);
+							draw_set_alpha(1.0);
+						}
 				
-					// draw room outline
-					if (room_visibility == kMapCelVisUnvisited)
-					{
-						draw_set_color(c_dkgray);
+						// draw room outline
+						if (room_visibility == kMapCelVisUnvisited)
+						{
+							draw_set_color(c_dkgray);
+						}
+						else if (room_visibility == kMapCelVisVisited)
+						{
+							draw_set_color(c_gold);
+						}
+						// get bbox for the edge tdetection
+						var room_info_current = Game.rooms_info[room_id];
+						var room_info_current_min = room_info_current[0];
+						var room_info_current_max = room_info_current[1];
+						// actually draw the edges
+						if (ix == room_info_current_min[0])
+						{
+							draw_spr_line(
+								dx +  v_ix      * divSize, dy +  v_iy      * divSize,
+								dx +  v_ix      * divSize, dy + (v_iy + 1) * divSize - 1);
+						}
+						if (ix + 1 == room_info_current_max[0])
+						{
+							draw_spr_line(
+								dx + (v_ix + 1) * divSize - 1, dy +  v_iy      * divSize,
+								dx + (v_ix + 1) * divSize - 1, dy + (v_iy + 1) * divSize - 1);
+						}
+						if (iy == room_info_current_min[1])
+						{
+							draw_spr_line(
+								dx +  v_ix      * divSize,     dy + v_iy * divSize,
+								dx + (v_ix + 1) * divSize - 1, dy + v_iy * divSize);
+						}
+						if (iy + 1 == room_info_current_max[1])
+						{
+							draw_spr_line(
+								dx +  v_ix      * divSize,     dy + (v_iy + 1) * divSize - 1,
+								dx + (v_ix + 1) * divSize - 1, dy + (v_iy + 1) * divSize - 1);
+						}
 					}
-					else if (room_visibility == kMapCelVisVisited)
-					{
-						draw_set_color(c_gold);
-					}
-					// get bbox for the edge tdetection
-					var room_info_current = Game.rooms_info[room_id];
-					var room_info_current_min = room_info_current[0];
-					var room_info_current_max = room_info_current[1];
-					// actually draw the edges
-					if (ix == room_info_current_min[0])
-					{
-						draw_line(
-							dx +  v_ix      * divSize, dy +  v_iy      * divSize,
-							dx +  v_ix      * divSize, dy + (v_iy + 1) * divSize - 1);
-					}
-					if (ix + 1 == room_info_current_max[0])
-					{
-						draw_line(
-							dx + (v_ix + 1) * divSize - 1, dy +  v_iy      * divSize,
-							dx + (v_ix + 1) * divSize - 1, dy + (v_iy + 1) * divSize - 1);
-					}
-					if (iy == room_info_current_min[1])
-					{
-						draw_line(
-							dx +  v_ix      * divSize,     dy + v_iy * divSize,
-							dx + (v_ix + 1) * divSize - 1, dy + v_iy * divSize);
-					}
-					if (iy + 1 == room_info_current_max[1])
-					{
-						draw_line(
-							dx +  v_ix      * divSize,     dy + (v_iy + 1) * divSize - 1,
-							dx + (v_ix + 1) * divSize - 1, dy + (v_iy + 1) * divSize - 1);
-					}
+					// Next room!
 				}
-				// Next room!
-			}
-		} // End loop
-		
+			} // End loop
+		} // End check for valid room
 	}// End if check
 }
 
