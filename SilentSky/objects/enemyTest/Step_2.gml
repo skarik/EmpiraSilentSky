@@ -26,16 +26,16 @@ controlUpdate(false);
 //var pl = objPlayerMain;
 
 // Grab control
-var input_zButton	= inputGet(zButton);
+var input_jumpButton	= inputGet(jumpButton);
 var input_xAxis		= inputGet(xAxis);
-var input_xButton	= inputGet(xButton);
+var input_atkButton	= inputGet(atkButton);
 
 // Move towards player
 var pl_distx = abs(pl.x - x);
 var pl_disty = abs(pl.y - y);
 if ( moState == MO_LEDGESTICK || moState == MO_WALLSTICK )
 {
-    input_zButton = !input_zButton;
+    input_jumpButton = !input_jumpButton;
 }
 if ( pl_distx < 130 && pl_disty < 64 )
 {
@@ -54,7 +54,7 @@ if ( pl_distx < 130 && pl_disty < 64 )
     else
     {   // Attack otherwise
         input_xAxis = 0;
-        input_xButton = !input_xButton;
+        input_atkButton = !input_atkButton;
     }
 }
 // Wander if player is out of range
@@ -77,6 +77,6 @@ else
 }
 
 // Update control
-inputSet(zButton, input_zButton);
+inputSet(jumpButton, input_jumpButton);
 inputSet(xAxis,   input_xAxis);
-inputSet(xButton, input_xButton);
+inputSet(atkButton, input_atkButton);

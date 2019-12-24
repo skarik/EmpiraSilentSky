@@ -68,7 +68,7 @@ if (exists(rebel))
 		{
 			if (place_meeting(x, y, ob_door))
 			{
-				inputSet(xButton, 1.0);
+				inputSet(atkButton, 1.0);
 				inputSet(xAxis, 0.0);
 				
 				other.rebelState = 2;
@@ -91,7 +91,7 @@ if (exists(rebel))
 	// Continue to walk up to the paladin.
 	else if (rebelState == 3)
 	{
-		inputSet(rebel.xButton, 0.0);
+		inputSet(rebel.atkButton, 0.0);
 		inputSet(rebel.xAxis, -1.0);
 		
 		if (rebel.x < paladin.x + 100)

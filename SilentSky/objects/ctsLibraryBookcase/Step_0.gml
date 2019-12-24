@@ -19,7 +19,7 @@ if (!bk_selected && bk_move >= 1.0)
         bk_selection -= 1;
         bk_fade = -0.1;
     }
-    if (xButton.pressed || zButton.pressed)
+    if (atkButton.pressed || jumpButton.pressed)
     {
         if (bk_selection == 7)
         {

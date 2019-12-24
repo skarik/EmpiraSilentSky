@@ -29,7 +29,7 @@ var pl_distx = abs(pl.x - x);
 var pl_disty = abs(pl.y - y);
 if ( moState == MO_LEDGESTICK || moState == MO_WALLSTICK )
 {
-    inputSet(zButton, !zButton.value);
+    inputSet(jumpButton, !jumpButton.value);
 }
 if ( pl_distx < 180 && pl_disty < 64 )
 {
@@ -48,7 +48,7 @@ if ( pl_distx < 180 && pl_disty < 64 )
     else
     {   // Attack otherwise
         inputSet(xAxis, 0);
-        inputSet(xButton, !xButton.value);
+        inputSet(atkButton, !atkButton.value);
     }
 }
 else if ( pl_disty < 90 )
@@ -58,7 +58,7 @@ else if ( pl_disty < 90 )
         inputSet(xAxis, sign(pl.x-x));
         // Try to jump
         if ( pl.y < y )
-            inputSet(zButton, !zButton.value);
+            inputSet(jumpButton, !jumpButton.value);
     }
 }
 // Wander if player is out of range

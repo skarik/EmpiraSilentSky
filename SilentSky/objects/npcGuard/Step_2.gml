@@ -23,7 +23,7 @@ if (aiActive)
     // Move towards player    
     if ( moState == MO_LEDGESTICK || moState == MO_WALLSTICK )
     {
-        inputSet(zButton, !zButton.value);
+        inputSet(jumpButton, !jumpButton.value);
     }
     if ( pl_distx < 180 && pl_disty < 64 )
     {
@@ -42,7 +42,7 @@ if (aiActive)
         else
         {   // Attack otherwise
             inputSet(xAxis, 0);
-            inputSet(xButton, !xButton.value);
+            inputSet(atkButton, !atkButton.value);
         }
     }
     else if ( aiAngry && pl_disty < 90 )
@@ -52,7 +52,7 @@ if (aiActive)
             inputSet(xAxis, sign(pl.x-x));
             // Try to jump
             if ( pl.y < y )
-                inputSet(zButton, !zButton.value);
+                inputSet(jumpButton, !jumpButton.value);
         }
     }
     // Wander if player is out of range

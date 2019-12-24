@@ -31,7 +31,7 @@ else
             audio_play_sound(sndUiMenuChange,30,false);
         }
         // Do button press
-        if ( xButton.pressed || zButton.pressed )
+        if ( atkButton.pressed || jumpButton.pressed )
         {
             var i = menu_selection;
             if ( i == -3 )

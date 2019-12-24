@@ -1,7 +1,7 @@
 // Grab control
 var input_xAxis		= inputGet(xAxis);
 var input_yAxis		= inputGet(yAxis);
-var input_zButton	= inputGet(zButton);
+var input_jumpButton	= inputGet(jumpButton);
 
 // We need to trace out the world ahead
 AI_CalcRaytrace(-70); // Look down at the ground
@@ -34,14 +34,14 @@ input_yAxis = 0;
 // No ground or coming wall? Jump.
 if (upcoming_no_ground || (absdistx > 8 && upcoming_wall) || (updisty > 48 && absdistx < updisty))
 {
-    input_zButton = !input_zButton;
+    input_jumpButton = !input_jumpButton;
 }
 else
 {
-    input_zButton = 0;
+    input_jumpButton = 0;
 }
 
 // Apply the output
 inputSet(xAxis, input_xAxis);
 inputSet(yAxis, input_yAxis);
-inputSet(zButton, input_zButton);
+inputSet(jumpButton, input_jumpButton);

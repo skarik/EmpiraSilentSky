@@ -19,7 +19,7 @@ else
     image_alpha = min( image_alpha + Time.dt * 2.0, 1.0 );
     
     // Do menu hiding
-    if ( sButton.pressed )
+    if ( specialButton.pressed )
     {
         killme = true;
         audio_play_sound(sndUiFail2,30,false);
@@ -32,7 +32,7 @@ else
         audio_play_sound(sndUiBlip2,30,false);
     }
     // Do purchase (if possible)
-    if ( xButton.pressed || zButton.pressed )
+    if ( atkButton.pressed || jumpButton.pressed )
     {
         var i = menu_selection;
         if (playerInventory.ammo_goo < menu_cost_goo[i] || playerInventory.ammo_glue < menu_cost_glue[i])

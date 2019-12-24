@@ -1,8 +1,9 @@
 
 controlUpdate(true);
 
-if (zButton.pressed || xButton.pressed || aButton.pressed || sButton.pressed
-	|| lButton.pressed || rButton.pressed
+if (jumpButton.pressed || atkButton.pressed || useButton.pressed
+	|| dodgeButton.pressed || specialButton.pressed
+	|| prevCharButton.pressed || nextCharButton.pressed
 	|| tabButton.pressed || escButton.pressed)
 {
     return true;

@@ -7,13 +7,13 @@ var pollInputs = argument0;
 //xAxisPrev = xAxis;
 //yAxisPrev = yAxis;
 //
-//zButtonPrev = zButton;
-//xButtonPrev = xButton;
-//aButtonPrev = aButton;
-//sButtonPrev = sButton;
+//jumpButtonPrev = jumpButton;
+//atkButtonPrev = atkButton;
+//dodgeButtonPrev = dodgeButton;
+//specialButtonPrev = specialButton;
 ////altButtonPrev = altButton;
-//lButtonPrev = lButton;
-//rButtonPrev = rButton;
+//prevCharButtonPrev = prevCharButton;
+//nextCharButtonPrev = nextCharButton;
 //tabButtonPrev = tabButton;
 //escButtonPrev = escButton;
 
@@ -26,13 +26,14 @@ if ( !pollInputs )
 	_controlStructUpdatePrevious(xAxis);
 	_controlStructUpdatePrevious(yAxis);
 	
-	_controlStructUpdatePrevious(zButton);
-	_controlStructUpdatePrevious(xButton);
-	_controlStructUpdatePrevious(aButton);
-	_controlStructUpdatePrevious(sButton);
+	_controlStructUpdatePrevious(jumpButton);
+	_controlStructUpdatePrevious(atkButton);
+	_controlStructUpdatePrevious(useButton);
+	_controlStructUpdatePrevious(dodgeButton);
+	_controlStructUpdatePrevious(specialButton);
 	
-	_controlStructUpdatePrevious(lButton);
-	_controlStructUpdatePrevious(rButton);
+	_controlStructUpdatePrevious(prevCharButton);
+	_controlStructUpdatePrevious(nextCharButton);
 	_controlStructUpdatePrevious(tabButton);
 	_controlStructUpdatePrevious(escButton);
 }
@@ -47,24 +48,25 @@ else if ( window_has_focus() )
     //        keyboard_check(vk_down) - keyboard_check(vk_up);
 	_controlStructUpdate(yAxis, -controlParseAndPoll(Settings.ctMoveUp) + controlParseAndPoll(Settings.ctMoveDown));
     
-    //zButton = keyboard_check(Settings.ctJump);
-    //xButton = keyboard_check(Settings.ctMeleeInteract);
-    //aButton = keyboard_check(Settings.ctDodge);
-    //sButton = keyboard_check(Settings.ctSpecial);
+    //jumpButton = keyboard_check(Settings.ctJump);
+    //atkButton = keyboard_check(Settings.ctMeleeInteract);
+    //dodgeButton = keyboard_check(Settings.ctDodge);
+    //specialButton = keyboard_check(Settings.ctSpecial);
 	
-	_controlStructUpdate(zButton, controlParseAndPoll(Settings.ctJump));
-	_controlStructUpdate(xButton, controlParseAndPoll(Settings.ctMelee));
-	_controlStructUpdate(aButton, controlParseAndPoll(Settings.ctDodge));
-	_controlStructUpdate(sButton, controlParseAndPoll(Settings.ctSpecial));
+	_controlStructUpdate(jumpButton, controlParseAndPoll(Settings.ctJump));
+	_controlStructUpdate(atkButton, controlParseAndPoll(Settings.ctMelee));
+	_controlStructUpdate(useButton, controlParseAndPoll(Settings.ctInteract));
+	_controlStructUpdate(dodgeButton, controlParseAndPoll(Settings.ctDodge));
+	_controlStructUpdate(specialButton, controlParseAndPoll(Settings.ctSpecial));
     
     //altButton = keyboard_check(vk_alt);
-    //lButton = keyboard_check(Settings.ctSwapPrev);
-    //rButton = keyboard_check(Settings.ctSwapNext);
+    //prevCharButton = keyboard_check(Settings.ctSwapPrev);
+    //nextCharButton = keyboard_check(Settings.ctSwapNext);
     //tabButton = keyboard_check(vk_tab);
     //escButton = keyboard_check(vk_escape);
     
-	_controlStructUpdate(lButton, controlParseAndPoll(Settings.ctSwapPrev));
-	_controlStructUpdate(rButton, controlParseAndPoll(Settings.ctSwapNext));
+	_controlStructUpdate(prevCharButton, controlParseAndPoll(Settings.ctSwapPrev));
+	_controlStructUpdate(nextCharButton, controlParseAndPoll(Settings.ctSwapNext));
 	_controlStructUpdate(tabButton, keyboard_check(vk_tab));
 	_controlStructUpdate(escButton, keyboard_check(vk_escape));
 	
@@ -77,14 +79,14 @@ else if ( window_has_focus() )
         yAxis += deadzone_bias(gamepad_axis_value(gp_index, gp_axislv)) +
                  gamepad_button_value(gp_index, gp_padd) - gamepad_button_value(gp_index, gp_padu);
         
-        zButton += gamepad_button_value(gp_index, gp_face1);
-        xButton += gamepad_button_value(gp_index, gp_face3);
-        aButton += gamepad_button_value(gp_index, gp_face2);
-        sButton += gamepad_button_value(gp_index, gp_face4);
+        jumpButton += gamepad_button_value(gp_index, gp_face1);
+        atkButton += gamepad_button_value(gp_index, gp_face3);
+        dodgeButton += gamepad_button_value(gp_index, gp_face2);
+        specialButton += gamepad_button_value(gp_index, gp_face4);
         
         //altButton += gamepad_button_value(gp_index, gp_shoulderr) + gamepad_button_value(gp_index, gp_shoulderl);
-        lButton += gamepad_button_value(gp_index, gp_shoulderl);
-        rButton += gamepad_button_value(gp_index, gp_shoulderr);
+        prevCharButton += gamepad_button_value(gp_index, gp_shoulderl);
+        nextCharButton += gamepad_button_value(gp_index, gp_shoulderr);
         tabButton += gamepad_button_value(gp_index, gp_select);
         escButton += gamepad_button_value(gp_index, gp_start);
     }*/
@@ -97,4 +99,16 @@ else if ( window_has_focus() )
 else
 {   // Reset the controls
 	_controlStructUpdate(xAxis, 0.0);
+	_controlStructUpdate(yAxis, 0.0);
+	
+	_controlStructUpdate(jumpButton, 0.0);
+	_controlStructUpdate(atkButton, 0.0);
+	_controlStructUpdate(useButton, 0.0);
+	_controlStructUpdate(dodgeButton, 0.0);
+	_controlStructUpdate(specialButton, 0.0);
+	
+	_controlStructUpdate(prevCharButton, 0.0);
+	_controlStructUpdate(nextCharButton, 0.0);
+	_controlStructUpdate(tabButton, 0.0);
+	_controlStructUpdate(escButton, 0.0);
 }

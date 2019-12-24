@@ -30,7 +30,7 @@ else
         audio_play_sound(sndUiBlip1,50,false);
     }
     // Check for inputs to cancel
-    if ( aButton.pressed || xButton.pressed )
+    if ( dodgeButton.pressed || atkButton.pressed )
     {
         // Go back to normal state
         moState = MO_NORMAL;
@@ -39,27 +39,27 @@ else
         Motion_PU_Normal();
     }
     // Check for inputs to continue
-    if ( sButton.pressed )
+    if ( specialButton.pressed )
     {   // Spell selected: we're casting now!
         spellState = SPELL_CASTING;
     }*/
     // Check for inputs to continue
-    if ( sButton.pressed )
+    if ( specialButton.pressed )
     {   // Spell selected: we're casting now!
         spellSelection = 0; // first
         spellState = SPELL_CASTING;
     }
-    else if ( xButton.pressed )
+    else if ( atkButton.pressed )
     {   // Spell selected: we're casting now!
         spellSelection = 1;
         spellState = SPELL_CASTING;
     }
-    else if ( aButton.pressed )
+    else if ( dodgeButton.pressed )
     {   // Spell selected: we're casting now!
         spellSelection = 3;
         spellState = SPELL_CASTING;
     }
-    else if ( zButton.pressed )
+    else if ( jumpButton.pressed )
     {   // Spell selected: we're casting now!
         spellSelection = 2;
         spellState = SPELL_CASTING;

@@ -4,7 +4,7 @@ controlUpdate(1);
 gain = min(1.0, gain + Time.dt * 0.1);
 
 // If anything is pressed...
-if (true)// || zButton || xButton || aButton || sButton || lButton || rButton || tabButton || escButton)
+if (true)// || jumpButton || atkButton || dodgeButton || specialButton || prevCharButton || nextCharButton || tabButton || escButton)
 {
     //if (exists(floaterLogo))
     //    floaterLogo.fadeout = true;

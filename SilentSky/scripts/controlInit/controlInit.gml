@@ -8,17 +8,18 @@
 
 #macro kControlChoice_Margin 0.33
 
-xAxis = _controlStructCreate();
-yAxis = _controlStructCreate();
+xAxis	= _controlStructCreate();
+yAxis	= _controlStructCreate();
 
-zButton = _controlStructCreate();
-xButton = _controlStructCreate();
-aButton = _controlStructCreate();
-sButton = _controlStructCreate();
-lButton = _controlStructCreate();
-rButton = _controlStructCreate();
-tabButton = _controlStructCreate();
-escButton = _controlStructCreate();
+jumpButton	= _controlStructCreate();
+atkButton	= _controlStructCreate();
+dodgeButton	= _controlStructCreate();
+useButton	= _controlStructCreate();
+specialButton	= _controlStructCreate();
+prevCharButton	= _controlStructCreate();
+nextCharButton	= _controlStructCreate();
+tabButton	= _controlStructCreate();
+escButton	= _controlStructCreate();
 
 lastControlType = kControlKB;
 lastGamepadName = gamepad_get_description(0);

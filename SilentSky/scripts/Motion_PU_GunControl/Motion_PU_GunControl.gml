@@ -1,7 +1,7 @@
 // Update gun timer
 gunTimer += Time.dt;
 
-if ( sButton.pressed )
+if ( specialButton.pressed )
 {
     // Show gun
     if (exists(gun)) gun.isHeld = true;
@@ -23,7 +23,7 @@ if ( sButton.pressed )
     }
 }
 // Gun fire input
-else if ( aButton.pressed )
+else if ( dodgeButton.pressed )
 {
     // Show gun
     if (exists(gun)) gun.isHeld = true;

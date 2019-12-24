@@ -31,7 +31,7 @@ if ( incanting )
     spellCastTimer = min( 1.01, spellCastTimer );
     
     // Check for inputs to cancel
-    if (aButton.pressed || xButton.pressed)
+    if (dodgeButton.pressed || atkButton.pressed)
     {
         // Go back to normal state
         moState = MO_NORMAL;
@@ -58,9 +58,9 @@ else
     spellCastTimer += Time.dt;
     
     // Check for inputs to release spell
-    if ( aButton.pressed ||
-         xButton.pressed ||
-         sButton.pressed ||
+    if ( dodgeButton.pressed ||
+         atkButton.pressed ||
+         specialButton.pressed ||
          spellCastTimer > 1.09 )
     {
         // Go to followthru special state for now in order to end this

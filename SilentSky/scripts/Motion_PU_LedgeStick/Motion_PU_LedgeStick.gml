@@ -13,7 +13,7 @@ else
 }   
 
 // Jumping player input
-if ( zButton.pressed )
+if ( jumpButton.pressed )
 {
     // If the controls say drop down, then drop down
     if ( yAxis.value > 0.3 )

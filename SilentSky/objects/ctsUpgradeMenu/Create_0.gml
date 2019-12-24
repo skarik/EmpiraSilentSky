@@ -8,7 +8,7 @@ controlUpdate(1);
 objPlayerMain.moPlayer = false;
 objPlayerMain.xAxis.value = 0;
 objPlayerMain.yAxis.value = 0;
-objPlayerMain.xButton.value = 0;
+objPlayerMain.atkButton.value = 0;
 
 killme = false;
 image_alpha = 0.0;

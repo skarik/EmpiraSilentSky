@@ -1,3 +1,5 @@
+// TODO: to properly fix the shader buffer issues, render the UI to a side buffer ALA freyr
+
 var ddx = uiPosX;
 var ddy = uiPosY;
 var current_character = 0;

@@ -75,64 +75,74 @@ else if ( isOnGround )
     }
 }
 // Jumping player input
-if ( !isGlued && inventory.cloak && isOnGround && zButton.pressed )
+if ( !isGlued && inventory.cloak && isOnGround && jumpButton.pressed )
 {
     if ( jumpTimer <= 0.0 )
     {
         jumpTimer = 1.0;
     }
 }
-// Melee attack input
-else if ( !isGlued && inventory.sword && xButton.pressed )
+// Melee and use attack input
+else if ( !isGlued && inventory.sword )
 {
+	// Using buttons:
     var pressed = false;
-    var button = instance_nearest(x,y,buttonBase);
-    if ( moPlayer && place_meeting(x,y,button) )
-    {
-        // Do a range check around the player
-        var enemy = collision_circle(x,y,72,enemyBase,false,true);
-        if ( enemy == null || !Combat_CanHit(id,enemy) )
-        {   // No enemy? Push the button
-			var current_user = id;
-            with (button)
-			{
-				user = current_user;
-				event_user(1);
-			}
-            pressed = true;
-        }
-    }
-    // Only attack if we have the stamina to attack with
-    if ( !pressed )
-    {
-        if ( chStamina > moAtkStamina0 )
-        {   // If have stamina, attack
-            atkTimer = 0;
-            atkQueued = false;
-            if ( sign(yAxis.value) == 1 )
-                moState = MO_MELEEGND0;
-            else if ( sign(xAxis.value) == 0 )
-                moState = MO_MELEESTAND0;
-            else
-                moState = MO_MELEE0;
-            // Update facing direction if button pressed
-            if ( sign(xAxis.value) != 0 )
-            {
-                facingDir = sign(xAxis.value);
-            }
-        }
-        else
-        {   // Else, do nothing but instantly reset stamina timer
-            staminaTimer = 1.0;
-        }
-    }
+	if ( useButton.pressed )
+	{
+	    var button = instance_nearest(x,y,buttonBase);
+	    if ( moPlayer && place_meeting(x,y,button) )
+	    {
+	        // Do a range check around the player
+	        var enemy = collision_circle(x,y,72,enemyBase,false,true);
+	        if ( enemy == null || !Combat_CanHit(id,enemy) )
+	        {   // No enemy? Push the button
+				var current_user = id;
+	            with (button)
+				{
+					user = current_user;
+					event_user(1);
+				}
+	            pressed = true;
+	        }
+	    }
+	}
+    
+	// Using melee:
+	if ( atkButton.pressed )
+	{
+	    if ( !pressed )
+	    {
+			// Only attack if we have the stamina to attack with
+	        if ( chStamina > moAtkStamina0 )
+	        {   // If have stamina, attack
+	            atkTimer = 0;
+	            atkQueued = false;
+	            if ( sign(yAxis.value) == 1 )
+	                moState = MO_MELEEGND0;
+	            else if ( sign(xAxis.value) == 0 )
+	                moState = MO_MELEESTAND0;
+	            else
+	                moState = MO_MELEE0;
+	            // Update facing direction if button pressed
+	            if ( sign(xAxis.value) != 0 )
+	            {
+	                facingDir = sign(xAxis.value);
+	            }
+	        }
+	        else
+	        {   // Else, do nothing but instantly reset stamina timer
+	            staminaTimer = 1.0;
+	        }
+	    }
+	}
+	
 }
 // Gun input
 /*else if ( !isGlued && inventory.gun )
 {
     Motion_PU_GunControl();
 }*/
-else if ( aButton.pressed )
+else if ( dodgeButton.pressed )
 {
     if ( isOnGround && dashTimer > moDashCooldown )
     {
@@ -142,7 +152,7 @@ else if ( aButton.pressed )
         dashTimer = 0.0;
     }
 }
-else if ( sButton.pressed )
+else if ( specialButton.pressed )
 {
     // Do the special now
     if ( chMana > moSpecialMana )
@@ -155,7 +165,7 @@ else if ( sButton.pressed )
         spellState = SPELL_INBOOK;
     }
 }
-else if (moPlayer && lButton.pressed )
+else if (moPlayer && prevCharButton.pressed )
 {
     var playerselection;
     playerselection[0] = objPlayerPaladin;
@@ -181,8 +191,8 @@ else if (moPlayer && lButton.pressed )
                 // Stop swapping next frame
 				repeat (2)
 				{
-					inputSet(lButton, 1.0);
-					inputSet(rButton, 1.0);
+					inputSet(prevCharButton, 1.0);
+					inputSet(nextCharButton, 1.0);
 				}
                 // Disable player input
                 moPlayer = false;
@@ -194,7 +204,7 @@ else if (moPlayer && lButton.pressed )
         }
     }
 }
-else if (moPlayer && rButton.pressed )
+else if (moPlayer && nextCharButton.pressed )
 {
     var playerselection;  // Reverse order
     playerselection[2] = objPlayerPaladin;
@@ -219,8 +229,8 @@ else if (moPlayer && rButton.pressed )
                 controlInit();
                 repeat (2)
 				{
-					inputSet(lButton, 1.0);
-					inputSet(rButton, 1.0);
+					inputSet(prevCharButton, 1.0);
+					inputSet(nextCharButton, 1.0);
 				}
                 // Disable player input
                 moPlayer = false;

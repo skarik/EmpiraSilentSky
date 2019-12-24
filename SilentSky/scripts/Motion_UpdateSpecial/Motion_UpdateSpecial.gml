@@ -78,7 +78,7 @@ gunTimer += Time.dt;
 /*if ( chStamina > 0 && atkTimer > moAtkKey0 )
 {
     // Melee attack input
-    if ( xButton.pressed )
+    if ( atkButton.pressed )
     {
         atkQueued = true;
     }

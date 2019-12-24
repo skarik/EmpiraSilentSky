@@ -1,8 +1,8 @@
 // Grab control
 var input_xAxis		= inputGet(xAxis);
 var input_yAxis		= inputGet(yAxis);
-var input_xButton	= inputGet(xButton);
-var input_zButton	= inputGet(zButton);
+var input_atkButton	= inputGet(atkButton);
+var input_jumpButton	= inputGet(jumpButton);
 
 // Get player
 var target = GetActivePlayer();
@@ -64,11 +64,11 @@ if (exists(aiFollowNode) && aiFollowStuckFixState == 0 && !path_super_clear)
         // Wait for the wall or ground before jumping
         if ((!node_is_drop && upcoming_no_ground) || upcoming_wall || (!node_is_drop && close_to_node_x))
         {
-            input_zButton = !input_zButton;
+            input_jumpButton = !input_jumpButton;
         }
         else
         {
-            input_zButton = 0;
+            input_jumpButton = 0;
         }
     }
     else
@@ -76,11 +76,11 @@ if (exists(aiFollowNode) && aiFollowStuckFixState == 0 && !path_super_clear)
         // No ground or coming wall? Jump.
         if ((!node_is_drop && upcoming_no_ground) || upcoming_wall || (node_is_jump && close_to_node_x))
         {
-            input_zButton = !input_zButton;
+            input_jumpButton = !input_jumpButton;
         }
         else
         {
-            input_zButton = 0;
+            input_jumpButton = 0;
         }
     }
     
@@ -95,7 +95,7 @@ if (exists(aiFollowNode) && aiFollowStuckFixState == 0 && !path_super_clear)
         }
         input_xAxis = 0;
         input_yAxis = 0;
-        input_zButton = 0;
+        input_jumpButton = 0;
     }
     
     // Update unstuck status
@@ -163,7 +163,7 @@ else
             input_xAxis = +1;
         else if ( aiFollowStuckFixState == 2 )
             input_xAxis = -1;
-        input_zButton = 0;
+        input_jumpButton = 0;
         
         aiFollowWaiting = false;
         
@@ -185,7 +185,7 @@ else
         }
         input_xAxis = 0;
         input_yAxis = 0;
-        input_zButton = 0;
+        input_jumpButton = 0;
     }
     
     // Not stuck? Doing normal following?
@@ -211,11 +211,11 @@ else
         // No ground or coming wall? Jump.
         if (upcoming_no_ground || (absdistx > 8 && upcoming_wall) || (updisty > 48 && absdistx < updisty))
         {
-            input_zButton = !input_zButton;
+            input_jumpButton = !input_jumpButton;
         }
         else
         {
-            input_zButton = 0;
+            input_jumpButton = 0;
         }
     }
 }
@@ -234,5 +234,5 @@ else
 // Apply the output
 inputSet(xAxis, input_xAxis);
 inputSet(yAxis, input_yAxis);
-inputSet(xButton, input_xButton);
-inputSet(zButton, input_zButton);
+inputSet(atkButton, input_atkButton);
+inputSet(jumpButton, input_jumpButton);

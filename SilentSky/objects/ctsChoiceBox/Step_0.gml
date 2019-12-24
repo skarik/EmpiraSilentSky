@@ -39,7 +39,7 @@ if ( image_alpha >= 1.0 )
     display_choice = clamp(display_choice, 0, input_choice_count-1);
     
     // Do confirm selection
-    if ( xButton.pressed )
+    if ( atkButton.pressed )
     {
         if (!input_fadeout)
         {

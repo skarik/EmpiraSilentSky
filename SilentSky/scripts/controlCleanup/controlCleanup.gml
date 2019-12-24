@@ -1,12 +1,13 @@
 delete(xAxis);
 delete(yAxis);
 
-delete(zButton);
-delete(xButton);
-delete(aButton);
-delete(sButton);
+delete(jumpButton);
+delete(atkButton);
+delete(useButton);
+delete(dodgeButton);
+delete(specialButton);
 
-delete(lButton);
-delete(rButton);
+delete(prevCharButton);
+delete(nextCharButton);
 delete(tabButton);
 delete(escButton);

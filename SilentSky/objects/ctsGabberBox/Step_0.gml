@@ -64,7 +64,7 @@ else
 if ( done_alpha > 0.5 && l_can_end )
 {
     controlUpdate(true);
-    if ( xButton.pressed )
+    if ( atkButton.pressed || useButton.pressed )
     {
         if (!input_fadeout)
         {
