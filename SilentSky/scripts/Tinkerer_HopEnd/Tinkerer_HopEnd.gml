@@ -5,12 +5,12 @@ if ( chMana > 15 )
     var source = id;
     with (enemyTest)
     {
-        if (Combat_CanHit(source, id))
+        if (damageCanHit(source, id))
         {
             if (point_distance(x,y, source.x,source.y) < 128)
             {
                 // Deal damage
-                Combat_Damage(source, 7, true,true);
+                damageTarget(source, 7, true,true);
                 // Shock them
                 fiShockTimer = 0;
                 isShocked = true;

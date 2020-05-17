@@ -24,7 +24,7 @@ if ( atkTimer >= moAtkKey0 && atkTimerPrev < moAtkKey0 )
     chStamina = max(0, chStamina - moAtkStamina0);
 
     // Perform attack now
-    Combat_Hitbox( id,
+    damageHitbox( id,
         x + 16 * facingDir, y - 56,
         x + 64 * facingDir, y - 8,
         moAtkDamage0, // Damage

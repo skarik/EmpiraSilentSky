@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "00d3f0d3-fd12-49a0-85c1-3a834b3295dc",
+            "Value": {
+                "id": "47a4b8a7-7cfb-4a9f-94b9-572223348a97",
+                "resourcePath": "scripts\\damageTypes\\damageTypes.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "01586eb7-90ad-4d2e-b278-51104beb67a1",
             "Value": {
                 "id": "0b4c4524-b80a-4015-add9-351041a372d9",
@@ -1394,7 +1402,7 @@
             "Key": "39717001-e6f2-4d95-9408-95053f20156e",
             "Value": {
                 "id": "0f6cf08a-1d04-4952-9736-dce89cc466cd",
-                "resourcePath": "scripts\\Combat_Damage\\Combat_Damage.yy",
+                "resourcePath": "scripts\\damageTarget\\damageTarget.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1890,7 +1898,7 @@
             "Key": "49d25078-f954-4659-8105-d627f49d886a",
             "Value": {
                 "id": "6e7ae8d4-410d-44f6-9e9f-3f5d15a6b39b",
-                "resourcePath": "scripts\\Combat_Raycast\\Combat_Raycast.yy",
+                "resourcePath": "scripts\\damageRaycast\\damageRaycast.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2866,7 +2874,7 @@
             "Key": "6d5e9ab8-d8b0-4574-bca8-534475aada1b",
             "Value": {
                 "id": "baa28771-ed40-466f-89d5-087626d14ff9",
-                "resourcePath": "scripts\\Combat_Hitbox\\Combat_Hitbox.yy",
+                "resourcePath": "scripts\\damageHitbox\\damageHitbox.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3610,7 +3618,7 @@
             "Key": "8722a296-5cea-4172-909e-027092674036",
             "Value": {
                 "id": "d9639f91-f3fe-4c4f-92f5-edf4bed56351",
-                "resourcePath": "scripts\\Combat_CanHit\\Combat_CanHit.yy",
+                "resourcePath": "scripts\\damageCanHit\\damageCanHit.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4082,7 +4090,7 @@
             "Key": "9a2552b4-2fbe-42fb-864f-ec5dd15caf8c",
             "Value": {
                 "id": "4c7e4b62-2eec-4c0f-b3cc-50e1cbbf9cd8",
-                "resourcePath": "scripts\\Combat_Falldamage\\Combat_Falldamage.yy",
+                "resourcePath": "scripts\\damageTargetFalldamage\\damageTargetFalldamage.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -5663,6 +5671,14 @@
             }
         },
         {
+            "Key": "d7b224e7-26b7-49fa-9dd6-a320db31e49a",
+            "Value": {
+                "id": "6037b201-c18f-4226-9bb2-8f33d5d2cac2",
+                "resourcePath": "views\\d7b224e7-26b7-49fa-9dd6-a320db31e49a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "d7fb4108-5260-4f58-8aa6-946cc6db188f",
             "Value": {
                 "id": "5b8ea2db-210b-43c9-baf4-1651dade822e",
@@ -6442,7 +6458,7 @@
             "Key": "f0ba3896-8610-481c-be2f-3cdf500ceada",
             "Value": {
                 "id": "9d0f3017-57ad-4811-a88b-5f4cfc3d8a1c",
-                "resourcePath": "scripts\\Combat_CalculateDamage\\Combat_CalculateDamage.yy",
+                "resourcePath": "scripts\\damageApplyModifiers\\damageApplyModifiers.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -6923,7 +6939,6 @@
         "5e61e283-4b0d-4010-9868-79b7d0d880fe",
         "4c6688b2-3516-4745-974f-2bf8567384dc",
         "27d7c0fe-9e4f-4bc3-a6e9-a3ae6f4a2e85",
-        "6c9dd763-c4cc-440d-b7bb-975e28d8a230",
         "bc41827f-b22e-4ebc-8b7f-09a1187230e3",
         "fb00b74b-c725-4e51-b4a2-bcb6734f4a04",
         "e873fa98-5360-4f27-a448-b730ace7f310",
@@ -6948,11 +6963,11 @@
         "0d4c68bc-650f-4975-bad8-f114f2af0693",
         "1c31d020-e3c3-448c-9cbc-557f3eeef5dd",
         "d312e13d-5b83-4aa6-b94a-dfc096a7924f",
+        "45edc3f3-6e68-4d80-a778-5192d285a583",
         "490008f6-bca4-4f13-8dcc-fefec2251c3c",
         "425ee44d-474b-4d30-a221-73d84cb59a40",
         "217b320b-d719-4eea-8d62-19c3f0ff2989",
         "6028f3db-1a53-44aa-a326-0689d34b2c7c",
-        "45edc3f3-6e68-4d80-a778-5192d285a583",
         "8d09566f-eeb3-4a4f-baca-d5b5b755e6a0",
         "a5486110-7f5f-40bf-94fc-54c90ff0b718",
         "5f4625de-ab97-4b06-bbda-390f2e7ed09f",
@@ -7005,6 +7020,7 @@
         "d531a5af-3716-43ff-bb14-d93973961922",
         "42ed31c1-5ad2-4434-9571-37293f46a08c",
         "abd15f04-2ce7-4c24-8a4e-535cfcd43386",
+        "6c9dd763-c4cc-440d-b7bb-975e28d8a230",
         "53b3f2ad-7609-4c13-b683-388f55853ee2",
         "2e3b0ec3-1575-4589-a7df-a338708e15ac",
         "1337b571-c3dc-4ca7-ac09-5bb7781fa8a6",
@@ -7079,12 +7095,13 @@
         "09c869d7-e17a-4c0c-b7d9-dab6cf6140bb",
         "42253bdb-0b15-442a-b6ff-74f4fd32a1f2",
         "dfe3acb8-eabc-47b9-9e1b-a1d1abd67741",
+        "00d3f0d3-fd12-49a0-85c1-3a834b3295dc",
         "6d5e9ab8-d8b0-4574-bca8-534475aada1b",
         "49d25078-f954-4659-8105-d627f49d886a",
         "9a2552b4-2fbe-42fb-864f-ec5dd15caf8c",
-        "8722a296-5cea-4172-909e-027092674036",
         "39717001-e6f2-4d95-9408-95053f20156e",
         "f0ba3896-8610-481c-be2f-3cdf500ceada",
+        "8722a296-5cea-4172-909e-027092674036",
         "cc080771-bd54-4192-a165-bf34ec02d54c",
         "03fd44ec-f736-4a80-9688-b382a69f3b85",
         "d40d5a5d-4e79-4521-89f9-edf2cc14279d",

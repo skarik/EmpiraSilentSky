@@ -1,4 +1,4 @@
-/// @description fmusic_play_introtrack(music_instance)
+/// @description fmusic_is_during_intro(music_instance)
 /// @param music_instance
 
 var music_instance = argument0;

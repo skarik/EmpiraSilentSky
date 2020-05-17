@@ -94,7 +94,7 @@ else if ( !isGlued && inventory.sword )
 	    {
 	        // Do a range check around the player
 	        var enemy = collision_circle(x,y,72,enemyBase,false,true);
-	        if ( enemy == null || !Combat_CanHit(id,enemy) )
+	        if ( enemy == null || !damageCanHit(id,enemy) )
 	        {   // No enemy? Push the button
 				var current_user = id;
 	            with (button)

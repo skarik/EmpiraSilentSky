@@ -67,7 +67,7 @@ with (pl)
     {
         // Do a range check around the player
         var enemy = collision_circle(x,y,72,enemyBase,false,true);
-        if ( enemy == null || !Combat_CanHit(id,enemy) )
+        if ( enemy == null || !damageCanHit(id,enemy) )
         {   // No enemy? Select the button
             pressed = true;
         }

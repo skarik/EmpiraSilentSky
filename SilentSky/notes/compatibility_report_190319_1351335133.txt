@@ -58,8 +58,8 @@ Converted description /// @description  instance_nth_nearest(x,y,obj,n)/// @par
 /// @param obj
 /// @param n
 
-Converting GML script: ${project_dir}\scripts\Combat_Hitbox\Combat_Hitbox.gml
-Converted description /// @description  Combat_Hitbox(source,x1,y1,x2,y2,damage,type)/// @param source
+Converting GML script: ${project_dir}\scripts\damageHitbox\damageHitbox.gml
+Converted description /// @description  damageHitbox(source,x1,y1,x2,y2,damage,type)/// @param source
 /// @param x1
 /// @param y1
 /// @param x2
@@ -67,8 +67,8 @@ Converted description /// @description  Combat_Hitbox(source,x1,y1,x2,y2,damage,
 /// @param damage
 /// @param type
 
-Converting GML script: ${project_dir}\scripts\Combat_Raycast\Combat_Raycast.gml
-Converted description /// @description  Combat_Raycast(source,x1,y1,dir,dist,damage,type)/// @param source
+Converting GML script: ${project_dir}\scripts\damageRaycast\damageRaycast.gml
+Converted description /// @description  damageRaycast(source,x1,y1,dir,dist,damage,type)/// @param source
 /// @param x1
 /// @param y1
 /// @param dir
@@ -76,16 +76,16 @@ Converted description /// @description  Combat_Raycast(source,x1,y1,dir,dist,dam
 /// @param damage
 /// @param type
 
-Converting GML script: ${project_dir}\scripts\Combat_Falldamage\Combat_Falldamage.gml
-Converted description /// @description  Combat_Falldamage(target,damage)/// @param target
+Converting GML script: ${project_dir}\scripts\damageTargetFalldamage\damageTargetFalldamage.gml
+Converted description /// @description  damageTargetFalldamage(target,damage)/// @param target
 /// @param damage
 
-Converting GML script: ${project_dir}\scripts\Combat_CanHit\Combat_CanHit.gml
-Converted description /// @description Combat_CanHit(source,target)/// @param source
+Converting GML script: ${project_dir}\scripts\damageCanHit\damageCanHit.gml
+Converted description /// @description damageCanHit(source,target)/// @param source
 /// @param target
 
-Converting GML script: ${project_dir}\scripts\Combat_Damage\Combat_Damage.gml
-Converted description /// @description Combat_Damage(source,damage,bool hitparticles,bool hitfx)/// @param source
+Converting GML script: ${project_dir}\scripts\damageTarget\damageTarget.gml
+Converted description /// @description damageTarget(source,damage,bool hitparticles,bool hitfx)/// @param source
 /// @param damage
 /// @param bool hitparticles
 /// @param bool hitfx

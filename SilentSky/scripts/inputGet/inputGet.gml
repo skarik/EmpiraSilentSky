@@ -1,4 +1,4 @@
-/// @func inputStructGet(control)
+/// @func inputGet(control)
 /// @desc Returns the current value of the control structure
 /// @param control {object}
 var control = argument0;

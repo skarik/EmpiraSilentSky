@@ -21,13 +21,13 @@ if (y1 > y2)
 }
 
 var enemy = collision_rectangle(x1, y1, x2, y2, enemyBase, false, true);
-if (enemy != null && Combat_CanHit(id, enemy))
+if (enemy != null && damageCanHit(id, enemy))
 {
     var source = id;
     with (enemy)
     {
-        //Combat_Damage(source, 15, true, true);
-		Combat_Damage(source, 45, true, true);
+        //damageTarget(source, 15, true, true);
+		damageTarget(source, 45, true, true);
         
         if (source.isShocked)
         {   // Shock the target if the bow is shocked

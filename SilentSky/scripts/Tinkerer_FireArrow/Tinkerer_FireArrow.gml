@@ -37,7 +37,7 @@ if ( atkTimer >= moAtkKey0 && atkTimerPrev < moAtkKey0 )
         chMana -= 15;
     }
         
-    /*Combat_Hitbox( id,
+    /*damageHitbox( id,
         x + 16 * facingDir, y - 56,
         x + 64 * facingDir, y - 8,
         moAtkDamage0, // Damage

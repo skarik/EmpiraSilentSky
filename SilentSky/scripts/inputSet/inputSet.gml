@@ -1,4 +1,4 @@
-/// @func inputStructSet(control, newValue)
+/// @func inputSet(control, newValue)
 /// @desc Sets the value of the given control structure.
 /// @param control {object}
 /// @param newValue {real}

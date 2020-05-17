@@ -43,7 +43,7 @@ while (true)
     if (!exists(inst)) break;
     
     // If can't hit the target, or target is dead, skip
-    if (source == inst || !Combat_CanHit(source, inst) || inst.chHealth <= 0)
+    if (source == inst || !damageCanHit(source, inst) || inst.chHealth <= 0)
     {
         nearest_index += 1;
         continue;

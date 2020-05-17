@@ -36,7 +36,7 @@ else if ( dodgeButton.pressed )
             gunTimer = 0.0; // Enable cooldown
         
             // Air shot
-            Combat_Raycast( this,
+            damageRaycast( this,
                 x,y-40,
                 shoot_direction, 100,
                 moGunDamage, // 6 Damage per shot

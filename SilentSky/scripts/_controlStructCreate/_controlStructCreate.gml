@@ -1,4 +1,4 @@
-/// @func _controlStructUpdate(DO NOT CALL)
+/// @func _controlStructCreate(DO NOT CALL)
 /// @desc This function should not be called directly.
 var control = new(_dummy);
 control.value = 0.0;

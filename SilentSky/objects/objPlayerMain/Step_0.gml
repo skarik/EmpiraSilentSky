@@ -17,7 +17,7 @@ if ( moDead )
     var source = id;
     with (enemyBase)
     {
-        if ( Combat_CanHit(source, id) )
+        if ( damageCanHit(source, id) )
         {
             enemies = true;
         }

@@ -1,0 +1,4 @@
+#macro DAMAGE_MELEE 1
+#macro DAMAGE_FIRE 2
+#macro DAMAGE_ACID 4
+#macro DAMAGE_PIERCING 8

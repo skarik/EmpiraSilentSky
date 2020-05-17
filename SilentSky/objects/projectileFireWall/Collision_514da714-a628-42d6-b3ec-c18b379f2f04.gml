@@ -4,7 +4,7 @@ var enemy = other.id;/*collision_rectangle(
     x - sprite_xoffset, y - sprite_yoffset, 
     x - sprite_xoffset + sprite_width, y - sprite_yoffset + sprite_width,
     enemyBase,false,true );*/
-if (exists(enemy) && Combat_CanHit(id,enemy))
+if (exists(enemy) && damageCanHit(id,enemy))
 {
     // Is it in the burn list?
     var hit = false;
@@ -24,7 +24,7 @@ if (exists(enemy) && Combat_CanHit(id,enemy))
         var source = id;
         with (enemy)
         {   // Burn them
-            Combat_Damage(source, 16*source.life+5, true, true);
+            damageTarget(source, 16*source.life+5, true, true);
          
             // Burn the target
             fiBurnTimer = 0;

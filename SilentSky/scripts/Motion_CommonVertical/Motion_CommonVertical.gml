@@ -25,7 +25,7 @@ if ( place_meeting(x, y + yspeed * Time.dt, bloxBase ) )
         // Perform fall damage
         if ( yspeed > 350 )
         {  
-            Combat_Falldamage(this, (yspeed-405) / 12 );
+            damageTargetFalldamage(this, (yspeed-405) / 12 );
         }
         // Zero out the speed
         yspeed = 0;

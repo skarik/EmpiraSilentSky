@@ -9,12 +9,12 @@ if ( chMana > 10 )
     var source = id;
     with (enemyBase)
     {
-        if (Combat_CanHit(source, id))
+        if (damageCanHit(source, id))
         {
             if (point_distance(x,y, source.x,source.y) < 160)
             {
                 // Deal damage
-                //Combat_Damage(source, 7, true,true);
+                //damageTarget(source, 7, true,true);
                 var dir = point_direction(source.x,source.y, x,y);
                 xspeed += lengthdir_x(250, dir);
                 yspeed += lengthdir_y(250, dir) - 100;

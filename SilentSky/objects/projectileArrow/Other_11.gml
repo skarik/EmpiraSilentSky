@@ -1,12 +1,12 @@
 var enemy = collision_circle(x,y,4, enemyBase,false,true);
-if (enemy != null && Combat_CanHit(id,enemy))
+if (enemy != null && damageCanHit(id,enemy))
 {
     //enemy.isGlued = true;
     //enemy.guTimer = 0; // Refresh the burn timer
     var source = id;
     with (enemy)
     {
-        Combat_Damage(source, 15, true, true);
+        damageTarget(source, 15, true, true);
         
         if (source.isShocked)
         {   // Shock the target if the bow is shocked

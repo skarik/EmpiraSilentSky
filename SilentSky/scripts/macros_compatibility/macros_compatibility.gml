@@ -21,10 +21,6 @@
 #macro BLOOD_SPARKS 16
 #macro BLOOD_DUST 32
 #macro BLOOD_TIMBER 64
-#macro DAMAGE_MELEE 1
-#macro DAMAGE_FIRE 2
-#macro DAMAGE_ACID 4
-#macro DAMAGE_PIERCING 8
 #macro GUN_NONE 0
 #macro GUN_GOO 1
 #macro GUN_GLUE 2

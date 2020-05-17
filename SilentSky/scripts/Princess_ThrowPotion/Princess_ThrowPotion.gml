@@ -33,7 +33,7 @@ if ( atkTimer >= moAtkKey0 && atkTimerPrev < moAtkKey0 )
         potion.xspeed = sign(facingDir) * 50 + xspeed * 0.9;
         potion.yspeed = -70;
     
-    /*Combat_Hitbox( id,
+    /*damageHitbox( id,
         x + 16 * facingDir, y - 56,
         x + 64 * facingDir, y - 8,
         moAtkDamage0, // Damage
