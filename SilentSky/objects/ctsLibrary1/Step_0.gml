@@ -6,7 +6,7 @@ if (!cutsceneUpdate())
         /*cutsceneWaitEnd();
         
         target_pitch = 0.75;*/
-        if (!exists(ctsLibraryBookcase)) new(ctsLibraryBookcase);
+        if (!iexists(ctsLibraryBookcase)) inew(ctsLibraryBookcase);
         if (ctsLibraryBookcase.bk_selected)
         {
             cutsceneWaitEnd();
@@ -19,9 +19,9 @@ if (!cutsceneUpdate())
     }
     if (cutsceneGetWaitId() == "storybegin")
     {
-        if (!exists(ctsFadeOutLongBlack))
+        if (!iexists(ctsFadeOutLongBlack))
         {
-            new(ctsFadeOutLongBlack);
+            inew(ctsFadeOutLongBlack);
             audio_sound_gain(music, 0.0, 1000);
             target_pitch = 0.25;
         }

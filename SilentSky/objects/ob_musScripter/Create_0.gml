@@ -2,7 +2,7 @@
 
 if (instance_number(object_index) > 1)
 {
-	delete(this);
+	idelete(this);
 	exit;
 }
 

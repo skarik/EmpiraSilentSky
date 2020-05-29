@@ -10,7 +10,7 @@ with (aiPathNode)
         failtoggle = ++failtoggle % 4;
     
         // Not exists?
-        if ( !exists(id) || !exists(inst) )
+        if ( !iexists(id) || !iexists(inst) )
             continue;
         // Not same?
         if ( id == inst )

@@ -11,11 +11,11 @@ if ( aiFollowNodeRefresh > 0 )
 }
 
 // Select a new node if the current one doesn't exist
-if (!exists(aiFollowNode))
+if (!iexists(aiFollowNode))
 {
     // Find nearest node that's valid
     aiFollowNode = AI_Pathfind_NearestNode(x,y);
-    if (!exists(aiFollowNode)) exit;
+    if (!iexists(aiFollowNode)) exit;
     // Is it closer than the target?
     if (point_distance(x,y-16,aiFollowNode.x,aiFollowNode.y) > point_distance(x,y,aiFollowTargetX,aiFollowTargetY))
     {
@@ -26,7 +26,7 @@ if (!exists(aiFollowNode))
     }
 }
 
-if (exists(aiFollowNode))
+if (iexists(aiFollowNode))
 {
     // Follow node exists. We should thus perform pathfinding whenever we get close to the current node
     var sqrdist = sqr(x - aiFollowNode.x) + sqr((y - aiFollowNode.y) * 0.25);

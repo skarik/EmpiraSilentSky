@@ -42,6 +42,6 @@ if ( place_meeting(x,y,enemyBase) )
 // Destroy self if out of level
 if ( abs(x-xstart) > 2000 || abs(y-ystart) > 2000 )
 {
-    delete(this);
+    idelete(this);
 }
 

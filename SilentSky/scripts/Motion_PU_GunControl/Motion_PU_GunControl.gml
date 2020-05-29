@@ -4,7 +4,7 @@ gunTimer += Time.dt;
 if ( specialButton.pressed )
 {
     // Show gun
-    if (exists(gun)) gun.isHeld = true;
+    if (iexists(gun)) gun.isHeld = true;
         
     if ( plCurrentGun != GUN_NONE )
     {
@@ -26,7 +26,7 @@ if ( specialButton.pressed )
 else if ( dodgeButton.pressed )
 {
     // Show gun
-    if (exists(gun)) gun.isHeld = true;
+    if (iexists(gun)) gun.isHeld = true;
 
     var shoot_direction = 90 - (90 + 45*yAxis.value)*facingDir + random_range(-2,2);
     if ( plCurrentGun == GUN_AIR )

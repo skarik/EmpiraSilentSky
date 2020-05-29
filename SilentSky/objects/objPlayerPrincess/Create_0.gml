@@ -73,10 +73,10 @@ mgBookDesc[3] = "Cooking Gone Wrong! Enchants all potions to explode into danger
 
 plCurrentPotion = POTION_NONE;
 
-if (!exists(playerHudInfo)) new(playerHudInfo);
-if (!exists(playerHudSpellbook)) new(playerHudSpellbook);
-if (!exists(playerHudBgInfo)) new(playerHudBgInfo);
-if (!exists(playerHudBgInfoHp)) new(playerHudBgInfoHp);
+if (!iexists(playerHudInfo)) inew(playerHudInfo);
+if (!iexists(playerHudSpellbook)) inew(playerHudSpellbook);
+if (!iexists(playerHudBgInfo)) inew(playerHudBgInfo);
+if (!iexists(playerHudBgInfoHp)) inew(playerHudBgInfoHp);
 
 /* */
 /*  */

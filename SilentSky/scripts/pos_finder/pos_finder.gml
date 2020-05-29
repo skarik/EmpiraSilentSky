@@ -55,7 +55,7 @@
     
     if (Debug.on)
     {
-        var dbg = new(debugLineF);
+        var dbg = inew(debugLineF);
             dbg.x1 = ox; dbg.x2 = dx;
             dbg.y1 = oy; dbg.y2 = dy;
     }

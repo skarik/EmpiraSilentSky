@@ -8,7 +8,7 @@ with (moverBase)
     for (var i = 0; i < instance_number(platformStopPoint); ++i)
     {
         var inst = instance_find(platformStopPoint, i);
-        if (exists(inst) && inst.x == x)
+        if (iexists(inst) && inst.x == x)
         {
             stop_point[stop_point_count] = inst;
             stop_point_count += 1;

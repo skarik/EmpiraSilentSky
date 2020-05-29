@@ -1,9 +1,9 @@
-if ( !exists(menuDebug) )
+if ( !iexists(menuDebug) )
 {
     // Hide
     visible = false;
     // Delete self
-    delete(this);
+    idelete(this);
 }
 else
 {

@@ -1,12 +1,12 @@
 var sound = sound_play_at(x,y,sndPickupGun);
 playerInventory.gun = true;
 
-if (!exists(playerGun))
-    new(playerGun);
+if (!iexists(playerGun))
+    inew(playerGun);
 playerGun.visible = true;
 playerGun.isHeld = true;
 
 // Create tutorial
-var tutorial = new(tutorialGun);
-    if (exists(tutorial)) tutorial.active = true;
+var tutorial = inew(tutorialGun);
+    if (iexists(tutorial)) tutorial.active = true;
 

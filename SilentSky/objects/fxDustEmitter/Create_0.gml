@@ -5,5 +5,5 @@ for ( var i = 0; i < choose(2,3,4); ++i )
     dust.yspeed = random_range(-20,10);
 }
 
-delete(this);
+idelete(this);
 

@@ -5,6 +5,6 @@ if (fade_in)
 else
 {
     fade_timer -= Time.dt;
-    if (fade_timer <= 0.0) delete(this);
+    if (fade_timer <= 0.0) idelete(this);
 }
 

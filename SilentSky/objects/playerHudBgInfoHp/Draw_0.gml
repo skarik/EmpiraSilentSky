@@ -1,7 +1,7 @@
 var dx = uiPosX;
 var dy = uiPosY - 24;
 var pl = GetActivePlayer();
-if (!exists(pl)) exit;
+if (!iexists(pl)) exit;
 
 // Draw enemy health
 draw_set_alpha(image_alpha*0.5);

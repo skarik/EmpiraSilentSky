@@ -1,7 +1,7 @@
 /// @description create the music
 
 // find the music that belongs to this object
-if (!exists(m_music))
+if (!iexists(m_music))
 {
 	var caller_id = id;
 	var caller = object_index;
@@ -15,7 +15,7 @@ if (!exists(m_music))
 }
 
 // if could not find music, create it
-if (!exists(m_music))
+if (!iexists(m_music))
 {
 	var music = fmusic_create();
 	var max_i = array_length_1d(m_tracks); //ds_map_find_value(entry, SEQI_MUSIC_TRACKCOUNT);

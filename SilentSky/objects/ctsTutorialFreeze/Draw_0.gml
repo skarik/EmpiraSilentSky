@@ -1,6 +1,6 @@
 var pl = GetActivePlayer();
 
-if (exists(pl))
+if (iexists(pl))
 {
     draw_set_alpha(1.0 - Time.scale);
     draw_set_font(global.font_arvo9);

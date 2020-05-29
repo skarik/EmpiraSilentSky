@@ -4,6 +4,6 @@ image_yscale = image_xscale;
 
 if ( image_alpha < 0.0 )
 {
-    delete(this);
+    idelete(this);
 }
 

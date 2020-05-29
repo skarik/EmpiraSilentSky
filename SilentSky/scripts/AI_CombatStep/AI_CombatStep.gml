@@ -1,5 +1,5 @@
 // Do a quick check we have a target to work with
-if (aiCombatTarget == null || !exists(aiCombatTarget))
+if (aiCombatTarget == null || !iexists(aiCombatTarget))
 {
     exit;
 }

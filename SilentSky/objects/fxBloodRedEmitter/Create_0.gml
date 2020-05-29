@@ -10,5 +10,5 @@ var blood = instance_create( x,y, gameBlooddrop );
     blood.image_blend = c_maroon;
     blood.xspeed = random_range(-80,80);
 
-delete(this);
+idelete(this);
 

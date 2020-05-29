@@ -1,4 +1,4 @@
-delete(this);
+idelete(this);
 
 if (room == rm_jail0_0)
 {

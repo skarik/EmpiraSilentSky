@@ -7,11 +7,11 @@ var buf = buffer_load(SAVE_FILE);
 
 // Read out the players:
 if (buffer_read(buf, buffer_bool))
-    if (!exists(objPlayerPaladin)) new(objPlayerPaladin);
+    if (!iexists(objPlayerPaladin)) inew(objPlayerPaladin);
 if (buffer_read(buf, buffer_bool))
-    if (!exists(objPlayerPrincess)) new(objPlayerPrincess);
+    if (!iexists(objPlayerPrincess)) inew(objPlayerPrincess);
 if (buffer_read(buf, buffer_bool))
-    if (!exists(objPlayerTinkerer)) new(objPlayerTinkerer);
+    if (!iexists(objPlayerTinkerer)) inew(objPlayerTinkerer);
 // Make them active
 with (objPlayerMain)
 {
@@ -24,7 +24,7 @@ var pl = buffer_read(buf, buffer_u32);
 if (pl == 0)
 {   // Check for valid file
     show_error("INVALID SAVE", true);
-    delete(objPlayerMain);
+    idelete(objPlayerMain);
     return false;
 }
 else

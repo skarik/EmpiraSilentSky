@@ -15,11 +15,11 @@ randomize();
 
 // Create the world:
 // Fade in
-new(fxScreenFadeIn);
+inew(fxScreenFadeIn);
 // create the goddamn lighting
-new(Lighting);
+inew(Lighting);
 // Create music
-new(audioMusic);
+inew(audioMusic);
 
 // Create the title
 //instance_create(view_xview[0],view_yview[0],floaterLogo);

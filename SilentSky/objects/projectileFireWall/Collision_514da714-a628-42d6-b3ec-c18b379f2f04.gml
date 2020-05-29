@@ -4,7 +4,7 @@ var enemy = other.id;/*collision_rectangle(
     x - sprite_xoffset, y - sprite_yoffset, 
     x - sprite_xoffset + sprite_width, y - sprite_yoffset + sprite_width,
     enemyBase,false,true );*/
-if (exists(enemy) && damageCanHit(id,enemy))
+if (iexists(enemy) && damageCanHit(id,enemy))
 {
     // Is it in the burn list?
     var hit = false;
@@ -37,7 +37,7 @@ if (exists(enemy) && damageCanHit(id,enemy))
     
     // Explode into effect
     event_user(2); 
-    delete(this);
+    idelete(this);
     killme = true;
 }
 

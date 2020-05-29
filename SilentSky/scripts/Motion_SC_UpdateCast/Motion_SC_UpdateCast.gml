@@ -3,7 +3,7 @@ Motion_CommonOnGround();
 Motion_CommonGravity();
 
 // Update effects
-if (exists(spellFxGlow))
+if (iexists(spellFxGlow))
 {
     // Make spell fade in and stick to player
     spellFxGlow.x = x;

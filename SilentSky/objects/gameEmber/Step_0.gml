@@ -17,7 +17,7 @@ image_blend = merge_color( c_black, c_red, clamp(hotness,0.0,1.0) );
 // Kill on hit something
 if ( place_meeting(x,y,bloxBase) )
 {
-    delete(this);
+    idelete(this);
 }
 else // Possibility to set things on fire
 {
@@ -38,7 +38,7 @@ else // Possibility to set things on fire
                 enemy.fiTimer = 0; // Refresh the burn timer
             }
             // Kill self
-            delete(this);
+            idelete(this);
         }
     }
     
@@ -52,7 +52,7 @@ else // Possibility to set things on fire
             // Play sound
             sound_play_at(x,y,sndFireStart);
             // Kill self
-            delete(this);
+            idelete(this);
         }
     }
 }
@@ -60,6 +60,6 @@ else // Possibility to set things on fire
 // Kill on too dark
 if ( hotness < 0 )
 {
-    delete(this);
+    idelete(this);
 }
 

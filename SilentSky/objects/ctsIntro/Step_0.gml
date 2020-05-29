@@ -4,14 +4,14 @@ time += Time.dt;
 if ( prevtime < 1.0 && time >= 1.0 )
 {
     // Remove the title after some time
-    if (exists(floaterLogo))
+    if (iexists(floaterLogo))
     {
         floaterLogo.fadeout = true;
     }
 }
 
-if ( !exists(pickupCoat) )
+if ( !iexists(pickupCoat) )
 {
-    delete(this);
+    idelete(this);
 }
 

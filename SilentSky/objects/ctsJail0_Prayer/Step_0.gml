@@ -1,5 +1,5 @@
 // enable when player too far X
-if (!exists(objPlayerPaladin)) exit;
+if (!iexists(objPlayerPaladin)) exit;
 
 if (!ctEnabled)
 {
@@ -11,7 +11,7 @@ if (!ctEnabled)
             isPlayer = false;
         }*/
         ctEnabled = true;
-        delete(buttonInvisi);
+        idelete(buttonInvisi);
     }
 }
 else
@@ -23,7 +23,7 @@ else
         {   
             //Cts_HellPulse();
             // We're fucking don moe here
-            delete(this);
+            idelete(this);
             
             with (objPlayerPaladin) isPlayer = true;
         }

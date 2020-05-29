@@ -1,5 +1,5 @@
 
-if (exists(aiFollowNode))
+if (iexists(aiFollowNode))
 {
     // Have a chance to wait on certain node types
     if (aiFollowNode.type & LINK_AIR)

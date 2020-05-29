@@ -1,6 +1,6 @@
 var activePlayer = GetActivePlayer();
 
-if (exists(activePlayer) && activePlayer.moPlayer)
+if (iexists(activePlayer) && activePlayer.moPlayer)
 {
     image_alpha += Time.dt;
 }
@@ -19,7 +19,7 @@ else
     visible = true;
 }
 
-if (exists(activePlayer))
+if (iexists(activePlayer))
 {
     // Generate UI's target position
     var tx = activePlayer.x;//view_xview[0];

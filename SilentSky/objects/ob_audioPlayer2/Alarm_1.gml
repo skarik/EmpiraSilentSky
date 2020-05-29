@@ -4,7 +4,7 @@ if (m_streamed)
 {
 	if (!audio_is_playing(m_audio))
 	{
-		delete(this);
+		idelete(this);
 	}
 }
 

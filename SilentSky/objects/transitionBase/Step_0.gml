@@ -1,5 +1,5 @@
 var pl = GetActivePlayer();
-if (exists(pl) && place_meeting(x,y,pl))
+if (iexists(pl) && place_meeting(x,y,pl))
 {
     // Check for player outside of room
     if (pl.x > room_width || pl.x < 0)

@@ -2,7 +2,7 @@ view_set_camera(1, m_outputCamera);
 camera_apply(m_outputCamera);
 
 // If lighting doesn't exist, then we draw "normally"
-if (!exists(Lighting))
+if (!iexists(Lighting))
 {
     // Reset rendering color (will mix the surface, possibly? check to see if still has GM8 bug)
     draw_set_color(c_white);

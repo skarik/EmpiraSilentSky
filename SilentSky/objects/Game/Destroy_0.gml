@@ -1,5 +1,5 @@
 if (!persistent) exit;
 
 
-delete(faFireLoop);
+idelete(faFireLoop);
 

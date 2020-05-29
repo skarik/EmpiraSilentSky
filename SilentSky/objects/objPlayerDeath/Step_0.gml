@@ -1,9 +1,9 @@
 restartTimer += Time.dt;
 
 // Fade the screen out...
-if ( restartTimer > 5.0 && !exists(fxScreenFadeOut) )
+if ( restartTimer > 5.0 && !iexists(fxScreenFadeOut) )
 {
-    new(fxScreenFadeOut);
+    inew(fxScreenFadeOut);
 }
 // And restart the game after showing them dead for a bit
 if ( restartTimer > 6.5 )

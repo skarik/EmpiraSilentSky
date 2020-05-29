@@ -40,7 +40,7 @@ for (var i = 0; i < control_length; i += 2)
 			|| l_input == gp_axisrh || l_input == gp_axisrv)
 		{
 			var value_in = deadzone_bias(gamepad_axis_value(0, l_input)) * (flip ? -1.0 : 1.0);
-			value += _controlParseCheckType(value_in, kControlGamepad);
+			value += _controlParseCheckType(max(0.0, value_in), kControlGamepad);
 		}
 		else
 		{

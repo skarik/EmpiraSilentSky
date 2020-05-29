@@ -1,5 +1,5 @@
 // enable when player too far X
-if (!exists(objPlayerPaladin)) exit;
+if (!iexists(objPlayerPaladin)) exit;
 
 // Prevent gaurds from moving about
 with (npcGuard)
@@ -27,7 +27,7 @@ else
             Cts_HellPulse();
         
             // We're fucking done here
-            delete(this);
+            idelete(this);
         }
     }
     if (GetGuardsAngry())
@@ -39,7 +39,7 @@ else
         Cts_HellPulse();
         
         // We're fucking done here
-        delete(this);
+        idelete(this);
     }
 }
 

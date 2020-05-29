@@ -3,7 +3,7 @@
 if (instance_number(object_index) > 1)
 {
 	persistent = false;
-    delete(this);
+    idelete(this);
     return true;
 }
 return false;

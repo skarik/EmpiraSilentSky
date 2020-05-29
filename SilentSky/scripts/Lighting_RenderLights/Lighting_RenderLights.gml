@@ -10,7 +10,7 @@ var ay = -cel_renderY*my - 1.0;
 // Reset the lighting surface
 draw_clear_alpha( ambient, 1.0 );
 // Draw proper ambient based on levels
-if ( exists(levelManager) )
+if ( iexists(levelManager) )
 {  
     with (levelManager)
     {

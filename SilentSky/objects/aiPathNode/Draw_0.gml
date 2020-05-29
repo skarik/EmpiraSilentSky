@@ -3,7 +3,7 @@ draw_set_color(c_white);
 draw_set_alpha(0.5);
 for (var i = 0; i < links; ++i)
 {
-    if (exists(link[i]))
+    if (iexists(link[i]))
     {
         draw_line(x,y, link[i].x,link[i].y);
     }

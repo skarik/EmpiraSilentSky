@@ -1,6 +1,6 @@
 event_inherited();
 
-if (!exists(Game)) new(Game);
+if (!iexists(Game)) inew(Game);
 
 animFrame = 0;
 animSpeed = 0;
@@ -88,9 +88,9 @@ mask_index = col24x64p;
 moPlayer = true;
 
 // Set inventory to player inventory instead
-delete(inventory);
-inventory = new(playerInventory);
-gun = new(playerGun);
+idelete(inventory);
+inventory = inew(playerInventory);
+gun = inew(playerGun);
 gun.visible = false;
 plCurrentGun = GUN_AIR;
 

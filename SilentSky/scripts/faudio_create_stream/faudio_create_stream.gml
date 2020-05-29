@@ -1,9 +1,9 @@
 /// @description faudio_create_stream(filename)
 /// @param filename
 
-if (!exists(AudioStreams))
+if (!iexists(AudioStreams))
 {
-	new(AudioStreams);
+	inew(AudioStreams);
 }
 
 var filename = argument0;

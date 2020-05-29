@@ -20,7 +20,7 @@ else
         image_alpha -= Time.dt*2.0;
         if ( image_alpha < 0.0 )
         {
-            delete(this);
+            idelete(this);
         }
     }
 }

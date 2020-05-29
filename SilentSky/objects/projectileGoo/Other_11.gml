@@ -7,6 +7,6 @@ if (enemy != null && enemy.object_index != objPlayerMain)
     // Create hit sound
     var sound_hit = sound_play_at(x,y, Sound_Step(BLOOD_GOO));
     
-    delete(this);
+    idelete(this);
 }
 

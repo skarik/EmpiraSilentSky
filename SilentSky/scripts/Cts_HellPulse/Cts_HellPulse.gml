@@ -1,4 +1,4 @@
-if (exists(doodadClouds0))
+if (iexists(doodadClouds0))
 {
     // Shake screen
     Effect_ScreenShake(3, 7.0, true);
@@ -20,7 +20,7 @@ if (exists(doodadClouds0))
             fx.xspeed = -ofx;
             fx.yspeed = -ofy;
     }*/
-    new(fxBgVoidParticleEmitter);
+    inew(fxBgVoidParticleEmitter);
     
     var sfx = sound_play_at(room_width / 2, room_height, sndThundershake);
         sfx.pitch = 0.8;

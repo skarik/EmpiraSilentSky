@@ -1,7 +1,7 @@
 switch (state)
 {
 case 0:	// Fade in is over...
-    if (!exists(ctsFadeInLongBlack))
+    if (!iexists(ctsFadeInLongBlack))
     {
         state = 1;
         timer = 0;
@@ -14,11 +14,11 @@ case 1: // Play music, continue.
     
 case 2:
     // Show logo
-    new(ctsLogoPopup); // Deletes self in Step, so is effectively skipped.
+    inew(ctsLogoPopup); // Deletes self in Step, so is effectively skipped.
     state = 3;
     break;
 case 3:
-    if (!exists(ctsLogoPopup)) {
+    if (!iexists(ctsLogoPopup)) {
         state = 4; // Logo doesn't exist, we go to a delay
         timer = 0;
     }
@@ -30,11 +30,11 @@ case 4: // Delay for 1 second
     if ( timer > 1.0 ) {
         state = 5;
         // Show game title
-        new(ctsVAPopup);
+        inew(ctsVAPopup);
     }
     break;
 case 5:
-    if (!exists(ctsVAPopup)) {
+    if (!iexists(ctsVAPopup)) {
         state = 6;
         timer = 0;
     }
@@ -45,11 +45,11 @@ case 6: // Delay for 1 second
     if ( timer > 1.0 ) {
         state = 7;
         // Show game title
-        new(ctsTitlePopup);
+        inew(ctsTitlePopup);
     }
     break;
 case 7:
-    if (!exists(ctsTitlePopup)) {
+    if (!iexists(ctsTitlePopup)) {
         state = 8;
         timer = 0;
     }
@@ -70,8 +70,8 @@ case 9: // Delay for 1 second
     break;
     
 case 10:
-    delete(this);
-    new(ctsLibrary1);
+    idelete(this);
+    inew(ctsLibrary1);
     audio_stop_sound(audio);
     
     state = 11;
@@ -81,7 +81,7 @@ case 10:
 
 if (controlUpdateAndCheckAny() && state != 7)
 {
-    delete(ctsLogoPopup);
+    idelete(ctsLogoPopup);
     state = 8;
 }
 

@@ -1,5 +1,5 @@
-if (!exists(ctsUpgradeMenu))
+if (!iexists(ctsUpgradeMenu))
 {
-    new(ctsUpgradeMenu);
+    inew(ctsUpgradeMenu);
 }
 

@@ -19,6 +19,6 @@ if ( updateTimer > 1.0 )
 
 if ( radius > max_radius )
 {
-    delete(this);
+    idelete(this);
 }
 

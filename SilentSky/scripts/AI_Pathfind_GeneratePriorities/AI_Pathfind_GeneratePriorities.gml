@@ -9,7 +9,7 @@ with (node)
     for (var i = 0; i < links; ++i)
     {
         // Doesn't exist?
-        if ( !exists(link[i]) ) continue;
+        if ( !iexists(link[i]) ) continue;
         // Circular?
         if ( link[i].id == id ) continue;
         // Has it been visited?

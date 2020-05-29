@@ -75,7 +75,7 @@ for (var cx = 0; cx < w; ++cx)
                     do
                     {   // Do it via checking position at each piece of the loop
                         inst = instance_position( ofx + fx, ofy + 16 + fy, bloxBase );
-                        delete(inst);
+                        idelete(inst);
                     }
                     until (inst == null);
                 }
@@ -116,7 +116,7 @@ for (var cx = 0; cx < w; ++cx)
                     do
                     {   // Do it via checking position at each piece of the loop
                         inst = instance_position( ofx + fx, ofy + 32*1, bloxBase );
-                        delete(inst);
+                        idelete(inst);
                     }
                     until (inst == null);
                 }
@@ -175,7 +175,7 @@ for (var cx = 0; cx < w; ++cx)
                     do
                     {   // Do it via checking position at each piece of the loop
                         inst = instance_position( ofx + fx, ofy + 32*6, bloxBase );
-                        delete(inst);
+                        idelete(inst);
                     }
                     until (inst == null);
                 }

@@ -9,5 +9,5 @@ if (surface_exists(surf_lighting_game))
     surf_lighting_game = null;
 }
 
-delete(this);
+idelete(this);
 

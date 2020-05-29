@@ -11,7 +11,7 @@ if (ctDisablePlayer)
 if (!cutsceneUpdate())
 {
     var pl = GetActivePlayer();
-    if (!exists(pl)) exit;
+    if (!iexists(pl)) exit;
 
     var wait_id = cutsceneGetWaitId();
     if (wait_id == "approach")
@@ -20,9 +20,9 @@ if (!cutsceneUpdate())
         {
             //CutsceneFlag_AutoSet();
             cutsceneWaitEnd();
-            delete(musicAmbientJail0);
-            delete(musicAmbientJail1);
-            new(musicAmbientPrincess0);
+            idelete(musicAmbientJail0);
+            idelete(musicAmbientJail1);
+            inew(musicAmbientPrincess0);
             instance_create(1072, 128, spellWall);
             
             // Make princess look up
@@ -59,12 +59,12 @@ if (!cutsceneUpdate())
     {
         if (ctStage == 0)
         {
-            new(ctsJail2_GuardTutorial);
+            inew(ctsJail2_GuardTutorial);
             ctStage = 1;
         }
         else
         {
-            if (!exists(ctsJail2_GuardTutorial))
+            if (!iexists(ctsJail2_GuardTutorial))
             {
                 if (abs(objPlayerPaladin.yAxis.value) > 0.8)
                 {
@@ -104,7 +104,7 @@ if (!cutsceneUpdate())
     else if (wait_id == "unlock0_guards")
     {
         // The guards come onto the screen
-        if (!exists(npcGuard))
+        if (!iexists(npcGuard))
         {
             instance_create( room_width-64, 224, npcGuard );
             instance_create( room_width-128, 224, npcGuard );
@@ -160,13 +160,13 @@ if (!cutsceneUpdate())
     {   
         CutsceneFlag_AutoSet();
         // We're fucking done here
-        delete(this);
+        idelete(this);
     }
 }
 
 
 // update pitch
-if ( exists(audioMusic) && audioMusic.curInst != null )
+if ( iexists(audioMusic) && audioMusic.curInst != null )
 {
     var dp = target_pitch - pitch;
     var dspeed = Time.dt * 0.25;

@@ -2,7 +2,7 @@ if (singleton_this()) exit; // Make this object a singleton
 // Only enable lighting if shaders supported
 if (!shaders_are_supported())
 {
-    delete(this);
+    idelete(this);
     exit;
 }
 
@@ -38,5 +38,5 @@ uni_samplerLighting = shader_get_sampler_index( shaderLighting, "samplerLighting
 uni_ambientColor = shader_get_uniform( shaderLighting, "uAmbientColor" );
 
 // Create bg dropper
-new(lightingalphadrop);
+inew(lightingalphadrop);
 

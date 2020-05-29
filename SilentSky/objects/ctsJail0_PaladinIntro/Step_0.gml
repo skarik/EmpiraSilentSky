@@ -15,7 +15,7 @@ if (!cutsceneUpdate())
 {
     if (cutsceneGetWaitId() == "rebelenter")
     {
-        if (!exists(npcRebel))
+        if (!iexists(npcRebel))
         {
             instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )+16, objPlayerPaladin.y, npcRebel);
         }
@@ -81,7 +81,7 @@ if (!cutsceneUpdate())
         }
         else
         {
-            if (!exists(npcRebel) || npcRebel.chHealth <= 0)
+            if (!iexists(npcRebel) || npcRebel.chHealth <= 0)
             {
                 cutsceneWaitEnd();
             }
@@ -90,7 +90,7 @@ if (!cutsceneUpdate())
     else if (cutsceneGetWaitId() == "guardsarrive")
     {
         // The guards come onto the screen
-        if (!exists(npcGuard))
+        if (!iexists(npcGuard))
         {
             instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )+16, objPlayerPaladin.y, npcGuard);
             instance_create(__view_get( e__VW.XView, 0 )+__view_get( e__VW.WView, 0 )+50, objPlayerPaladin.y, npcGuard);
@@ -131,7 +131,7 @@ if (!cutsceneUpdate())
                 objPlayerPaladin.moPlayer = true;
                 
                 // Add the tutorial
-                new(ctsJail0_AttackTutorial);
+                inew(ctsJail0_AttackTutorial);
                 
                 ctStage = 2;
             }
@@ -151,7 +151,7 @@ if (!cutsceneUpdate())
     else if (cutsceneIsDone())
     {   
         // We're fucking done here
-        delete(this);
+        idelete(this);
     }
 }
 

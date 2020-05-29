@@ -18,7 +18,7 @@ var dy = y1 + lengthdir_y(dist,dir);
 // For debug purposes, draw the bounding box of the hitbox
 if (Debug.on)
 {
-    var dbb = new(debugLine);
+    var dbb = inew(debugLine);
         dbb.x1 = x1; dbb.y1 = y1;
         dbb.x2 = dx; dbb.y2 = dy;
         dbb.image_blend = c_gray;
@@ -86,17 +86,17 @@ while ( true )
         // For debug purposes, draw the bounding box of the hitbox
         if (Debug.on)
         {
-            var dbb = new(debugLine);
+            var dbb = inew(debugLine);
                 dbb.x1 = x1; dbb.y1 = y1;
                 dbb.x2 = dx; dbb.y2 = dy;
                 dbb.image_blend = c_red;
                 dbb.depth = -2;
         }
-        /*var dbb = new(debugLine);
+        /*var dbb = inew(debugLine);
             dbb.x1 = x1; dbb.y1 = y1;
             dbb.x2 = dx; dbb.y2 = dy;
             dbb.image_blend = c_white;
-        var dbb = new(debugLine);
+        var dbb = inew(debugLine);
             dbb.x1 = x1; dbb.y1 = y1;
             dbb.x2 = dx; dbb.y2 = dy;
             dbb.image_blend = c_gray;*/
@@ -185,7 +185,7 @@ else if ( blox_saved )
     if ( type == DAMAGE_FIRE )
     {
         var goo_hit = collision_circle(dx,dy, 4, splatterGoo, false,true );
-        if ( exists(goo_hit) )
+        if ( iexists(goo_hit) )
         {
             if ( !goo_hit.isBurning )
             {

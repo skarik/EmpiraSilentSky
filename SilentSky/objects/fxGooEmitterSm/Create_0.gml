@@ -7,5 +7,5 @@ for ( var i = 0; i < choose(2,3,4); ++i )
     goo.image_blend = c_lime;
 }
 
-delete(this);
+idelete(this);
 

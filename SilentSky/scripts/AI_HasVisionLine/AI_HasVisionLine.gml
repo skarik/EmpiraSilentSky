@@ -5,6 +5,6 @@
 /// @param y2
 
 var col = collision_line(argument0,argument1,argument2,argument3, bloxBase, false, true);
-if (exists(col)) return false;
+if (iexists(col)) return false;
 return true;
 

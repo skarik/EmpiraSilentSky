@@ -58,7 +58,7 @@ guGlueTime = 3.0;
 
 controlInit();
 
-inventory = new(enemyInventory);
+inventory = inew(enemyInventory);
 gun = null;
 
 chHealth = 100;

@@ -32,7 +32,7 @@ else if ( fxFadeState == 2 )
     if ( image_alpha < 0.0 )
     {
         image_alpha = 0.5;
-        delete(this);
+        idelete(this);
     }
     image_blend = merge_color(c_red, c_maroon, 1.0 - (image_alpha)*2.0);
     

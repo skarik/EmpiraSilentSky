@@ -3,7 +3,7 @@ Motion_CommonOnGround();
 Motion_CommonGravity();
 
 // Hide gun
-if (exists(gun)) gun.isHeld = false;
+if (iexists(gun)) gun.isHeld = false;
 
 // Cannot stun
 if (isStunned)

@@ -6,7 +6,7 @@ var input_jumpButton	= inputGet(jumpButton);
 
 // Get player
 var target = GetActivePlayer();
-if (!exists(target)) exit;
+if (!iexists(target)) exit;
 
 // Update target when it moves
 var sqrdist;
@@ -44,7 +44,7 @@ var absdistx = abs(aiFollowTargetX - x);
 var updisty = max(aiFollowTargetY - y, 0);
     
 // Move to node
-if (exists(aiFollowNode) && aiFollowStuckFixState == 0 && !path_super_clear)
+if (iexists(aiFollowNode) && aiFollowStuckFixState == 0 && !path_super_clear)
 {
     aiFollowInfo_State = 1;
     

@@ -1,4 +1,4 @@
 NPC_UpdateDeath();
 
-delete(this);
+idelete(this);
 

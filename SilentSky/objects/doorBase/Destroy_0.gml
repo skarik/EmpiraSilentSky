@@ -1,4 +1,4 @@
-delete(parta);
-delete(partb);
+idelete(parta);
+idelete(partb);
 
 

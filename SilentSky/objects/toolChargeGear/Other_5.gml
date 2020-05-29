@@ -1,6 +1,6 @@
 if ( sfx_geartock != null )
 {
-    delete( sfx_geartock );
+    idelete( sfx_geartock );
 }
 
 

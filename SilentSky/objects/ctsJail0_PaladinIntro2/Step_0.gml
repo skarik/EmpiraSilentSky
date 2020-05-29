@@ -56,7 +56,7 @@ if (!cutsceneIsDone())
 }
 
 // Rebel "AI" for them to kick the door open
-if (exists(rebel))
+if (iexists(rebel))
 {
 	// Walk until we hit door.
 	if (rebelState == 1)

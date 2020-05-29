@@ -1,5 +1,5 @@
 var activePlayer = GetActivePlayer();
-if (!exists(activePlayer)) exit;
+if (!iexists(activePlayer)) exit;
 
 if ( image_alpha <= 0.0 )
 {

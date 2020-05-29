@@ -54,10 +54,10 @@ mgCastCb[0] = Paladin_CastHeal;
 //moSpecialCbKey = Paladin_CastHeal;
 mgCastCost[0] = 20;
 
-if (!exists(playerHudInfo)) new(playerHudInfo);
-if (!exists(playerHudSpellbook)) new(playerHudSpellbook);
-if (!exists(playerHudBgInfo)) new(playerHudBgInfo);
-if (!exists(playerHudBgInfoHp)) new(playerHudBgInfoHp);
+if (!iexists(playerHudInfo)) inew(playerHudInfo);
+if (!iexists(playerHudSpellbook)) inew(playerHudSpellbook);
+if (!iexists(playerHudBgInfo)) inew(playerHudBgInfo);
+if (!iexists(playerHudBgInfoHp)) inew(playerHudBgInfoHp);
 
 moAtkStateOverride0 = Paladin_ThrowSword;
 moAtkKey0 = 0.4;

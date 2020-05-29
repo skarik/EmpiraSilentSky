@@ -48,7 +48,7 @@ if (deadTimer > 0.8)
         }
     }
     
-    delete(this);
+    idelete(this);
 }
 
 /* */

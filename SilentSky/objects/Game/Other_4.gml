@@ -1,3 +1,3 @@
 // Create AI master
-if (!exists(aiMaster)) new(aiMaster);
+if (!iexists(aiMaster)) inew(aiMaster);
 

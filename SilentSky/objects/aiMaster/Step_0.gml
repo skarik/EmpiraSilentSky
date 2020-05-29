@@ -1,7 +1,7 @@
 var pl = GetActivePlayer();
 
 mappingTimer += Time.dt * 3.0;
-if ( exists(pl) )
+if ( iexists(pl) )
     mappingTimer += clamp(-pl.yspeed / 400, -3.0, 3.0) * Time.dt;
 
 if ( mappingTimer > 1.0 )

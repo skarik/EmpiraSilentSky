@@ -1,4 +1,4 @@
-//delete(this);
+//idelete(this);
 // Player has died.
 //room_restart();
 
@@ -9,7 +9,7 @@
 restartTimer = false;
 instance_change(objPlayerDeath,false);
 // Create death
-new(floaterDead);
+inew(floaterDead);
 
 // Shake screen for keks
 Effect_ScreenShake(
@@ -47,9 +47,9 @@ with (objPlayerMain)
 }
 if (not_dead == false)
 {
-    if (!exists(floaterDead))
+    if (!iexists(floaterDead))
     {
-        new(floaterDead);
+        inew(floaterDead);
         // Shake screen for keks
         Effect_ScreenShake(
                 5,

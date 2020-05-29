@@ -13,7 +13,7 @@ if (!file_exists(filename))
     return null;
 }
 
-var audio_player = new(ob_audioPlayer2);
+var audio_player = inew(ob_audioPlayer2);
 
 if (streamed)
 {

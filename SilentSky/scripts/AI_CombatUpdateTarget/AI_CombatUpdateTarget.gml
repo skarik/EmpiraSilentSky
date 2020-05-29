@@ -15,7 +15,7 @@ else
 var pl = GetActivePlayer();
 var sx, sy;
 
-if (exists(pl))
+if (iexists(pl))
 {
     sx = (x + pl.x) * 0.5;
     sy = (y + pl.y) * 0.5;
@@ -40,7 +40,7 @@ while (true)
     var inst = instance_nth_nearest(sx, sy, enemyBase, nearest_index);
     
     // Object doesn't exist? End.
-    if (!exists(inst)) break;
+    if (!iexists(inst)) break;
     
     // If can't hit the target, or target is dead, skip
     if (source == inst || !damageCanHit(source, inst) || inst.chHealth <= 0)

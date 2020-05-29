@@ -32,7 +32,7 @@ if ( moDead )
 
 if ( moDead )
 {
-	if (exists(floaterDead))
+	if (iexists(floaterDead))
 	{
 		if (floaterDead.image_alpha > 4.0)
 		{

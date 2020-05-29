@@ -19,6 +19,6 @@ for (var i = 0; i < node2.links; ++i)
 node1.x = (node1.x + node2.x) / 2;
 node1.y = (node1.y + node2.y) / 2;
 
-delete(node2);
+idelete(node2);
 return node1;
 

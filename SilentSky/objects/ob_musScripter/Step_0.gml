@@ -1,6 +1,6 @@
 /// @description Update volume
 
-if (!exists(m_music))
+if (!iexists(m_music))
 {
 	event_user(0);
 }
@@ -15,7 +15,7 @@ if (array_length_1d(m_trackVolume) != track_count)
 }
 
 // update volume:
-if (exists(m_music))
+if (iexists(m_music))
 {
 	// If in intro, do special stuff
 	if (m_allowIntroOverride

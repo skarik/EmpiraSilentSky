@@ -34,7 +34,7 @@ if ( isBurning )
             sound.gain = random_range(0.7,0.8);
                 
         // Delete self
-        delete(this);
+        idelete(this);
     }
 }
 

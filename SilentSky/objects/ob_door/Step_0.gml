@@ -12,7 +12,7 @@ if (m_closing)
 	// On close
 	if (m_angle == 0)
 	{
-		if (!exists(m_collider))
+		if (!iexists(m_collider))
 		{
 			m_collider = instance_create(x, y, blox32x);
 			m_collider.image_yscale = 3;
@@ -71,7 +71,7 @@ with (enemyBase)
 		nearest_dist = next_dist;
 	}
 }
-if (exists(nearest_char))
+if (iexists(nearest_char))
 {
 	image_xscale += sign(nearest_char.x - x) * 0.25;
 }

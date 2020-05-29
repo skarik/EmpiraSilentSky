@@ -1,17 +1,17 @@
 // This object performs all the loading horseshit.
 
 // Need to create the Screen before anything
-new(Screen);
+inew(Screen);
 // Now, need to create the timer
-new(Time);
+inew(Time);
 // Create the debug helper
-new(Debug);
+inew(Debug);
 // Add the resources manager
-new(Resources);
+inew(Resources);
 // Load settings
-new(Settings);
+inew(Settings);
 // Set up the input manager
-new(Input);
+inew(Input);
 // Set up new random state
 mt19937_init();
 

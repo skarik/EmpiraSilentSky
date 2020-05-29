@@ -1,4 +1,4 @@
-new(ctsFadeInLongBlack);
+inew(ctsFadeInLongBlack);
 
 state = 0;
 timer = 0;

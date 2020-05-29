@@ -79,9 +79,9 @@ y += max(0, ny);
 
 // Pull parent at the current position now
 drParent = collision_circle(x + dx*16 - nx*16, y + dy*16 - ny*16, 2, bloxBase, false,true);
-if (!exists(drParent))
+if (!iexists(drParent))
 {
-    delete(this);
+    idelete(this);
 }
 
 /* */

@@ -7,7 +7,7 @@ var node = argument0;
 for (var i = 0; i < node.links; ++i)
 {
     var link = node.link[i];
-    if ( !exists(link) )
+    if ( !iexists(link) )
     {
         // Remove this link
         AI_NodeRemoveLinkIndex(node,i);

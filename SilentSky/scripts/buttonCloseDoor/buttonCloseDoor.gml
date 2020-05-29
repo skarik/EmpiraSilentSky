@@ -6,7 +6,7 @@ with (door)
 	m_angleSpeed = 0;
 	m_angle = 0;
 	
-	if (!exists(m_collider))
+	if (!iexists(m_collider))
 	{
 		m_collider = instance_create(x, y, blox32x);
 		m_collider.image_yscale = 3;

@@ -59,7 +59,7 @@ if ( playerInventory.sword || playerInventory.gun )
                         do
                         {   // Do it via checking position at each piece of the loop
                             inst = instance_position( ofx + tx + 16, ofy + ty + 16, bloxBase );
-                            delete(inst);
+                            idelete(inst);
                         }
                         until (inst == null);
                     }

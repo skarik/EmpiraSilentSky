@@ -4,7 +4,7 @@ var pl = objPlayerMain;
 if ( pl.x >= lvCurrentLimit )
 {
     // Do area checks:
-    if ( !exists(doorOnewayLevel) )
+    if ( !iexists(doorOnewayLevel) )
     {   // We have a new room!
         lvNewRoom = true;
     }
@@ -24,7 +24,7 @@ if ( pl.x >= lvCurrentLimit )
             lvNewRoom = false;
             
             // New area, so let's make a floater for it
-            var floater = new(floaterArea);
+            var floater = inew(floaterArea);
                 floater.text = Level_NextAreaName(lvTileset);
         }
         else
@@ -33,7 +33,7 @@ if ( pl.x >= lvCurrentLimit )
             lvNewRoom = true;
             
             // New area, so let's make a floater for it
-            var floater = new(floaterArea);
+            var floater = inew(floaterArea);
                 floater.text = "AREA " + string(lvAreaCount);
         }
     }
@@ -41,7 +41,7 @@ if ( pl.x >= lvCurrentLimit )
     // Create floater for area name
     if (instance_number(levelGenerator) == 0)
     {
-        var floater = new(floaterArea);
+        var floater = inew(floaterArea);
             floater.text = "DJEHUT CAMPLE";
     }
 

@@ -19,7 +19,7 @@ if ( levelManager.lvAreaCount > 0 )
 }
 
 enemy = place_unique( tx, ty, enemy );
-if ( exists(enemy) )
+if ( iexists(enemy) )
 {
     // Start to strengthen enemies (10% health each area)
     enemy.chMaxHealth += floor(levelManager.lvAreaCount * enemy.chMaxHealth * 0.1);

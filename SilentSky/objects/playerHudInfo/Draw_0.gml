@@ -7,7 +7,7 @@ var current_character = 0;
 // Select active player to put at the top
 for (var i = 0; i < 3; ++i)
 {
-    if (exists(uiPlayers[i]) && uiPlayers[i].moPlayer)
+    if (iexists(uiPlayers[i]) && uiPlayers[i].moPlayer)
     {
         current_character = i;
         break;
@@ -15,7 +15,7 @@ for (var i = 0; i < 3; ++i)
 }
 
 // Hide if no active player
-if (i >= 3 || !exists(uiPlayers[current_character]))
+if (i >= 3 || !iexists(uiPlayers[current_character]))
 {
     uiAlpha = 0;
     exit;
@@ -29,7 +29,7 @@ ofi = 0;
 for (var i = 0; i < 3; ++i)
 {
     var player = uiPlayers[(current_character + i) % 3];
-    if (exists(player) && player.moPlayerAvailable)
+    if (iexists(player) && player.moPlayerAvailable)
     {
         players[ofi] = player;
         players_index[ofi] = (current_character + i) % 3;
@@ -45,7 +45,7 @@ for (var character = 0; character < ofi; ++character)
 {
     var character_index = players_index[character];// (current_character + character) % 3;
     var pl = players[character];
-    if ( !exists(pl) || !pl.moPlayerAvailable ) break;
+    if ( !iexists(pl) || !pl.moPlayerAvailable ) break;
  
     var dx = ddx;
     var dy = ddy + (character * 20) + (17 * (character != 0));
@@ -196,7 +196,7 @@ if (uiShowControls)
     var textJump = "Jump";
     
     var pl = uiPlayers[current_character];
-    if ( exists(pl) )
+    if ( iexists(pl) )
     {
         // Modify them all:
         if (pl.object_index == objPlayerPaladin)

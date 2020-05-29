@@ -24,9 +24,9 @@ if (!m_closing && !m_opening)
 		Effect_ScreenShake(4.0, 0.05, false);
 		
 		// Delete any collider
-		if (exists(m_collider))
+		if (iexists(m_collider))
 		{
-			delete(m_collider);
+			idelete(m_collider);
 		}
 	}
 }

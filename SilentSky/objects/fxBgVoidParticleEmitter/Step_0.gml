@@ -22,6 +22,6 @@ while (emit_target > 0)
 
 if (radius > 400)
 {
-    delete(this);
+    idelete(this);
 }
 

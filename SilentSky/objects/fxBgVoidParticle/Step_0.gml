@@ -8,6 +8,6 @@ image_yscale -= Time.dt;
 image_xscale = image_yscale * 0.5;
 if ( image_yscale <= 0 )
 {
-    delete(this);
+    idelete(this);
 }
 

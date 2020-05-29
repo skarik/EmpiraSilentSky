@@ -8,6 +8,6 @@ var effect_hit = instance_create(x,y, Effect_Step(BLOOD_GLUE));
 
 // Explode into effect
 event_user(2); 
-delete(this);
+idelete(this);
 killme = true;
 

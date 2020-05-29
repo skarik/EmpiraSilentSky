@@ -1,5 +1,5 @@
 var hit_object = other.id;
-if (!exists(hit_object)) exit;
+if (!iexists(hit_object)) exit;
 
 var delta;
 var spd = Time.dt * 110.0;

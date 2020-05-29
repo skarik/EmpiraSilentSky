@@ -76,7 +76,7 @@ case SEQTYPE_LINES:
 		// FREYR SPECIFIC:
 		// Replace the line with the player gender-specific line if possible:
 		/*var pl = getPlayer();
-		if (exists(pl))
+		if (iexists(pl))
 		{
 			var new_line = undefined;
 			var gender = pl.pstats.m_gender;
@@ -102,19 +102,19 @@ case SEQTYPE_LINES:
         // Update talker's sprites
         if (target == objPlayerImp)
         {
-            if (!exists(ctsLibrarianPopup)) new (ctsLibrarianPopup);
+            if (!iexists(ctsLibrarianPopup)) inew (ctsLibrarianPopup);
             ctsLibrarianPopup.image_index = ds_map_find_value(entry, SEQI_TYPE);
             ctsGabberBox.input_actor = null;
         }
         
         // Make the target face the input direction
-        if (exists(target_inst))
+        if (iexists(target_inst))
         {
             if (facing == -1 || facing == 1)
             {
                 target_inst.facingDir = facing;
             }
-            else if (exists(facing))
+            else if (iexists(facing))
             {
                 target_inst.facingDir = sign(facing.x - target_inst.x);
             }
@@ -124,9 +124,9 @@ case SEQTYPE_LINES:
         cts_execute_state = 1;
     }
     // No longer exists? We go to the next entry.
-   else if (  (!exists(ctsTalkerBox) ) // Check talker boxes normally
+   else if (  (!iexists(ctsTalkerBox) ) // Check talker boxes normally
 			// But gabber boxes are special: we can continue as soon as they fade, to keep dialogue snappy.
-			&& (!exists(ctsGabberBox) || (instance_number(ctsGabberBox) == 1 && ctsGabberBox.input_fadeout))  )
+			&& (!iexists(ctsGabberBox) || (instance_number(ctsGabberBox) == 1 && ctsGabberBox.input_fadeout))  )
     {
         cts_entry_current++;
         cts_execute_state = 0;   
@@ -141,7 +141,7 @@ case SEQTYPE_CHOICES:
         // Make a talker with all the input info
         var count = ds_map_find_value(entry, SEQI_COUNT);
         
-        var gabber = new(ctsChoiceBox);
+        var gabber = inew(ctsChoiceBox);
             gabber.input_choice_count = count;
             for (var i = 0; i < count; ++i)
             {
@@ -152,7 +152,7 @@ case SEQTYPE_CHOICES:
         return false;
     }
     // No longer exists? We go to the enxt entry.
-    else if (!exists(ctsChoiceBox))
+    else if (!iexists(ctsChoiceBox))
     {
         cts_entry_current++;
         cts_execute_state = 0;   

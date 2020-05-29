@@ -1,13 +1,13 @@
-delete(xAxis);
-delete(yAxis);
+idelete(xAxis);
+idelete(yAxis);
 
-delete(jumpButton);
-delete(atkButton);
-delete(useButton);
-delete(dodgeButton);
-delete(specialButton);
+idelete(jumpButton);
+idelete(atkButton);
+idelete(useButton);
+idelete(dodgeButton);
+idelete(specialButton);
 
-delete(prevCharButton);
-delete(nextCharButton);
-delete(tabButton);
-delete(escButton);
+idelete(prevCharButton);
+idelete(nextCharButton);
+idelete(tabButton);
+idelete(escButton);

@@ -36,7 +36,7 @@
 	    faFireLoopObject = burning_object;
 	}
 
-	if ( exists(faFireLoopObject) && faFireLoopObject.isBurning )
+	if ( iexists(faFireLoopObject) && faFireLoopObject.isBurning )
 	{   // Move sound to the closest burning object
 	    faFireLoop.x = faFireLoopObject.x;
 	    faFireLoop.y = faFireLoopObject.y;
@@ -63,7 +63,7 @@
 	
 	// get center of map
 	//var room_info = rooms_info[room]; // dangerous. need to make it a list
-	if (exists(pl) && room < array_length_1d(rooms_info))
+	if (iexists(pl) && room < array_length_1d(rooms_info))
 	{
 		var room_info = rooms_info[room];
 		if (is_array(room_info) && array_length_1d(room_info) > 0)

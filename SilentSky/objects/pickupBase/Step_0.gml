@@ -108,9 +108,9 @@ if ( pkTimer > 4.3 )
     event_user(0);
     // Delete self
     if ( pkBigItem )
-        delete(object_index);
+        idelete(object_index);
     else
-        delete(this);
+        idelete(this);
 }
 
 // Fade in and out the UI bit

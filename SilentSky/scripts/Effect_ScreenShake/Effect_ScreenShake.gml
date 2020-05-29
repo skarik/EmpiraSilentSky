@@ -3,7 +3,7 @@
 /// @param length
 /// @param fade
 
-var screenshake = new(fxScreenshake);
+var screenshake = inew(fxScreenshake);
 screenshake.magnitude   = argument0;
 screenshake.life    = argument1;
 screenshake.maxlife = argument1;

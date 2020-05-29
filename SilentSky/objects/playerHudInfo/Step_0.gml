@@ -1,5 +1,5 @@
 var pl = GetActivePlayer();
-if (!exists(pl)) pl = objPlayerMain;
+if (!iexists(pl)) pl = objPlayerMain;
 var inventory = playerInventory;
 var delta, deltaSpeed;
 
@@ -73,7 +73,7 @@ with (pl)
         }
     }
 }
-if ( pressed && exists(button) )
+if ( pressed && iexists(button) )
 {
     uiButtonFade += Time.dt * 3.0;
     

@@ -13,7 +13,7 @@ with (door)
         sound_play_at(x+sprite_width/2,y+sprite_height/2,sndDoor0_Close);
     }
 }
-if (exists(door))
+if (iexists(door))
 {
     image_index = door.open;
 }

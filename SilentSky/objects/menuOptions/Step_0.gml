@@ -13,7 +13,7 @@ if (fade)
     image_alpha -= Time.dt * 2.0;
     if (image_alpha < 0)
     {
-        delete(this);
+        idelete(this);
     }
 }
 else
@@ -40,7 +40,7 @@ else
                 audio_play_sound(sndUiMenuSelect, 90, false);
                 
                 // Fade out everything
-                if (exists(floaterLogo))
+                if (iexists(floaterLogo))
                     floaterLogo.fadeout = true;
                 fade = true; // Fade out now
             }

@@ -39,8 +39,8 @@ mgCastCb[0] = null;
 moSpecialCbKey = Tinkerer_CastBurst;
 mgCastCost[0] = 35;
 
-if (!exists(playerHudInfo)) new(playerHudInfo);
-if (!exists(playerHudSpellbook)) new(playerHudSpellbook);
-if (!exists(playerHudBgInfo)) new(playerHudBgInfo);
-if (!exists(playerHudBgInfoHp)) new(playerHudBgInfoHp);
+if (!iexists(playerHudInfo)) inew(playerHudInfo);
+if (!iexists(playerHudSpellbook)) inew(playerHudSpellbook);
+if (!iexists(playerHudBgInfo)) inew(playerHudBgInfo);
+if (!iexists(playerHudBgInfoHp)) inew(playerHudBgInfoHp);
 

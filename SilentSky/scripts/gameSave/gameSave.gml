@@ -1,13 +1,13 @@
 var buf = buffer_create(4096, buffer_grow, 1);
 
 // Write out the players:
-buffer_write(buf, buffer_bool, exists(objPlayerPaladin) && objPlayerPaladin.moPlayerAvailable);
-buffer_write(buf, buffer_bool, exists(objPlayerPrincess) && objPlayerPrincess.moPlayerAvailable);
-buffer_write(buf, buffer_bool, exists(objPlayerTinkerer) && objPlayerTinkerer.moPlayerAvailable);
+buffer_write(buf, buffer_bool, iexists(objPlayerPaladin) && objPlayerPaladin.moPlayerAvailable);
+buffer_write(buf, buffer_bool, iexists(objPlayerPrincess) && objPlayerPrincess.moPlayerAvailable);
+buffer_write(buf, buffer_bool, iexists(objPlayerTinkerer) && objPlayerTinkerer.moPlayerAvailable);
 
 // Write out the current player position
 var pl = GetActivePlayer();
-if (!exists(pl))
+if (!iexists(pl))
 {
     buffer_write(buf, buffer_u32, 0);
     exit;

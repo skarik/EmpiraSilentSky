@@ -1,3 +1,3 @@
 // Nothin!
-delete(floater);
+idelete(floater);
 

@@ -2,13 +2,13 @@ Converting GML script: ${project_dir}\scripts\singleton_this\singleton_this.gml
 Converted description /// @description  Returns true if the calling script should abort
 
 Converting GML script: ${project_dir}\scripts\new\new.gml
-Converted description /// @description  new(object_to_create)/// @param object_to_create
+Converted description /// @description  inew(object_to_create)/// @param object_to_create
 
 Converting GML script: ${project_dir}\scripts\delete\delete.gml
-Converted description /// @description  delete(object_to_delete)/// @param object_to_delete
+Converted description /// @description  idelete(object_to_delete)/// @param object_to_delete
 
 Converting GML script: ${project_dir}\scripts\exists\exists.gml
-Converted description /// @description  exists(object_to_check)/// @param object_to_check
+Converted description /// @description  iexists(object_to_check)/// @param object_to_check
 
 Converting GML script: ${project_dir}\scripts\collision_normal\collision_normal.gml
 Converted description /// @description  collision_normal(x1,y1,obj [,rad [,res]])/// @param x1

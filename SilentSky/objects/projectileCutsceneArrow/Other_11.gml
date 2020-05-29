@@ -20,7 +20,7 @@ if (enemy != null && damageCanHit(id,enemy))
     
     // Explode into effect
     event_user(2); 
-    delete(this);
+    idelete(this);
     killme = true;
 }
 

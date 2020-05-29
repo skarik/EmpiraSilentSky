@@ -22,7 +22,7 @@ if ( position_meeting(x + xstep, y + ystep, bloxBase ) )
         }
     }
     
-    delete(this);
+    idelete(this);
     exit;
 }
 

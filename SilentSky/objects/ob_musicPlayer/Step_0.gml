@@ -13,7 +13,7 @@ if (m_fadeOut)
 	}
 	if (can_delete)
 	{
-		delete(this);
+		idelete(this);
 		exit;
 	}
 }

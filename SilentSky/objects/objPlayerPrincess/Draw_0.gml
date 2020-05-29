@@ -4,7 +4,7 @@ draw_self();
     for ( var i = 0; i < ds_list_size(aiFollowNodeList); ++i)
     {
         var node = ds_list_find_value(aiFollowNodeList,i);
-        if ( exists(node) )
+        if ( iexists(node) )
         {
             draw_set_color(c_red);
             draw_circle(node.x,node.y, 8, true);

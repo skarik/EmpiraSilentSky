@@ -29,7 +29,7 @@ if ( curTrack != wanted_track )
         if ( curInst != null )
 		{
 			if (instance_exists(curInst))
-				delete(curInst);
+				idelete(curInst);
 			else if (audio_exists(curInst))
 				audio_stop_sound(curInst);
 			curInst = null;
@@ -37,7 +37,7 @@ if ( curTrack != wanted_track )
         if ( curTrack != null )
         {
 			if (object_exists(curTrack))
-				curInst = new(curTrack);
+				curInst = inew(curTrack);
 			else if (audio_exists(curTrack))
 				curInst = audio_play_sound(curTrack, 80, true);
 				

@@ -8,8 +8,8 @@ y += yspeed * Time.dt;
 if ( place_meeting(x,y,bloxBase) )
 {
     var splatter = instance_create(x,y,splatterBlood);
-        if (exists(splatter)) splatter.image_blend = image_blend;
-    delete(this);
+        if (iexists(splatter)) splatter.image_blend = image_blend;
+    idelete(this);
 }
 
 

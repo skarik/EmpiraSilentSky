@@ -1,6 +1,6 @@
 // Player controls start:
 var hasControl = moPlayer;
-if (moPlayer && exists(ctsTalker))
+if (moPlayer && iexists(ctsTalker))
 {
     if (ctsTalker.input_priority)
     {
@@ -183,7 +183,7 @@ else if (moPlayer && prevCharButton.pressed )
     for ( var i = 1; i < 4; ++i )
     {
         var index = (playercurrent + i) % 3;
-        if ( exists(playerselection[index]) && playerselection[index].moPlayerAvailable )
+        if ( iexists(playerselection[index]) && playerselection[index].moPlayerAvailable )
         {
             with (objPlayerMain) 
             {   // Zero controls
@@ -222,7 +222,7 @@ else if (moPlayer && nextCharButton.pressed )
     for ( var i = 1; i < 4; ++i )
     {
         var index = (playercurrent + i) % 3;
-        if ( exists(playerselection[index]) && playerselection[index].moPlayerAvailable )
+        if ( iexists(playerselection[index]) && playerselection[index].moPlayerAvailable )
         {
             with (objPlayerMain) 
             {   // Zero controls

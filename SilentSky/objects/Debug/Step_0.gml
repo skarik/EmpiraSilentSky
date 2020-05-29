@@ -2,12 +2,12 @@
 if ( keyboard_check_pressed(192) )
 {
     // Toggle the menu when it is pressed down.
-    if ( !exists(menuDebug) ) {
-        new( menuDebug );
+    if ( !iexists(menuDebug) ) {
+        inew( menuDebug );
         on = true;
     }
     else {
-        delete( menuDebug );
+        idelete( menuDebug );
         on = false;
     }
 }

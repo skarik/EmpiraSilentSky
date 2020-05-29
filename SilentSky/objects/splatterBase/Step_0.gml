@@ -11,8 +11,8 @@ for (var i = 0; i < drCount; ++i)
 }
 
 // Make sure the parent still exists before destroying self
-if (!exists(drParent))
+if (!iexists(drParent))
 {
-    delete(this);
+    idelete(this);
 }
 

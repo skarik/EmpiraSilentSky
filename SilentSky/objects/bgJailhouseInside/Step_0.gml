@@ -1,4 +1,4 @@
-if (exists(Lighting))
+if (iexists(Lighting))
 {
     //Lighting.ambient = make_color_rgb(76,106,99);
     Lighting.ambient = make_color_rgb(76 * 0.9,106 * 0.9,99 * 0.9);

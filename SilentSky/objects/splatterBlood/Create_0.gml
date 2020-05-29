@@ -4,5 +4,5 @@ drCount = max(0,drCount-2);
 
 
 
-if (image_angle != 0) delete(this);
+if (image_angle != 0) idelete(this);
 

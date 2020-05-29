@@ -1,10 +1,10 @@
-if (Debug.reset && !exists(Game))
+if (Debug.reset && !iexists(Game))
     return false;
 
 if (global._flag_cutscene[argument0] == true)
 {
     cutsceneInit();
-    delete(this);
+    idelete(this);
     return true;
 }
 global._flag_cutscene[argument0] = true;

@@ -5,7 +5,7 @@
 AI_CombatUpdateTarget();
 
 // Check if the target is alive, angry, or nearby
-if (exists(aiCombatTarget))
+if (iexists(aiCombatTarget))
 {
     if (aiCombatTarget.aiAngry)
     {

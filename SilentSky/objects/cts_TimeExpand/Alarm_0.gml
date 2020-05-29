@@ -1,2 +1,2 @@
-delete(this);
+idelete(this);
 

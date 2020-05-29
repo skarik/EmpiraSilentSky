@@ -20,7 +20,7 @@ if (instance_number(ctsGabberBox) == 1)
 }
 
 var talker = null;
-if (existing_gabber != null && exists(existing_gabber))
+if (existing_gabber != null && iexists(existing_gabber))
 {
 	talker = existing_gabber;
 	Cts_GabberReset(talker);
@@ -30,7 +30,7 @@ if (existing_gabber != null && exists(existing_gabber))
 }
 else
 {
-	talker = new(ctsGabberBox);
+	talker = inew(ctsGabberBox);
 	talker.input_actor = argument0;
 	talker.input_name = argument1;
 	talker.input_text = argument2;

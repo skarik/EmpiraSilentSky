@@ -54,6 +54,6 @@ if ( faderTimer >= 1.0 )
 // Destroy self if out of level
 if ( abs(x-xstart) > 2000 || abs(y-ystart) > 2000 )
 {
-    delete(this);
+    idelete(this);
 }
 

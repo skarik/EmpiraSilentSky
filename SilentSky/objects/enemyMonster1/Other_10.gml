@@ -20,5 +20,5 @@ for (var i = 0; i < choose(1,2,3); ++i)
         blood.image_blend = c_green;
 }
     
-delete(this);
+idelete(this);
 

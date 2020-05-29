@@ -1,5 +1,5 @@
 
-if (exists(ctsChoiceBox))
+if (iexists(ctsChoiceBox))
 {
     return ctsChoiceBox.display_choice;
 }

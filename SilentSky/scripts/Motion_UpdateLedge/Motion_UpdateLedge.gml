@@ -1,5 +1,5 @@
 // Hide gun
-if (exists(gun)) gun.isHeld = false;
+if (iexists(gun)) gun.isHeld = false;
 
 // Perform the horizontal collision:
 // Check if will hit the wall next frame

@@ -15,7 +15,7 @@ var type = argument6;
 // For debug purposes, draw the bounding box of the hitbox
 if (Debug.on)
 {
-    var dbb = new(debugBox);
+    var dbb = inew(debugBox);
         dbb.x1 = x1; dbb.y1 = y1;
         dbb.x2 = x2; dbb.y2 = y2;
         dbb.image_blend = c_gray;

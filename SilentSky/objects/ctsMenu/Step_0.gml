@@ -6,14 +6,14 @@ gain = min(1.0, gain + Time.dt * 0.1);
 // If anything is pressed...
 if (true)// || jumpButton || atkButton || dodgeButton || specialButton || prevCharButton || nextCharButton || tabButton || escButton)
 {
-    //if (exists(floaterLogo))
+    //if (iexists(floaterLogo))
     //    floaterLogo.fadeout = true;
-    if ( !exists(menuOptions) && exists(floaterLogo) && !floaterLogo.fadeout )
-        new(menuOptions);
+    if ( !iexists(menuOptions) && iexists(floaterLogo) && !floaterLogo.fadeout )
+        inew(menuOptions);
 }
 
 // Fade out the music
-if (exists(floaterLogo) && floaterLogo.fadeout)
+if (iexists(floaterLogo) && floaterLogo.fadeout)
 {
     audio_sound_gain(music, floaterLogo.image_alpha*gain, 0);
 }
@@ -23,7 +23,7 @@ else
 }
 
 // Stop music, go to next room
-if (!exists(floaterLogo))
+if (!iexists(floaterLogo))
 {
     audio_stop_sound(music);
     room_goto_next();

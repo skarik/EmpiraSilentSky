@@ -1,7 +1,7 @@
 var dx = uiPosX;
 var dy = uiPosY;
 var pl = GetActivePlayer();
-if (!exists(pl)) exit;
+if (!iexists(pl)) exit;
 
 var ofw = 250;
 var ofx = dx + Screen.width/2;

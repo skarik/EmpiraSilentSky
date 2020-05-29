@@ -1,5 +1,5 @@
 // We need the screen to draw, but otherwise this is where we draw
-if (exists(Screen))
+if (iexists(Screen))
 {
 	// Apply the output matrix
 	view_set_camera(1, Screen.m_outputCamera);
